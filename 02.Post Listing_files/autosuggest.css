@@ -1,0 +1,22 @@
+.autosuggestDiv{overflow-y:scroll;max-height:270px;text-align:left;z-index:10000;position:absolute;display:none;background-color:#FFF; box-shadow:0px 2px 4px 0 #999}
+.autosuggestDiv ul {list-style-type:none;-webkit-padding-start:5px;-webkit-margin-before:0px;margin:0px;padding:0px;}
+.autosuggestDiv ul li a.building_icn{background:url(/public/images/filter/black_building_hover.png) no-repeat right center;padding-right:17px;}
+.autosuggestDiv ul li a.building_icn:hover{background:url(/public/images/filter/black_building.png) no-repeat right center;}
+.autosuggestDiv ul li{padding:3px 3px 3px 3px !important;font: 12px arial;}
+.autosuggestDiv ul li.autosugg_sel a{
+ color: #111 !important;
+}
+.autosuggestDiv span{line-height:20px;padding:3px;color:#535353}
+.autosuggestDiv ul li a{color: #535353 !important;}
+
+a.autsspan{cursor:pointer;border:1px solid #8EB7CE;padding:3px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;text-align:center;background-color:white;color:#58595B;float:left;margin:2px 0px;}
+a:hover.autsspan{cursor: pointer !important;}
+.autosuggestDiv a{text-decoration:none;}
+.greyborder{border:1px solid #ccc;}
+.mrt0{margin-top:0px;}
+.mrl0{margin-left:0px;}
+.mrt-2{margin-top:-2px;}
+.mrt3{margin-top:3px;}
+.mrl5{margin-left:5px;}
+.popup_ac{position:fixed;z-index:1000000;}
+.fw_as_class{position:fixed;}

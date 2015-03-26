@@ -1,0 +1,3365 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="title" content="CF AgentConsole: SKC Realty Logged In">
+	<meta name="author" content="CommonFloor.com">
+	<meta name="keywords" content="Agent, Broker, Property Listings">
+	<meta name="description" content="Information to Property Agents or Brokers about the Property Listings">
+	<title>CF Agent Console:  Logged In</title>
+	<link type="text/css" rel="stylesheet" href="02.Post%20Listing_files/commonfloor.css">
+	<link type="text/css" rel="stylesheet" href="02.Post%20Listing_files/modal-message.css">
+	<link type="text/css" rel="stylesheet" href="02.Post%20Listing_files/aitcommon.css">
+
+	<iframe style="display: none;" scrolling="no" src="02.Post%20Listing_files/analyze.htm" height="1" width="1"></iframe><script src="02.Post%20Listing_files/pixel.php" async="" type="text/javascript"></script><script src="02.Post%20Listing_files/ga.js" async="" type="text/javascript"></script><script type="text/javascript" src="02.Post%20Listing_files/prototype.js"></script>
+	<script type="text/javascript" src="02.Post%20Listing_files/jquery-1.js"></script>
+	<script type="text/javascript" src="02.Post%20Listing_files/noconflict.js"></script>
+	<script type="text/javascript" src="02.Post%20Listing_files/autosuggest2.js"></script>
+	<script type="text/javascript" src="02.Post%20Listing_files/newautosuggest.js"></script>
+	<link type="text/css" rel="stylesheet" href="02.Post%20Listing_files/autosuggest.css">
+	<script type="text/javascript" src="02.Post%20Listing_files/indexpage.js"></script>
+	<script type="text/javascript" src="02.Post%20Listing_files/calendarDateInput.js"></script><style>
+td.calendarDateInput {letter-spacing:normal;line-height:normal;font-family:Tahoma,Sans-Serif;font-size:11px;}
+select.calendarDateInput {letter-spacing:.06em;font-family:Verdana,Sans-Serif;font-size:11px;}
+input.calendarDateInput {letter-spacing:.06em;font-family:Verdana,Sans-Serif;font-size:11px;}
+</style>
+
+	<script type="text/javascript" src="02.Post%20Listing_files/modal-message.js"></script>
+    <link type="text/css" rel="stylesheet" href="02.Post%20Listing_files/chosen.css">
+    <script type="text/javascript" src="02.Post%20Listing_files/chosen.js"></script>
+
+	<style>
+	<!--
+	.quick-menu {
+		width:150px;
+		background-color:#FFFFFF;
+		font-size:13px;
+		border:thin solid #CCCCCC;
+		align:center;
+		margin:0px;	
+		z-index:100;
+		padding:2px;
+	}
+	
+	.quick-menu a{
+		width:146px;
+		display:block;
+		margin:0px;
+		font-family:"trebuchet MS";
+		font-weight:normal;
+		font-size:12px;	
+		line-height:14px;
+		color:#0099FF;
+		text-decoration:none;
+		text-align:left;
+		list-style:none;	
+		border-bottom:1px solid #EEEEEE;		
+	}
+	
+	.quick-menu a:hover{
+		width:146px;
+		background-color:#E6FFFF;
+		display:block;
+		margin:0px;
+		font-family:"trebuchet MS";
+		font-size:12px;
+		font-weight:normal;
+		line-height:14px;
+		color:#0099FF;
+		text-decoration:none;
+		text-align:left;
+		list-style:none;	
+		border-bottom:1px solid #EEEEEE;		
+	}
+	
+	sup {	
+		color:#FF8040;		
+		font-size:11px;
+		font-weight:bold;
+	}
+	
+	.mainnav {
+		width:150px;
+	}
+	.mainnav a {
+		width:150px;
+	}
+	.mainnav a:hover {
+		width:150px;
+	}
+	.mainnav01 {
+		width:150px;
+	}
+	.mainnav01 a {
+		width:150px;
+	}
+	.mainnav01 a:hover {
+		width:150px;
+	}
+	#listing_search_box #search_quick_links a {
+		padding:0px;
+		margin:0px;
+		clear:both;
+		color:#0054A8;
+		font-size:11px;
+		font-weight:bold;
+		line-height:20px;
+		text-decoration:underline;
+	}
+	#listing_search_box #search_quick_links a:hover{
+		padding:0px;
+		margin:0px;
+		clear:both;
+		color:#FF5B00;
+		font-size:11px;
+		font-weight:bold;
+		line-height:20px;
+		text-decoration:none;
+	}
+	-->
+	.property_consultant{
+		float: left;
+		width: 352px; 
+		height: 82px;
+		margin-left: 35px;
+	}
+	</style>
+
+<script type="text/javascript">
+	function closeMessage()
+	{
+		messageObj.close();
+	}
+</script>
+
+</head>
+
+<body>	
+<script type="text/javascript">
+	<!--
+	messageObj = new DHTML_modalMessage();	// We only create one object of this class
+	messageObj.setShadowOffset(5);	// Large shadow
+	
+	var cursor_on_submenu = false;
+	var current_tab = 'h';
+	
+	function showSubMenu(idMouseOver)
+	{
+		
+		var idMenuBox = idMouseOver + '-menu';
+		var offset_info = $(idMouseOver).cumulativeOffset();	
+		offset_left = offset_info[0];
+		offset_top = offset_info[1];
+		
+		if((current_tab) != idMouseOver)
+		{
+			$(idMouseOver).className = 'mainnav01';
+		}
+		
+		$(idMenuBox).style.top = (offset_top + 30) + 'px';
+		$(idMenuBox).style.left = (offset_left) + 'px';	
+		$(idMenuBox).show();
+		
+	}
+	
+	function hideSubMenu(idMouseOver)
+	{
+		if(cursor_on_submenu == true)
+		{
+			return;
+		}
+		
+		if((current_tab + '_nav') != idMouseOver)
+		{
+			$(idMouseOver).className = 'mainnav';
+		}
+		
+		
+		
+		var idMenuBox = idMouseOver + '-menu';
+		$(idMenuBox).hide();
+			
+	}
+	-->
+</script>	
+
+<div align="center">
+	<div class="text12" style="width:1000px" align="left">
+		<a href="http://www.commonfloor.com/dashboard" title="CommonFloor Dashboard"><small>Dashboard</small></a> &gt; <small>Agent  Console</small>
+	</div>
+</div>
+<div id="wrapper">
+
+	<div style="color:#808080;">
+			<p class="logo" style="padding:0 0 0 20px;">
+			<a href="http://www.commonfloor.com/">
+					<img src="02.Post%20Listing_files/common_floor.gif" alt="Common Floor" title="Common Floor" border="0" height="45" width="110">
+			</a>
+		</p>
+			<h1 style="float:left;padding-left:50px;font-size:25px;margin-bottom:5px; color:#638094 !important;">
+			Agent  Console</h1>
+		<div style="float:right;text-align:left;">
+		
+					<big>
+						<strong>For any help,<br>
+							 <i>+91 124 4653000</i><br>
+			                 <i> Agentcare@commonfloor.com</i>
+						 </strong>
+				   </big>
+						</div>
+		<p class="clear"></p>
+	</div>
+	
+	<div class="masthead">
+		<p class="clear"><spacer type="block" height="0"></spacer></p>
+		 <div class="utilitylinks">
+           	  	<ul class="utility_nav_pannel" style="float:left;">
+           	  		<li class="utility_nav01" style="padding-left : 40px;">Welcome <b>SKC Realty</b>!</li>
+           	  	</ul>
+           	  	<ul class="utility_nav_pannel" style="float:right;">
+           	  		<li class="utility_nav02"><a href="http://www.commonfloor.com/agent/settings" title="Change your Password">Change Password</a> | </li>
+           	  		<li class="utility_nav02"><a href="http://www.commonfloor.com/agent/logout" title="Logout">Logout <img src="02.Post%20Listing_files/icon_logout.gif" alt="Logout" align="absmiddle" border="0" height="13" width="13"></a></li>
+           	  	</ul>
+           	  	<p class="clear"><spacer type="block" height="0"></spacer></p>
+          </div>
+	          
+	                            
+	          <div id="agent_smoothmenu1" class="mainnav_bg"><ul id="main_nav_tabs"></ul></div>	          
+	          <div class="subnav_bg"><ul><li class="subnav" style="float:right;"><a title="List your property" href="http://www.commonfloor.com/listing/post-listing-basic-detail">LIST YOUR PROPERTY</a></li></ul></div>    </div>
+    <p class="clear"></p>
+	<div style="clear:both" align="center">
+		 			<span id="flashmsg" class="text13" style="padding:3px; background-color:#FFFFCE; border:#999999 thin solid;color:#666666; display:none"></span>
+				
+			</div>
+
+
+    
+
+<script type="text/javascript">
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  try{
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2595309-4']);
+  _gaq.push(['_trackPageview']);
+}catch(err){
+	
+}
+
+</script>
+<link type="text/css" rel="stylesheet" href="02.Post%20Listing_files/property_listing_new1.css">
+<script type="text/javascript" src="02.Post%20Listing_files/property_listing_new.js"></script>
+<script type="text/javascript" src="02.Post%20Listing_files/validator.js"></script>
+<script type="text/javascript" src="02.Post%20Listing_files/content_property_listing_new.js"></script>
+
+<script type="text/javascript">
+if(typeof AutoSuggest == 'undefined') {
+	CFLoad.js('/public/assets/autosuggest2.js?012_new');
+}
+</script><script type="text/javascript" src="02.Post%20Listing_files/realestate_search.js"></script>
+<script type="text/javascript" src="02.Post%20Listing_files/search_utility.js"></script>
+<script type="text/javascript" src="02.Post%20Listing_files/calendar_event.js"></script>
+<script type="text/javascript" src="02.Post%20Listing_files/slider.js"></script>
+<script type="text/javascript"> PropertyListingNew.ConsoleRequest=true; </script>
+<style>
+<!--
+select.calendarDateInput {padding:3px;width:55px;border:1px solid #888;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;margin-right:5px;}
+input.calendarDateInput {padding:3px;width:55px;border:1px solid #888;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;margin-right:5px;}
+#container .dashboard_left .innerdiv .possession_from span{margin: 0px;clear:both;}
+.heading{font-size:18px !important;}
+.largeselectbox,.mediumtextbox{width:250px !important;}
+#container .dashboard_left .innerdiv .negotiablediv{width:360px !important;}
+-->
+</style>
+  <script type="text/javascript">
+  
+  var isExpiredListing = 0;
+
+  PropertyListingNew.prevAreaUnitType = 'Sq. Ft.';
+</script>
+ 	 
+
+<div id="wrapper" class="container-wrapper-cls">
+  <div class="container-holder">
+    <div id="container">
+           	<h1>Post your property</h1>
+      
+    	<p style="font-family: Arial;font-size: 14px;color: #4d4d4d !important;">
+    		Thank you for choosing to post property on CommonFloor.
+  Posting property on CommonFloor helps you reach thousands of property 
+seekers. You will get instant SMS and email from people interested in 
+your property.  
+    <br><br>
+    	</p>
+    	<span class="fr mrt30 mrr35">Field mark with an asterisk * are required.</span>
+    	<div class="dashboard_left" style="background-color:#F8F9FB;width:970px">
+    		<form name="basic_detail_form" method="post" action="/listing/post-listing-additional-detail" id="property_basic_details_form" enctype="multipart/form-data">
+  	 	  	<input name="listing_id" value="" id="listing_id" type="hidden">
+  		  	<input value="yes" name="show_header_footer" type="hidden">
+    			<input id="suggstr" value="" type="hidden">
+    			<input id="tag_to_move" name="tag_to_move" type="hidden">
+    			    			<input value="agent/builder console" name="listing_source" type="hidden">
+    			    			<input name="user_flow" value="agent" type="hidden">
+      		<input id="tmp_project_name" value="" type="hidden">
+            <input id="sel_proj_locality" value="" type="hidden">
+            <input id="old_sel_proj_locality" value="" type="hidden">
+            <input id="tmp_locality_name" value="" type="hidden">
+			<input id="property_id" name="property_id" value="" type="hidden">
+      		<input id="old_property_id" value="" type="hidden">
+  		    <input id="area_id" name="area_id" value="" type="hidden">
+            <input id="old_area_id" value="" type="hidden">
+            <input name="abandoned_id" id="abandoned_id" value="" type="hidden">
+  		    <div class="heading f20">Contact Details</div>
+  			<div class="innerdiv fl">
+  		      <h2 class="requiredfield padLeft15">Name</h2>
+  	          <input class="textbox" name="contact_name" id="name" onblur="PropertyListingNew.validateName(this);" value="SKC Realty" type="text">
+  	          <div class="t-tip">
+  	           <div class="info">
+  	          	<span>
+  	            	 <div class="tt">Please Enter Correct Name<br>eg. Rahul Jain </div>
+  	            	 <div class="arrow"></div>
+  	            </span>
+  	            <div class="hideerror" id="name_error"></div>
+  	           </div>
+  	          </div>
+  			</div>
+
+			<div class="innerdiv fl">
+				<h2 class="requiredfield padLeft15">E-mail Address</h2>
+          		<input class="textbox" name="contact_email" id="email" onblur="PropertyListingNew.validateEmail(this);" onchange="PropertyListingNew.checkIsRegUser(this, false);" value="cswaroop@gmail.com" disabled="disabled" type="text">
+          		          		<input value="cswaroop@gmail.com" name="contact_email" type="hidden">
+          		          		<div class="t-tip">
+          			<div class="info">
+          				<span><div class="tt"> Please enter correct email<br>
+	              			eg. john@mail.com </div>
+	            			<div class="arrow"> </div>
+	            		</span>
+	            		<div class="hideerror" id="email_error"></div>
+	            	</div> 
+	            </div>
+			</div>
+			<div class="clear"></div>
+			<div class="innerdiv">
+        				<input onclick="ContentPropertyListingNew.handlePropertyOwnershipType(this,'');" name="user_type" value="Broker" id="broker" checked="checked" class="show" type="radio">
+				I am a real estate agent/professional<br>
+        				<input onclick="ContentPropertyListingNew.handlePropertyOwnershipType(this,'');" name="user_type" value="Builder" class="show fl" type="radio">
+				<p class="fl mrt5">I am a builder</p>
+      				<div class="t-tip fl">
+					<div class="info">
+						<span><div class="tt"> Please Enter Property Ownership Type</div>
+            				<div class="arrow"></div>
+						</span>
+						<div class="hideerror" id="ownership_error"></div>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>			
+			<div class="innerdiv fl">
+			
+			
+			<h2 class="requiredfield padLeft15">Mobile Number</h2>
+			
+			 <div id="new_contact_mobile" class="fl" style="display:block;">
+			    		<select class="selectbox" id="country_code" name="country_code">
+									<option value="91" selected="selected">
+						(India) 91					</option>
+									<option value="001">
+						(USA) 001					</option>
+									<option value="44">
+						(UK) 44					</option>
+									<option value="971">
+						(UAE) 971					</option>
+								</select>
+				<input class="smalltextbox" name="contact_mobile" id="mobile" onblur="ContentPropertyListingNew.validateContactMobile(this,$('country_code'));" value="8147740292" type="text">
+				<div class="t-tip"> 
+					<div class="info"> <span>
+					<div class="tt"> Please Enter Correct Mobile Numbereg. 987654321 </div>
+					<div class="arrow"> </div>
+					</span><div class="hideerror" id="mobile_error"></div> 
+					</div> 
+					<div class="correct" id="mobile_verified" style="display: none;" title="This is verified Mobile Number."></div>
+				</div>
+			
+				  
+						<a href="javascript:void(0);" class="fl mrl5 mrt5" style="display:none;" onclick="ContentPropertyListingNew.handleCancelAction('mobile','91','8147740292');">
+						Cancel</a>
+						
+				</div>
+								</div>
+			
+			<div class="innerdiv fl">
+				<h2 class="requiredfield padLeft15">What would be a right time to call you?</h2>
+				<select name="right_time_to_call_start_hour" id="right_time_to_call_start_hour" class="selectbox" onchange="PropertyListingNew.handleRightTimeToCall(this,'right_time_to_call_end_hour')">
+				<script type="text/javascript">Calendar.showTimeOptions(0,23,10);</script><option value="0">12 Midnight</option><option value="1">1:00 AM</option><option value="2">2:00 AM</option><option value="3">3:00 AM</option><option value="4">4:00 AM</option><option value="5">5:00 AM</option><option value="6">6:00 AM</option><option value="7">7:00 AM</option><option value="8">8:00 AM</option><option value="9">9:00 AM</option><option value="10" selected="selected">10:00 AM</option><option value="11">11:00 AM</option><option value="12">12 Noon</option><option value="13">1:00 PM</option><option value="14">2:00 PM</option><option value="15">3:00 PM</option><option value="16">4:00 PM</option><option value="17">5:00 PM</option><option value="18">6:00 PM</option><option value="19">7:00 PM</option><option value="20">8:00 PM</option><option value="21">9:00 PM</option><option value="22">10:00 PM</option><option value="23">11:00 PM</option>
+				</select>
+				<select name="right_time_to_call_end_hour" id="right_time_to_call_end_hour" class="selectbox">
+				<script type="text/javascript">Calendar.showTimeOptions(11,23,18);</script><option value="11">11:00 AM</option><option value="12">12 Noon</option><option value="13">1:00 PM</option><option value="14">2:00 PM</option><option value="15">3:00 PM</option><option value="16">4:00 PM</option><option value="17">5:00 PM</option><option value="18" selected="selected">6:00 PM</option><option value="19">7:00 PM</option><option value="20">8:00 PM</option><option value="21">9:00 PM</option><option value="22">10:00 PM</option><option value="23">11:00 PM</option>
+				</select>
+				<div class="clear"></div>
+			</div>
+      <div class="clear"></div>
+			<div class="innerdiv">
+				<div class="heading requiredfield float-l">What is the type of  your Property?</div>
+				<div class="t-tip questiontooltip">
+					<div class="info">
+						<span><div class="tt"> Please select property type <br>from below options</div>
+	            			<div class="arrow"> </div>
+	            		</span>
+	            		<div class="hideerror" id="property_type_error"></div>
+	            	</div>
+	            </div>
+	      		<div class="clear"></div>
+	      		<input value="0" name="unset_home_detail" id="unset_home_detail" type="hidden">
+	      		<input value="0" name="unset_project_name" id="unset_project_name" type="hidden">
+
+														<input id="apartment" name="unit_type" value="Apartment" class="show mrr5" onclick=" 
+                          ContentPropertyListingNew.handlePropertyType(this,true);
+                          						              " type="radio">
+					Apartment														<input id="house" name="unit_type" value="House" class="show mrr5" onclick=" 
+                          ContentPropertyListingNew.handlePropertyType(this,true);
+                          						              " type="radio">
+					Individual House														<input id="rowhouse" name="unit_type" value="Row House" class="show mrr5" onclick=" 
+                          ContentPropertyListingNew.handlePropertyType(this,true);
+                          						              " type="radio">
+					Row House														<input id="villa" name="unit_type" value="Villa" class="show mrr5" onclick=" 
+                          ContentPropertyListingNew.handlePropertyType(this,true);
+                          						              " type="radio">
+					Villa														<input id="plot" name="unit_type" value="Plot" class="show mrr5" onclick=" 
+                          ContentPropertyListingNew.handlePropertyType(this,true);
+                          						              " type="radio">
+					Plot									           <div class="clear"></div> <br>					<input id="builderfloor" name="unit_type" value="Builder Floor" class="show mrr5" onclick=" 
+                          ContentPropertyListingNew.handlePropertyType(this,true);
+                          						              " type="radio">
+					Builder Floor														<input id="penthouse" name="unit_type" value="Penthouse" class="show mrr5" onclick=" 
+                          ContentPropertyListingNew.handlePropertyType(this,true);
+                          						              " type="radio">
+					Penthouse														<input id="farmhouse" name="unit_type" value="Farmhouse" class="show mrr5" onclick=" 
+                          ContentPropertyListingNew.handlePropertyType(this,true);
+                          						              " type="radio">
+					Farm house														<input id="serviceapartment" name="unit_type" value="Service Apartment" class="show mrr5" onclick=" 
+                          ContentPropertyListingNew.handlePropertyType(this,true);
+                          						              " type="radio">
+					Service Apartment														<input id="studioapartment" name="unit_type" value="Studio Apartment" class="show mrr5" onclick=" 
+                          ContentPropertyListingNew.handlePropertyType(this,true);
+                          						              " type="radio">
+					Studio Apartment								<div class="clear"></div>
+			</div>
+	  		<div class="clear"></div>
+
+			<div class="innerdiv">
+				<div class="heading requiredfield float-l">Is your property up for Sale or Rent?</div>
+				<div class="t-tip questiontooltip">
+					<div class="info">
+						<span>
+							<div class="tt"> Please Select Property is for<br>Sale or Rent </div>
+							<div class="arrow"></div>
+						</span>
+						<div class="hideerror" id="listing_intent_error"></div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<input id="sale_intent" name="posted_for" value="sale" class="show" onclick="ContentPropertyListingNew.handleListingIntent('sale',true);" type="radio">
+				Sale
+				<input id="rent_intent" name="posted_for" value="rent" class="show" onclick="ContentPropertyListingNew.handleListingIntent('rent',true);" type="radio">
+				Rent
+				<div class="clear"></div>
+			</div>
+                        
+                        <div class="innerdiv" style="display:none" id="search_sale_intent">
+ 				<div class="heading  float-l">Is your property New or for Resale?</div>
+				<div class="t-tip questiontooltip">
+					<div class="info">
+						<span>
+							<div class="tt"> Please Select Property is for<br>Resale or New </div>
+							<div class="arrow"></div>
+						</span>
+						<div class="hideerror" id="search_listing_intent_error"></div>
+					</div>
+				</div>
+                                <div class="clear"></div>
+				<input id="sale_intent_resale" name="posted_for_sale" value="1" class="show" type="radio">
+				Resale
+				<input id="sale_intent_new" name="posted_for_sale" value="0" class="show" type="radio">
+				New
+				<div class="clear"></div>
+			</div>
+      
+		      <div class="innerdiv fl">
+				  <div class="heading requiredfield">Select the city</div>
+		          <select class="largeselectbox" name="city" id="city" onchange="PropertyListingNew.handleSelectCity();PropertyListingNew.validateCity(this);
+										ContentPropertyListingNew.showAdditionalInfo(1);">
+		          <option selected="selected" value="">Select a City</option>
+		          		            <option value="Bangalore">
+		             Bangalore</option>
+		          		            <option value="Mumbai">
+		             Mumbai</option>
+		          		            <option value="Pune">
+		             Pune</option>
+		          		            <option value="Gurgaon">
+		             Gurgaon</option>
+		          		            <option value="Noida">
+		             Noida</option>
+		          		            <option value="Hyderabad">
+		             Hyderabad</option>
+		          		            <option value="Chennai">
+		             Chennai</option>
+		          		            <option value="Greater Noida">
+		             Greater Noida</option>
+		          		            <option value="Ghaziabad">
+		             Ghaziabad</option>
+		          		            <option value="Delhi">
+		             Delhi</option>
+		          		            <option value="Faridabad">
+		             Faridabad</option>
+		          		            <option value="Navi Mumbai">
+		             Navi Mumbai</option>
+		          		            <option value="Kolkata">
+		             Kolkata</option>
+		          		            <option value="Jaipur">
+		             Jaipur</option>
+		          		            <option value="Adilabad">
+		             Adilabad</option>
+		          		            <option value="Agra">
+		             Agra</option>
+		          		            <option value="Ahmedabad">
+		             Ahmedabad</option>
+		          		            <option value="Ahmednagar">
+		             Ahmednagar</option>
+		          		            <option value="Aizawl">
+		             Aizawl</option>
+		          		            <option value="Ajmer">
+		             Ajmer</option>
+		          		            <option value="Akola">
+		             Akola</option>
+		          		            <option value="Alappuzha">
+		             Alappuzha</option>
+		          		            <option value="Aligarh">
+		             Aligarh</option>
+		          		            <option value="Allahabad">
+		             Allahabad</option>
+		          		            <option value="Almora">
+		             Almora</option>
+		          		            <option value="Alwar">
+		             Alwar</option>
+		          		            <option value="Amarnath">
+		             Amarnath</option>
+		          		            <option value="Ambala">
+		             Ambala</option>
+		          		            <option value="Ambedkar Nagar">
+		             Ambedkar Nagar</option>
+		          		            <option value="Amravati">
+		             Amravati</option>
+		          		            <option value="Amreli">
+		             Amreli</option>
+		          		            <option value="Amritsar">
+		             Amritsar</option>
+		          		            <option value="Anand">
+		             Anand</option>
+		          		            <option value="Anantapur">
+		             Anantapur</option>
+		          		            <option value="Anantnag">
+		             Anantnag</option>
+		          		            <option value="Andaman &amp; Nicobar">
+		             Andaman &amp; Nicobar</option>
+		          		            <option value="Angul">
+		             Angul</option>
+		          		            <option value="Anuppur">
+		             Anuppur</option>
+		          		            <option value="Ara">
+		             Ara</option>
+		          		            <option value="Araria">
+		             Araria</option>
+		          		            <option value="Arwal">
+		             Arwal</option>
+		          		            <option value="Asansol">
+		             Asansol</option>
+		          		            <option value="Ashoknagar">
+		             Ashoknagar</option>
+		          		            <option value="Auraiya">
+		             Auraiya</option>
+		          		            <option value="Aurangabad">
+		             Aurangabad</option>
+		          		            <option value="Aurangabad">
+		             Aurangabad</option>
+		          		            <option value="Azamgarh">
+		             Azamgarh</option>
+		          		            <option value="Badgam">
+		             Badgam</option>
+		          		            <option value="Bagalkot">
+		             Bagalkot</option>
+		          		            <option value="Bageshwar">
+		             Bageshwar</option>
+		          		            <option value="Baghpat">
+		             Baghpat</option>
+		          		            <option value="Bahadurgarh">
+		             Bahadurgarh</option>
+		          		            <option value="Bahraich">
+		             Bahraich</option>
+		          		            <option value="Baksa">
+		             Baksa</option>
+		          		            <option value="Balaghat">
+		             Balaghat</option>
+		          		            <option value="Baleswar">
+		             Baleswar</option>
+		          		            <option value="Ballia">
+		             Ballia</option>
+		          		            <option value="Baloda Bazar">
+		             Baloda Bazar</option>
+		          		            <option value="Balrampur">
+		             Balrampur</option>
+		          		            <option value="Banaskantha">
+		             Banaskantha</option>
+		          		            <option value="Banda">
+		             Banda</option>
+		          		            <option value="Banka">
+		             Banka</option>
+		          		            <option value="Bankura">
+		             Bankura</option>
+		          		            <option value="Banswara">
+		             Banswara</option>
+		          		            <option value="Barabanki">
+		             Barabanki</option>
+		          		            <option value="Baramula">
+		             Baramula</option>
+		          		            <option value="Baran">
+		             Baran</option>
+		          		            <option value="Bardhaman">
+		             Bardhaman</option>
+		          		            <option value="Bareilly">
+		             Bareilly</option>
+		          		            <option value="Bargarh">
+		             Bargarh</option>
+		          		            <option value="Barmer">
+		             Barmer</option>
+		          		            <option value="Barnala">
+		             Barnala</option>
+		          		            <option value="Barpeta">
+		             Barpeta</option>
+		          		            <option value="Barwani">
+		             Barwani</option>
+		          		            <option value="Bastar">
+		             Bastar</option>
+		          		            <option value="Basti">
+		             Basti</option>
+		          		            <option value="Bathinda">
+		             Bathinda</option>
+		          		            <option value="Beawar">
+		             Beawar</option>
+		          		            <option value="Beed">
+		             Beed</option>
+		          		            <option value="Begusarai">
+		             Begusarai</option>
+		          		            <option value="Belgaum">
+		             Belgaum</option>
+		          		            <option value="Bellary">
+		             Bellary</option>
+		          		            <option value="Betul">
+		             Betul</option>
+		          		            <option value="Bhadrak">
+		             Bhadrak</option>
+		          		            <option value="Bhagalpur">
+		             Bhagalpur</option>
+		          		            <option value="Bhandara">
+		             Bhandara</option>
+		          		            <option value="Bharatpur">
+		             Bharatpur</option>
+		          		            <option value="Bharuch">
+		             Bharuch</option>
+		          		            <option value="Bhavnagar">
+		             Bhavnagar</option>
+		          		            <option value="Bhilai">
+		             Bhilai</option>
+		          		            <option value="Bhilwara">
+		             Bhilwara</option>
+		          		            <option value="Bhind">
+		             Bhind</option>
+		          		            <option value="Bhiwadi">
+		             Bhiwadi</option>
+		          		            <option value="Bhiwandi">
+		             Bhiwandi</option>
+		          		            <option value="Bhiwani">
+		             Bhiwani</option>
+		          		            <option value="Bhojpur">
+		             Bhojpur</option>
+		          		            <option value="Bhopal">
+		             Bhopal</option>
+		          		            <option value="Bhramapur">
+		             Bhramapur</option>
+		          		            <option value="Bhubaneswar">
+		             Bhubaneswar</option>
+		          		            <option value="Bidar ">
+		             Bidar </option>
+		          		            <option value="Bijapur">
+		             Bijapur</option>
+		          		            <option value="Bijapur">
+		             Bijapur</option>
+		          		            <option value="Bijnor">
+		             Bijnor</option>
+		          		            <option value="Bikaner">
+		             Bikaner</option>
+		          		            <option value="Bilaspur">
+		             Bilaspur</option>
+		          		            <option value="Bilaspur">
+		             Bilaspur</option>
+		          		            <option value="Billhaur">
+		             Billhaur</option>
+		          		            <option value="Birbhum">
+		             Birbhum</option>
+		          		            <option value="Bishnupur">
+		             Bishnupur</option>
+		          		            <option value="Bokaro">
+		             Bokaro</option>
+		          		            <option value="Bolangir">
+		             Bolangir</option>
+		          		            <option value="Bongaigaon">
+		             Bongaigaon</option>
+		          		            <option value="Boudh">
+		             Boudh</option>
+		          		            <option value="Budaun">
+		             Budaun</option>
+		          		            <option value="Bulandshahar">
+		             Bulandshahar</option>
+		          		            <option value="Buldhana">
+		             Buldhana</option>
+		          		            <option value="Bundi">
+		             Bundi</option>
+		          		            <option value="Burhanpur">
+		             Burhanpur</option>
+		          		            <option value="Buxar">
+		             Buxar</option>
+		          		            <option value="Cachar">
+		             Cachar</option>
+		          		            <option value="Calicut">
+		             Calicut</option>
+		          		            <option value="Chamarajanagar ">
+		             Chamarajanagar </option>
+		          		            <option value="Chamba">
+		             Chamba</option>
+		          		            <option value="Chamoli">
+		             Chamoli</option>
+		          		            <option value="Champawat">
+		             Champawat</option>
+		          		            <option value="Champhai">
+		             Champhai</option>
+		          		            <option value="Chandauli">
+		             Chandauli</option>
+		          		            <option value="Chandel">
+		             Chandel</option>
+		          		            <option value="Chandigarh">
+		             Chandigarh</option>
+		          		            <option value="Chandrapur">
+		             Chandrapur</option>
+		          		            <option value="Changlang">
+		             Changlang</option>
+		          		            <option value="Chatra">
+		             Chatra</option>
+		          		            <option value="Chhatarpur">
+		             Chhatarpur</option>
+		          		            <option value="Chhindwara">
+		             Chhindwara</option>
+		          		            <option value="Chikballapur">
+		             Chikballapur</option>
+		          		            <option value="Chikkamaglur">
+		             Chikkamaglur</option>
+		          		            <option value="Chirang">
+		             Chirang</option>
+		          		            <option value="Chitiradurga">
+		             Chitiradurga</option>
+		          		            <option value="Chitrakoot">
+		             Chitrakoot</option>
+		          		            <option value="Chittoor">
+		             Chittoor</option>
+		          		            <option value="Chittorgarh">
+		             Chittorgarh</option>
+		          		            <option value="Churachandpur">
+		             Churachandpur</option>
+		          		            <option value="Churu">
+		             Churu</option>
+		          		            <option value="Coimbatore">
+		             Coimbatore</option>
+		          		            <option value="Cooch Behar">
+		             Cooch Behar</option>
+		          		            <option value="Coorg">
+		             Coorg</option>
+		          		            <option value="Cuddalore">
+		             Cuddalore</option>
+		          		            <option value="Cuttack">
+		             Cuttack</option>
+		          		            <option value="Dadra &amp; Nagar Haveli">
+		             Dadra &amp; Nagar Haveli</option>
+		          		            <option value="Dahod">
+		             Dahod</option>
+		          		            <option value="Daman">
+		             Daman</option>
+		          		            <option value="Damoh">
+		             Damoh</option>
+		          		            <option value="Dantewada">
+		             Dantewada</option>
+		          		            <option value="Darbhanga">
+		             Darbhanga</option>
+		          		            <option value="Darjeeling">
+		             Darjeeling</option>
+		          		            <option value="Darrang">
+		             Darrang</option>
+		          		            <option value="Datia">
+		             Datia</option>
+		          		            <option value="Dausa">
+		             Dausa</option>
+		          		            <option value="Davanagere">
+		             Davanagere</option>
+		          		            <option value="Debagarh">
+		             Debagarh</option>
+		          		            <option value="Dehradun">
+		             Dehradun</option>
+		          		            <option value="Deoghar">
+		             Deoghar</option>
+		          		            <option value="Deoria">
+		             Deoria</option>
+		          		            <option value="Dewas">
+		             Dewas</option>
+		          		            <option value="Dhamtari">
+		             Dhamtari</option>
+		          		            <option value="Dhanbad">
+		             Dhanbad</option>
+		          		            <option value="Dhar">
+		             Dhar</option>
+		          		            <option value="Dharmapuri">
+		             Dharmapuri</option>
+		          		            <option value="Dharuhera">
+		             Dharuhera</option>
+		          		            <option value="Dhemaji">
+		             Dhemaji</option>
+		          		            <option value="Dhenkanal">
+		             Dhenkanal</option>
+		          		            <option value="Dholpur">
+		             Dholpur</option>
+		          		            <option value="Dhubri">
+		             Dhubri</option>
+		          		            <option value="Dhule">
+		             Dhule</option>
+		          		            <option value="Dibrugarh">
+		             Dibrugarh</option>
+		          		            <option value="Dimapur">
+		             Dimapur</option>
+		          		            <option value="Dinajpur">
+		             Dinajpur</option>
+		          		            <option value="Dindigul">
+		             Dindigul</option>
+		          		            <option value="Dindori">
+		             Dindori</option>
+		          		            <option value="Doda">
+		             Doda</option>
+		          		            <option value="Dumka">
+		             Dumka</option>
+		          		            <option value="Dungapur">
+		             Dungapur</option>
+		          		            <option value="Durg">
+		             Durg</option>
+		          		            <option value="Durgapur">
+		             Durgapur</option>
+		          		            <option value="East Godavari">
+		             East Godavari</option>
+		          		            <option value="East Kameng">
+		             East Kameng</option>
+		          		            <option value="East Siang">
+		             East Siang</option>
+		          		            <option value="Erode">
+		             Erode</option>
+		          		            <option value="Etah">
+		             Etah</option>
+		          		            <option value="Etawah">
+		             Etawah</option>
+		          		            <option value="Faizabad">
+		             Faizabad</option>
+		          		            <option value="Faridkot">
+		             Faridkot</option>
+		          		            <option value="Farrukhabad">
+		             Farrukhabad</option>
+		          		            <option value="Fatehabad">
+		             Fatehabad</option>
+		          		            <option value="Fatehgarh Sahib">
+		             Fatehgarh Sahib</option>
+		          		            <option value="Fatehpur">
+		             Fatehpur</option>
+		          		            <option value="Firozabad">
+		             Firozabad</option>
+		          		            <option value="Firozpur">
+		             Firozpur</option>
+		          		            <option value="Gadag">
+		             Gadag</option>
+		          		            <option value="Gadchiroli">
+		             Gadchiroli</option>
+		          		            <option value="Gajapati">
+		             Gajapati</option>
+		          		            <option value="Ganderbal">
+		             Ganderbal</option>
+		          		            <option value="Gandhinagar">
+		             Gandhinagar</option>
+		          		            <option value="Ganganagar">
+		             Ganganagar</option>
+		          		            <option value="Gangtok">
+		             Gangtok</option>
+		          		            <option value="Ganjam">
+		             Ganjam</option>
+		          		            <option value="Garhwa">
+		             Garhwa</option>
+		          		            <option value="Gautam Buddha Nagar">
+		             Gautam Buddha Nagar</option>
+		          		            <option value="Gaya">
+		             Gaya</option>
+		          		            <option value="Geyzing">
+		             Geyzing</option>
+		          		            <option value="Ghazipur">
+		             Ghazipur</option>
+		          		            <option value="Giridih">
+		             Giridih</option>
+		          		            <option value="Goa">
+		             Goa</option>
+		          		            <option value="Goalpara">
+		             Goalpara</option>
+		          		            <option value="Godda">
+		             Godda</option>
+		          		            <option value="Golaghat">
+		             Golaghat</option>
+		          		            <option value="Gonda">
+		             Gonda</option>
+		          		            <option value="Gondiya">
+		             Gondiya</option>
+		          		            <option value="Gopalganj">
+		             Gopalganj</option>
+		          		            <option value="Gorakhpur">
+		             Gorakhpur</option>
+		          		            <option value="Gulbarga">
+		             Gulbarga</option>
+		          		            <option value="Gumla">
+		             Gumla</option>
+		          		            <option value="Guna">
+		             Guna</option>
+		          		            <option value="Guntur">
+		             Guntur</option>
+		          		            <option value="Gurdaspur">
+		             Gurdaspur</option>
+		          		            <option value="Guruvayoor">
+		             Guruvayoor</option>
+		          		            <option value="Guwahati">
+		             Guwahati</option>
+		          		            <option value="Gwalior">
+		             Gwalior</option>
+		          		            <option value="Hailakandi">
+		             Hailakandi</option>
+		          		            <option value="Hamirpur">
+		             Hamirpur</option>
+		          		            <option value="Hamirpur">
+		             Hamirpur</option>
+		          		            <option value="Hanumangarh">
+		             Hanumangarh</option>
+		          		            <option value="Hapur">
+		             Hapur</option>
+		          		            <option value="Harda">
+		             Harda</option>
+		          		            <option value="Hardoi">
+		             Hardoi</option>
+		          		            <option value="Haridwar">
+		             Haridwar</option>
+		          		            <option value="Hassan">
+		             Hassan</option>
+		          		            <option value="Hathras">
+		             Hathras</option>
+		          		            <option value="Haveri">
+		             Haveri</option>
+		          		            <option value="Hawai">
+		             Hawai</option>
+		          		            <option value="Hazaribagh">
+		             Hazaribagh</option>
+		          		            <option value="Hingoli">
+		             Hingoli</option>
+		          		            <option value="Hisar">
+		             Hisar</option>
+		          		            <option value="Hoshangabad">
+		             Hoshangabad</option>
+		          		            <option value="Hoshiarpur">
+		             Hoshiarpur</option>
+		          		            <option value="Hosur">
+		             Hosur</option>
+		          		            <option value="Hubli-Dharwad">
+		             Hubli-Dharwad</option>
+		          		            <option value="Idukki">
+		             Idukki</option>
+		          		            <option value="Imphal">
+		             Imphal</option>
+		          		            <option value="Indore">
+		             Indore</option>
+		          		            <option value="Jabalpur">
+		             Jabalpur</option>
+		          		            <option value="Jagatsinghpur">
+		             Jagatsinghpur</option>
+		          		            <option value="Jaisalmer">
+		             Jaisalmer</option>
+		          		            <option value="Jajapur">
+		             Jajapur</option>
+		          		            <option value="Jalandhar">
+		             Jalandhar</option>
+		          		            <option value="Jalaun">
+		             Jalaun</option>
+		          		            <option value="Jalgaon">
+		             Jalgaon</option>
+		          		            <option value="Jalna">
+		             Jalna</option>
+		          		            <option value="Jalore">
+		             Jalore</option>
+		          		            <option value="Jalpaiguri">
+		             Jalpaiguri</option>
+		          		            <option value="Jammu">
+		             Jammu</option>
+		          		            <option value="Jamnagar">
+		             Jamnagar</option>
+		          		            <option value="Jamshedpur">
+		             Jamshedpur</option>
+		          		            <option value="Jamui">
+		             Jamui</option>
+		          		            <option value="Janjgir-Champa">
+		             Janjgir-Champa</option>
+		          		            <option value="Jashpur">
+		             Jashpur</option>
+		          		            <option value="Jaunpur">
+		             Jaunpur</option>
+		          		            <option value="Jehanabad">
+		             Jehanabad</option>
+		          		            <option value="Jhabua">
+		             Jhabua</option>
+		          		            <option value="Jhajjar">
+		             Jhajjar</option>
+		          		            <option value="Jhalawar">
+		             Jhalawar</option>
+		          		            <option value="Jhansi">
+		             Jhansi</option>
+		          		            <option value="Jharsuguda">
+		             Jharsuguda</option>
+		          		            <option value="Jind">
+		             Jind</option>
+		          		            <option value="Jodhpur">
+		             Jodhpur</option>
+		          		            <option value="Jorhat">
+		             Jorhat</option>
+		          		            <option value="Juhnjhunun">
+		             Juhnjhunun</option>
+		          		            <option value="Junagadh">
+		             Junagadh</option>
+		          		            <option value="Jyotiba Phoole Nagar">
+		             Jyotiba Phoole Nagar</option>
+		          		            <option value="Kadapa">
+		             Kadapa</option>
+		          		            <option value="Kaimur">
+		             Kaimur</option>
+		          		            <option value="Kaithal">
+		             Kaithal</option>
+		          		            <option value="Kalahandi">
+		             Kalahandi</option>
+		          		            <option value="Kamrup Metropolitan">
+		             Kamrup Metropolitan</option>
+		          		            <option value="Kamrup Rural">
+		             Kamrup Rural</option>
+		          		            <option value="Kanchipuram">
+		             Kanchipuram</option>
+		          		            <option value="Kandhamal">
+		             Kandhamal</option>
+		          		            <option value="Kangra">
+		             Kangra</option>
+		          		            <option value="Kanker">
+		             Kanker</option>
+		          		            <option value="Kannauj">
+		             Kannauj</option>
+		          		            <option value="Kannur">
+		             Kannur</option>
+		          		            <option value="Kanpur">
+		             Kanpur</option>
+		          		            <option value="Kanyakumari">
+		             Kanyakumari</option>
+		          		            <option value="Kapurthala">
+		             Kapurthala</option>
+		          		            <option value="Karauli">
+		             Karauli</option>
+		          		            <option value="Karbi Anglong">
+		             Karbi Anglong</option>
+		          		            <option value="Kargil">
+		             Kargil</option>
+		          		            <option value="Karimganj">
+		             Karimganj</option>
+		          		            <option value="Karimnagar">
+		             Karimnagar</option>
+		          		            <option value="Karnal">
+		             Karnal</option>
+		          		            <option value="Karur">
+		             Karur</option>
+		          		            <option value="Karwar">
+		             Karwar</option>
+		          		            <option value="Kasaragod">
+		             Kasaragod</option>
+		          		            <option value="Kathua">
+		             Kathua</option>
+		          		            <option value="Katihar">
+		             Katihar</option>
+		          		            <option value="Katni">
+		             Katni</option>
+		          		            <option value="Kaushambi">
+		             Kaushambi</option>
+		          		            <option value="Kawardha">
+		             Kawardha</option>
+		          		            <option value="Kendrapara">
+		             Kendrapara</option>
+		          		            <option value="Kendujhar">
+		             Kendujhar</option>
+		          		            <option value="Khagaria">
+		             Khagaria</option>
+		          		            <option value="Khammam">
+		             Khammam</option>
+		          		            <option value="Khandwa">
+		             Khandwa</option>
+		          		            <option value="Kharagpur">
+		             Kharagpur</option>
+		          		            <option value="Khargone">
+		             Khargone</option>
+		          		            <option value="Kheda">
+		             Kheda</option>
+		          		            <option value="Kinnaur">
+		             Kinnaur</option>
+		          		            <option value="Kishanganj">
+		             Kishanganj</option>
+		          		            <option value="Kishtwar">
+		             Kishtwar</option>
+		          		            <option value="Kochi">
+		             Kochi</option>
+		          		            <option value="Koderma">
+		             Koderma</option>
+		          		            <option value="Kohima">
+		             Kohima</option>
+		          		            <option value="Kokrajhar">
+		             Kokrajhar</option>
+		          		            <option value="Kolar">
+		             Kolar</option>
+		          		            <option value="Kolhapur">
+		             Kolhapur</option>
+		          		            <option value="Kollam">
+		             Kollam</option>
+		          		            <option value="Koppal">
+		             Koppal</option>
+		          		            <option value="Koraput">
+		             Koraput</option>
+		          		            <option value="Korba">
+		             Korba</option>
+		          		            <option value="Koriya">
+		             Koriya</option>
+		          		            <option value="Kota">
+		             Kota</option>
+		          		            <option value="Kottayam">
+		             Kottayam</option>
+		          		            <option value="Krishna">
+		             Krishna</option>
+		          		            <option value="Krishnagiri">
+		             Krishnagiri</option>
+		          		            <option value="Kulgam">
+		             Kulgam</option>
+		          		            <option value="Kullu">
+		             Kullu</option>
+		          		            <option value="Kupwara">
+		             Kupwara</option>
+		          		            <option value="Kurnool">
+		             Kurnool</option>
+		          		            <option value="Kurukshetra">
+		             Kurukshetra</option>
+		          		            <option value="Kurung Kumey">
+		             Kurung Kumey</option>
+		          		            <option value="Kushi Nagar ">
+		             Kushi Nagar </option>
+		          		            <option value="Kutch">
+		             Kutch</option>
+		          		            <option value="Kutch">
+		             Kutch</option>
+		          		            <option value="Lahaul and Spiti">
+		             Lahaul and Spiti</option>
+		          		            <option value="Lakhimpur">
+		             Lakhimpur</option>
+		          		            <option value="Lakhimpur Kheri">
+		             Lakhimpur Kheri</option>
+		          		            <option value="Lakhisarai">
+		             Lakhisarai</option>
+		          		            <option value="Lakshadweep">
+		             Lakshadweep</option>
+		          		            <option value="Lalitpur">
+		             Lalitpur</option>
+		          		            <option value="Latur">
+		             Latur</option>
+		          		            <option value="Leh">
+		             Leh</option>
+		          		            <option value="Lohardaga">
+		             Lohardaga</option>
+		          		            <option value="Lohit">
+		             Lohit</option>
+		          		            <option value="Lonavala">
+		             Lonavala</option>
+		          		            <option value="Lower Dibang Valley">
+		             Lower Dibang Valley</option>
+		          		            <option value="Lower Subansiri">
+		             Lower Subansiri</option>
+		          		            <option value="Lucknow">
+		             Lucknow</option>
+		          		            <option value="Ludhiana">
+		             Ludhiana</option>
+		          		            <option value="Lunglei">
+		             Lunglei</option>
+		          		            <option value="MAU">
+		             MAU</option>
+		          		            <option value="Madhepura">
+		             Madhepura</option>
+		          		            <option value="Madhubani">
+		             Madhubani</option>
+		          		            <option value="Madurai">
+		             Madurai</option>
+		          		            <option value="Mahabubnagar">
+		             Mahabubnagar</option>
+		          		            <option value="Maharajganj">
+		             Maharajganj</option>
+		          		            <option value="Mahasamund">
+		             Mahasamund</option>
+		          		            <option value="Mahendragarh">
+		             Mahendragarh</option>
+		          		            <option value="Mahoba">
+		             Mahoba</option>
+		          		            <option value="Mainpuri">
+		             Mainpuri</option>
+		          		            <option value="Malappuram">
+		             Malappuram</option>
+		          		            <option value="Malda">
+		             Malda</option>
+		          		            <option value="Malkangiri">
+		             Malkangiri</option>
+		          		            <option value="Mandi">
+		             Mandi</option>
+		          		            <option value="Mandla">
+		             Mandla</option>
+		          		            <option value="Mandsaur">
+		             Mandsaur</option>
+		          		            <option value="Mandya">
+		             Mandya</option>
+		          		            <option value="Mangalore">
+		             Mangalore</option>
+		          		            <option value="Mansa">
+		             Mansa</option>
+		          		            <option value="Marigaon">
+		             Marigaon</option>
+		          		            <option value="Mathura">
+		             Mathura</option>
+		          		            <option value="Mayurbhanj">
+		             Mayurbhanj</option>
+		          		            <option value="Medak">
+		             Medak</option>
+		          		            <option value="Meerut">
+		             Meerut</option>
+		          		            <option value="Mehsana">
+		             Mehsana</option>
+		          		            <option value="Mewat">
+		             Mewat</option>
+		          		            <option value="Midnapore">
+		             Midnapore</option>
+		          		            <option value="Mirzapur">
+		             Mirzapur</option>
+		          		            <option value="Moga">
+		             Moga</option>
+		          		            <option value="Mohali">
+		             Mohali</option>
+		          		            <option value="Mokokchung">
+		             Mokokchung</option>
+		          		            <option value="Mon">
+		             Mon</option>
+		          		            <option value="Moradabad">
+		             Moradabad</option>
+		          		            <option value="Morbi">
+		             Morbi</option>
+		          		            <option value="Morena">
+		             Morena</option>
+		          		            <option value="Mukatsar">
+		             Mukatsar</option>
+		          		            <option value="Munger">
+		             Munger</option>
+		          		            <option value="Murshidabad">
+		             Murshidabad</option>
+		          		            <option value="Mussoorie">
+		             Mussoorie</option>
+		          		            <option value="Muzaffarnagar">
+		             Muzaffarnagar</option>
+		          		            <option value="Muzaffarpur">
+		             Muzaffarpur</option>
+		          		            <option value="Mysore">
+		             Mysore</option>
+		          		            <option value="Nabarangpur">
+		             Nabarangpur</option>
+		          		            <option value="Nagaon">
+		             Nagaon</option>
+		          		            <option value="Nagapattinam">
+		             Nagapattinam</option>
+		          		            <option value="Nagaur">
+		             Nagaur</option>
+		          		            <option value="Nagpur">
+		             Nagpur</option>
+		          		            <option value="Nainital">
+		             Nainital</option>
+		          		            <option value="Nalanda">
+		             Nalanda</option>
+		          		            <option value="Nalbari">
+		             Nalbari</option>
+		          		            <option value="Nalgonda">
+		             Nalgonda</option>
+		          		            <option value="Namakkal">
+		             Namakkal</option>
+		          		            <option value="Namchi">
+		             Namchi</option>
+		          		            <option value="Nanded">
+		             Nanded</option>
+		          		            <option value="Nandurbar">
+		             Nandurbar</option>
+		          		            <option value="Narayanpur">
+		             Narayanpur</option>
+		          		            <option value="Narmada">
+		             Narmada</option>
+		          		            <option value="Narsinghpur">
+		             Narsinghpur</option>
+		          		            <option value="Nashik">
+		             Nashik</option>
+		          		            <option value="Navsari">
+		             Navsari</option>
+		          		            <option value="Nawada">
+		             Nawada</option>
+		          		            <option value="Nawan Shehar">
+		             Nawan Shehar</option>
+		          		            <option value="Nayagarh">
+		             Nayagarh</option>
+		          		            <option value="Neemrana">
+		             Neemrana</option>
+		          		            <option value="Neemuch">
+		             Neemuch</option>
+		          		            <option value="Nellore">
+		             Nellore</option>
+		          		            <option value="Nizamabad">
+		             Nizamabad</option>
+		          		            <option value="North Cachar Hills">
+		             North Cachar Hills</option>
+		          		            <option value="North Tripura">
+		             North Tripura</option>
+		          		            <option value="Nuapada">
+		             Nuapada</option>
+		          		            <option value="Odalguri">
+		             Odalguri</option>
+		          		            <option value="Ooty">
+		             Ooty</option>
+		          		            <option value="Osmanabad">
+		             Osmanabad</option>
+		          		            <option value="Pakur">
+		             Pakur</option>
+		          		            <option value="Palakkad">
+		             Palakkad</option>
+		          		            <option value="Palamu">
+		             Palamu</option>
+		          		            <option value="Pali">
+		             Pali</option>
+		          		            <option value="Panchmahal">
+		             Panchmahal</option>
+		          		            <option value="Panipat">
+		             Panipat</option>
+		          		            <option value="Panna">
+		             Panna</option>
+		          		            <option value="Papum Pare">
+		             Papum Pare</option>
+		          		            <option value="Parbhani">
+		             Parbhani</option>
+		          		            <option value="Pashchim">
+		             Pashchim</option>
+		          		            <option value="Pashchim">
+		             Pashchim</option>
+		          		            <option value="Patan">
+		             Patan</option>
+		          		            <option value="Pathanamthitta">
+		             Pathanamthitta</option>
+		          		            <option value="Patiala">
+		             Patiala</option>
+		          		            <option value="Patna">
+		             Patna</option>
+		          		            <option value="Pauri">
+		             Pauri</option>
+		          		            <option value="Perambalur">
+		             Perambalur</option>
+		          		            <option value="Phaltan">
+		             Phaltan</option>
+		          		            <option value="Phek">
+		             Phek</option>
+		          		            <option value="Pilibhit">
+		             Pilibhit</option>
+		          		            <option value="Pithoragarh">
+		             Pithoragarh</option>
+		          		            <option value="Pondicherry">
+		             Pondicherry</option>
+		          		            <option value="Poonch">
+		             Poonch</option>
+		          		            <option value="Porbandar">
+		             Porbandar</option>
+		          		            <option value="Prakasam">
+		             Prakasam</option>
+		          		            <option value="Pratapgarh">
+		             Pratapgarh</option>
+		          		            <option value="Pudukkottai">
+		             Pudukkottai</option>
+		          		            <option value="Pulwama">
+		             Pulwama</option>
+		          		            <option value="Purba">
+		             Purba</option>
+		          		            <option value="Purba Champaran">
+		             Purba Champaran</option>
+		          		            <option value="Puri">
+		             Puri</option>
+		          		            <option value="Purnia">
+		             Purnia</option>
+		          		            <option value="Purulia">
+		             Purulia</option>
+		          		            <option value="Puttaparthi">
+		             Puttaparthi</option>
+		          		            <option value="Raebareli">
+		             Raebareli</option>
+		          		            <option value="Raichur">
+		             Raichur</option>
+		          		            <option value="Raigarh">
+		             Raigarh</option>
+		          		            <option value="Raipur">
+		             Raipur</option>
+		          		            <option value="Raisen">
+		             Raisen</option>
+		          		            <option value="Rajahmundry">
+		             Rajahmundry</option>
+		          		            <option value="Rajauri">
+		             Rajauri</option>
+		          		            <option value="Rajgarh">
+		             Rajgarh</option>
+		          		            <option value="Rajkot">
+		             Rajkot</option>
+		          		            <option value="Rajnandgaon">
+		             Rajnandgaon</option>
+		          		            <option value="Rajsamand">
+		             Rajsamand</option>
+		          		            <option value="Ramanagram">
+		             Ramanagram</option>
+		          		            <option value="Ramanathapuram">
+		             Ramanathapuram</option>
+		          		            <option value="Ramban">
+		             Ramban</option>
+		          		            <option value="Rampur">
+		             Rampur</option>
+		          		            <option value="Ranchi">
+		             Ranchi</option>
+		          		            <option value="Rangareddy">
+		             Rangareddy</option>
+		          		            <option value="Ratlam">
+		             Ratlam</option>
+		          		            <option value="Ratnagiri">
+		             Ratnagiri</option>
+		          		            <option value="Raurkela">
+		             Raurkela</option>
+		          		            <option value="Rayagada">
+		             Rayagada</option>
+		          		            <option value="Reasi">
+		             Reasi</option>
+		          		            <option value="Rewa">
+		             Rewa</option>
+		          		            <option value="Rewari">
+		             Rewari</option>
+		          		            <option value="Rohtak">
+		             Rohtak</option>
+		          		            <option value="Rohtas">
+		             Rohtas</option>
+		          		            <option value="Roorkee">
+		             Roorkee</option>
+		          		            <option value="Rudraprayag">
+		             Rudraprayag</option>
+		          		            <option value="Rudrapur">
+		             Rudrapur</option>
+		          		            <option value="Rupnagar">
+		             Rupnagar</option>
+		          		            <option value="Sabarkantha">
+		             Sabarkantha</option>
+		          		            <option value="Sagar">
+		             Sagar</option>
+		          		            <option value="Saharanpur">
+		             Saharanpur</option>
+		          		            <option value="Saharsa">
+		             Saharsa</option>
+		          		            <option value="Sahibganj">
+		             Sahibganj</option>
+		          		            <option value="Salem">
+		             Salem</option>
+		          		            <option value="Samastipur">
+		             Samastipur</option>
+		          		            <option value="Samba">
+		             Samba</option>
+		          		            <option value="Sambalpur">
+		             Sambalpur</option>
+		          		            <option value="Sangli">
+		             Sangli</option>
+		          		            <option value="Sangrur">
+		             Sangrur</option>
+		          		            <option value="Sant Kabir Nagar">
+		             Sant Kabir Nagar</option>
+		          		            <option value="Sant Ravidas Nagar">
+		             Sant Ravidas Nagar</option>
+		          		            <option value="Saran">
+		             Saran</option>
+		          		            <option value="Satara">
+		             Satara</option>
+		          		            <option value="Satna">
+		             Satna</option>
+		          		            <option value="Sawai">
+		             Sawai</option>
+		          		            <option value="Sawai Madhopur">
+		             Sawai Madhopur</option>
+		          		            <option value="Sehore">
+		             Sehore</option>
+		          		            <option value="Senapati">
+		             Senapati</option>
+		          		            <option value="Seoni">
+		             Seoni</option>
+		          		            <option value="Shahdol">
+		             Shahdol</option>
+		          		            <option value="Shahjahanpur">
+		             Shahjahanpur</option>
+		          		            <option value="Shajapur">
+		             Shajapur</option>
+		          		            <option value="Sheikhpura">
+		             Sheikhpura</option>
+		          		            <option value="Sheohar">
+		             Sheohar</option>
+		          		            <option value="Sheopur">
+		             Sheopur</option>
+		          		            <option value="Shillong">
+		             Shillong</option>
+		          		            <option value="Shimla">
+		             Shimla</option>
+		          		            <option value="Shimoga">
+		             Shimoga</option>
+		          		            <option value="Shivpuri">
+		             Shivpuri</option>
+		          		            <option value="Shopian">
+		             Shopian</option>
+		          		            <option value="Shravasti">
+		             Shravasti</option>
+		          		            <option value="Sibsagar">
+		             Sibsagar</option>
+		          		            <option value="Siddharth Nagar">
+		             Siddharth Nagar</option>
+		          		            <option value="Sidhi">
+		             Sidhi</option>
+		          		            <option value="Sikar">
+		             Sikar</option>
+		          		            <option value="Siliguri">
+		             Siliguri</option>
+		          		            <option value="Sindhudurg">
+		             Sindhudurg</option>
+		          		            <option value="Singrauli">
+		             Singrauli</option>
+		          		            <option value="Sirmaur">
+		             Sirmaur</option>
+		          		            <option value="Sirohi">
+		             Sirohi</option>
+		          		            <option value="Sirsa">
+		             Sirsa</option>
+		          		            <option value="Sitamarhi">
+		             Sitamarhi</option>
+		          		            <option value="Sitapur">
+		             Sitapur</option>
+		          		            <option value="Sivaganga">
+		             Sivaganga</option>
+		          		            <option value="Siwan">
+		             Siwan</option>
+		          		            <option value="Solan">
+		             Solan</option>
+		          		            <option value="Solapur">
+		             Solapur</option>
+		          		            <option value="Sonbhadra">
+		             Sonbhadra</option>
+		          		            <option value="Sonipat">
+		             Sonipat</option>
+		          		            <option value="Sonitpur">
+		             Sonitpur</option>
+		          		            <option value="South Tripura">
+		             South Tripura</option>
+		          		            <option value="Srikakulam">
+		             Srikakulam</option>
+		          		            <option value="Srinagar">
+		             Srinagar</option>
+		          		            <option value="Srkakulam">
+		             Srkakulam</option>
+		          		            <option value="Subarnapur">
+		             Subarnapur</option>
+		          		            <option value="Sultanpur">
+		             Sultanpur</option>
+		          		            <option value="Sundargarh">
+		             Sundargarh</option>
+		          		            <option value="Supaul">
+		             Supaul</option>
+		          		            <option value="Surat">
+		             Surat</option>
+		          		            <option value="Surendranagar">
+		             Surendranagar</option>
+		          		            <option value="Surguja">
+		             Surguja</option>
+		          		            <option value="Tamenglong">
+		             Tamenglong</option>
+		          		            <option value="Tapi">
+		             Tapi</option>
+		          		            <option value="Tarn Taran">
+		             Tarn Taran</option>
+		          		            <option value="Tawang">
+		             Tawang</option>
+		          		            <option value="Tehri Garhwal">
+		             Tehri Garhwal</option>
+		          		            <option value="Thane">
+		             Thane</option>
+		          		            <option value="Thanjavur">
+		             Thanjavur</option>
+		          		            <option value="The Dangs">
+		             The Dangs</option>
+		          		            <option value="The Nilgiris">
+		             The Nilgiris</option>
+		          		            <option value="Theni">
+		             Theni</option>
+		          		            <option value="Thoothukudi">
+		             Thoothukudi</option>
+		          		            <option value="Thoubal">
+		             Thoubal</option>
+		          		            <option value="Thrissur">
+		             Thrissur</option>
+		          		            <option value="Tikamgarh">
+		             Tikamgarh</option>
+		          		            <option value="Tinsukia">
+		             Tinsukia</option>
+		          		            <option value="Tirap">
+		             Tirap</option>
+		          		            <option value="Tirunelveli">
+		             Tirunelveli</option>
+		          		            <option value="Tirupati">
+		             Tirupati</option>
+		          		            <option value="Tiruppur">
+		             Tiruppur</option>
+		          		            <option value="Tiruvannamalai">
+		             Tiruvannamalai</option>
+		          		            <option value="Tonk">
+		             Tonk</option>
+		          		            <option value="Trichy">
+		             Trichy</option>
+		          		            <option value="Trivandrum">
+		             Trivandrum</option>
+		          		            <option value="Tuensang">
+		             Tuensang</option>
+		          		            <option value="Tumkur">
+		             Tumkur</option>
+		          		            <option value="Udaipur">
+		             Udaipur</option>
+		          		            <option value="Udham Singh Nagar">
+		             Udham Singh Nagar</option>
+		          		            <option value="Udhampur">
+		             Udhampur</option>
+		          		            <option value="Udupi">
+		             Udupi</option>
+		          		            <option value="Ujjain">
+		             Ujjain</option>
+		          		            <option value="Ukhrul">
+		             Ukhrul</option>
+		          		            <option value="Ulhasnagar">
+		             Ulhasnagar</option>
+		          		            <option value="Umaria">
+		             Umaria</option>
+		          		            <option value="Una">
+		             Una</option>
+		          		            <option value="Unnao">
+		             Unnao</option>
+		          		            <option value="Upper Dibang Valley">
+		             Upper Dibang Valley</option>
+		          		            <option value="Upper Siang">
+		             Upper Siang</option>
+		          		            <option value="Upper Subansiri">
+		             Upper Subansiri</option>
+		          		            <option value="Uttar Kannada">
+		             Uttar Kannada</option>
+		          		            <option value="Uttarkashi">
+		             Uttarkashi</option>
+		          		            <option value="Vadodara">
+		             Vadodara</option>
+		          		            <option value="Vaishali">
+		             Vaishali</option>
+		          		            <option value="Valsad">
+		             Valsad</option>
+		          		            <option value="Varanasi">
+		             Varanasi</option>
+		          		            <option value="Vellore">
+		             Vellore</option>
+		          		            <option value="Vidisha">
+		             Vidisha</option>
+		          		            <option value="Vijayawada">
+		             Vijayawada</option>
+		          		            <option value="Villupuram">
+		             Villupuram</option>
+		          		            <option value="Virudhunagar">
+		             Virudhunagar</option>
+		          		            <option value="Visakhapatnam">
+		             Visakhapatnam</option>
+		          		            <option value="Vizianagaram">
+		             Vizianagaram</option>
+		          		            <option value="Warangal">
+		             Warangal</option>
+		          		            <option value="Wardha">
+		             Wardha</option>
+		          		            <option value="Washim">
+		             Washim</option>
+		          		            <option value="Wayanad">
+		             Wayanad</option>
+		          		            <option value="West Godavari">
+		             West Godavari</option>
+		          		            <option value="West Kameng">
+		             West Kameng</option>
+		          		            <option value="West Siang">
+		             West Siang</option>
+		          		            <option value="West Tripura">
+		             West Tripura</option>
+		          		            <option value="Wokha">
+		             Wokha</option>
+		          		            <option value="Yamunanagar">
+		             Yamunanagar</option>
+		          		            <option value="Yavatmal">
+		             Yavatmal</option>
+		          		            <option value="Zunheboto">
+		             Zunheboto</option>
+		          		          </select>
+		          <div class="t-tip"> <div class="info"> <span>
+		            <div class="tt"> Please Select a City<br>
+		              from Dropdown </div>
+		            <div class="arrow"> </div>
+		            </span><div class="hideerror" id="city_error"></div></div> </div>
+		      </div>
+		      <div class="innerdiv fl">
+		      <div id="project_name_div" style="display:block;">
+		      <div class="heading requiredfield" id="project_name_require_div">Residential Project Name</div>
+			      <div id="new_project_info" class="fl" style="display:block;">
+			      <input autocomplete="off" size="30" class="mediumtextbox" name="property_name" id="project_name" onkeypress="cf_apt_suggester.fetchSuggestions($('city').value, $('project_name').value,event);$('property_address').value='';$('property_id').value='';$('tmp_project_name').value='';$('area').value='';$('area_id').value='';" onclick="$('project_name').value='';" style="background-position: 99% 50%; background-image: url(&quot;/images/search_icon.png&quot;); background-repeat: no-repeat;" type="text">
+                                                
+<a href="javascript:void(0);" class="fl mrl5 mrt5" style="display:none;" onclick="ContentPropertyListingNew.handleCancelAction('project','','','');">
+Cancel</a>
+                                                <div id="project_picked" style="width:200px;color:red;display:none">Project not picked<br>
+                                                    <div style="color:black">
+                                                    <input class="show" name="project_validity" id="project_validity_radio_db" value="Not In DB" type="radio">Project Not In Database<br>
+                                                    <input class="show" name="project_validity" id="project_validity_radio_unknown" value="Unknown" type="radio">Project Name Unknown
+                                                    </div>
+                                                    </div>
+				</div>
+				  		          <div class="t-tip"> <div class="info"> <span>
+  		            <div id="project_error_tt" class="tt"> Please select project name for your property </div>
+  		            <div class="arrow"> </div>
+  		            </span><div class="hideerror" id="project_name_error"></div></div> </div>
+  		      </div>
+  		      </div>
+  		      <div class="innerdiv fl">
+  			      <div class="heading requiredfield">Locality</div>
+  			      <div id="new_area_info" class="fl" style="display:block;">
+  			      <input autocomplete="off" size="30" class="mediumtextbox" name="area" id="area" onkeypress="cf_loc_suggester.fetchSuggestions($('city').value, this.value,event);$('area_id').value='';$('tmp_locality_name').value='';" onblur="ContentPropertyListingNew.handleBlurAction('locality');" onclick="this.value='';" style="background-position: 99% 50%; background-image: url(&quot;/images/search_icon.png&quot;); background-repeat: no-repeat;" type="text"> 
+  					<a href="javascript:void(0);" class="fl mrl5 mrt5" style="display:none;" onclick="ContentPropertyListingNew.handleCancelAction('locality','','');">Cancel</a>
+                                        <div id="locality_not_picked" style="width: 200px;color:red;display:none"><br>Locality not picked
+                                            <div style="color:black">
+                                            <input class="show" name="area_validity" id="locality_validity_radio_unknown" value="Not In DB" type="radio">Locality Not in Database
+                                            </div>
+                                        </div>
+  				  </div>
+  							          <div class="t-tip"> <div class="info"> <span>
+		            <div id="locality_name_tt" class="tt"> Please select locality name for your property </div>
+		            <div class="arrow"> </div>
+		            </span><div class="hideerror" id="area_name_error"></div></div> </div>
+		          <div class="clear"></div>
+		      </div>
+				<div class="clear"></div>	
+		      <div class="innerdiv">
+		      <div class="heading requiredfield">Address</div>
+		      
+		      <div id="new_address" class="fl" style="display:block;">
+			 		 <textarea autocomplete="off" rows="3" cols="60" class="fl largetextbox" name="property_address" id="property_address" style="" onblur="PropertyListingNew.validatePropertyAddress(this);"></textarea>
+		          <div class="t-tip"> <div class="info"> <span>
+		            <div class="tt"> Please write property address for your property </div>
+		            <div class="arrow"> </div>
+		            </span><div class="hideerror" id="property_address_error"></div></div> </div>
+		            
+		    	      
+					<a href="javascript:void(0);" class="fl mrl5 mrt5" style="display:none;" onclick="ContentPropertyListingNew.handleCancelAction('address','','');">Cancel</a>
+				  </div>
+		                               		          <div class="clear"></div>
+		     </div>
+     <div class="innerdiv">
+     	<div class="fl" id="block_container">
+	     	<h2>
+	     	Block</h2>
+	     	<select disabled="disabled" class="selectbox" id="block_select" name="block" onchange="PropertyListingNew.validateBlock(this);" style="display: none;">
+	          	<option selected="selected" value="">Select Block</option>
+				<option value="more" onclick="PropertyListingNew.handleMoreOrOther($('block_select'),$('block_input'));">Other</option>
+	          </select>
+	          <input class="textbox" name="block" id="block_input" style="width: 80px;" onchange="PropertyListingNew.validateBlock(this);" type="text">
+	          		     	
+	          <div class="t-tip"> <div class="info"> <span>
+	            <div class="tt"> Please enter valid block </div>
+	            <div class="arrow"> </div>
+	            </span><div class="hideerror" id="block_error"></div></div> </div>
+        </div>
+        <div class="fl">
+        	<h2 id="property_no">House No        	</h2>
+        	 <input class="textbox" name="house_id" id="house_id" style="width: 80px;" onchange="PropertyListingNew.validateBlock(this);" type="text">
+	          	        	
+        </div>
+          
+        <div class="clear"></div>
+  </div>      
+      <div style="display:none" id="builtup_area" class="innerdiv">
+          <div class="heading requiredfield"> Built Up Area</div>
+          <input class="tinytextbox fl" name="builtup_area" id="builtup_area_hidden" value="" type="hidden">
+           <input class="tinytextbox fl" name="builtup_area_" id="builtup_area_field" onblur="PropertyListingNew.validateAreaSqft(this,1);$('builtup_area_hidden').value= this.value;" type="text">
+            
+                       <select class="mediumselectbox" id="area_unit_type_builtup" style="margin-top:0px;" name="area_unit_type" onchange="PropertyListingNew.handleAreaUnitType(this);PropertyListingNew .prevAreaUnitType= this.value;">
+                                                    <option selected="selected" value="Sq. Ft.">Square Feet</option>
+                                                            <option value="Sq. Yd.">Square Yard</option>
+                                                            <option value="Sq. Mt.">Square Meter</option>
+                                                                                    <option value="Guntha">Guntha</option>
+                                                            <option value="Ground">Ground</option>
+                                                                                  </select>
+               <div class="t-tip"> <div class="info"> <span>
+            <div class="tt"> Please enter area <br> in sq. ft.<br> </div>
+            <div class="arrow"> </div>
+            </span> <div class="hideerror" id="builtup_area_error"></div></div></div>
+               </div> 
+               <div class="clear"></div>
+               <div style="display:none" id="open_area" class="innerdiv">
+                <div class="heading requiredfield" id="open_area_text"> </div>
+                <input class="tinytextbox fl" name="open_area" id="open_area_hidden" value="" type="hidden">
+                <input class="tinytextbox fl" name="open_area_" id="open_area_field" onblur="PropertyListingNew.validateAreaSqft(this,1);$('open_area_hidden').value= this.value;" type="text">
+                
+                              <select class="mediumselectbox" id="area_unit_type_openarea" style="margin-top:0px;" name="area_unit_type" onchange="PropertyListingNew.handleAreaUnitType(this);PropertyListingNew .prevAreaUnitType= this.value;">
+                                <option selected="selected" value="Sq. Ft.">Square Feet</option>
+                              <option value="Sq. Yd.">Square Yard</option>
+                              <option value="Sq. Mt.">Square Meter</option>
+                              <option value="Cent">Cent</option>
+                              <option value="Guntha">Guntha</option>
+                              <option value="Ground">Ground</option>
+                              <option value="Acre">Acre</option>
+                              <option value="Hectare">Hectare</option>
+                          </select>
+            <div class="t-tip"> <div class="info"> <span>
+              <div class="tt"> Please enter area <br> in sq. ft.<br> </div>
+              <div class="arrow"> </div>
+            </span> <div class="hideerror" id="open_area_error"></div></div></div>
+          </div>  
+
+     <div class="clear"></div>
+	<div id="room_details" style="display:none;">
+      <div class="innerdiv">
+      	<div class="heading requiredfield">Room details</div>
+      		<div class="fl">No of Bedrooms<br>
+          <select class="mediumselectbox" id="no_of_bed_rooms_select" name="no_of_bed_rooms" onchange="
+           PropertyListingNew.validateNumBedrooms(this);">
+          	<option selected="selected" value="0">No of Bedrooms</option>
+          	             <option value="0.5">1 RK</option>
+                        <option value="1">1 BHK</option>
+                        <option value="1.5">1.5 BHK</option>
+                        <option value="2">2 BHK</option>
+                        <option value="2.5">2.5 BHK</option>
+                        <option value="3">3 BHK</option>
+                        <option value="3.5">3.5 BHK</option>
+                        <option value="4">4 BHK</option>
+                        <option value="4.5">4.5 BHK</option>
+                        <option value="5">5 BHK</option>
+                        <option value="5.5">5.5 BHK</option>
+                        <option value="6">6 BHK</option>
+                        <option value="6+">6+ BHK</option>
+                      </select><input class="textbox" name="no_of_bed_rooms" id="no_of_bed_rooms_input" style="display: none;width: 150px;" disabled="disabled" onblur="PropertyListingNew.validateNumBedrooms(this);" type="text">
+           <div class="t-tip"> <div class="info"> <span>
+            <div class="tt"> Please Select Number of Bedrooms for Your Property </div>
+            <div class="arrow"> </div>
+            </span><div class="hideerror" id="bedrooms_error"></div></div> </div>
+            </div>
+            <div class="fl">
+            No of Bathrooms<br>
+          <select class="mediumselectbox" id="no_of_bath_rooms_select" name="no_of_bath_rooms" onchange="
+          	if(this.value=='more')PropertyListingNew.handleMoreOrOther($('no_of_bath_rooms_select'),$('no_of_bath_rooms_input'));
+          	else PropertyListingNew.validateBathrooms(this);">
+          	<option selected="selected" value="0">No of Bathrooms</option>
+          	          	<option value="1">1</option>
+          	          	<option value="2">2</option>
+          	          	<option value="3">3</option>
+          	          	<option value="4">4</option>
+          	          	<option value="5">5</option>
+          	          	<option value="6">6</option>
+          	          	<option value="7">7</option>
+          	          	<option value="8">8</option>
+          	          	<option value="9">9</option>
+          				<option value="more">
+				More than 9			</option>
+          </select>
+          <input class="textbox" name="no_of_bath_rooms" id="no_of_bath_rooms_input" style="display: none;width: 150px;" disabled="disabled" onblur="PropertyListingNew.validateBathrooms(this);" type="text">
+           <div class="t-tip"> <div class="info"> <span>
+            <div class="tt"> Please Select Number of Bathrooms for Your Property </div>
+            <div class="arrow"> </div>
+            </span><div class="hideerror" id="bathrooms_error"></div></div> </div>
+            </div>
+            <div id="balconies_div" class="fl">
+            Balconies/Sitouts<br>
+			<select class="mediumselectbox" id="no_of_balconies_select" name="no_of_balconies" style="display: block;" onchange="if(this.value=='more')PropertyListingNew.handleMoreOrOther($('no_of_balconies_select'),$('no_of_balconies_input'));
+				else PropertyListingNew.validateBalcony(this);">
+				<option value="" selected="selected">Balconies/Sitouts</option>
+								<option value="0">
+					0								</option><option value="1">
+					1								</option><option value="2">
+					2								</option><option value="3">
+					3								</option><option value="4">
+					4								</option><option value="5">
+					5								</option><option value="6">
+					6								</option><option value="7">
+					7								</option><option value="8">
+					8								</option><option value="9">
+					9								</option><option value="more">
+					More than 9				</option>
+			</select>
+			<input class="textbox" name="no_of_balconies" id="no_of_balconies_input" disabled="disabled" style="width: 150px;display: none;" onchange="PropertyListingNew.validateBalcony(this);" type="text">
+			<div class="t-tip">
+				<div class="info">
+					<span>
+						<div class="tt">Please select number of balconies for your property</div>
+						<div class="arrow"></div> 
+					</span>
+					<div class="hideerror" id="balcony_error"></div>
+				</div>
+			</div>
+			</div>
+          <div class="clear"></div>
+      </div>
+	</div>
+	
+	<div id="price_option_div" style="display:none"> 
+      <div class="innerdiv">
+      <div class="heading requiredfield mrr15" id="heading_sale">What is the value of your property?</div>
+      <div class="heading requiredfield mrr15" id="heading_rent">What is the monthly rent?</div>
+          <div class="value" id="crore_container">
+            <h4>Crores</h4>
+            <select class="selectbox" name="crore" id="crore" onchange="PropertyListingNew.handlePrice('detail_to_full');">
+             				<option selected="selected" value="0">
+					0				</option>
+							<option value="1">
+					1				</option>
+							<option value="2">
+					2				</option>
+							<option value="3">
+					3				</option>
+							<option value="4">
+					4				</option>
+							<option value="5">
+					5				</option>
+							<option value="6">
+					6				</option>
+							<option value="7">
+					7				</option>
+							<option value="8">
+					8				</option>
+							<option value="9">
+					9				</option>
+							<option value="10">
+					10				</option>
+							<option value="11">
+					11				</option>
+							<option value="12">
+					12				</option>
+							<option value="13">
+					13				</option>
+							<option value="14">
+					14				</option>
+							<option value="15">
+					15				</option>
+							<option value="16">
+					16				</option>
+							<option value="17">
+					17				</option>
+							<option value="18">
+					18				</option>
+							<option value="19">
+					19				</option>
+							<option value="20">
+					20				</option>
+							<option value="21">
+					21				</option>
+							<option value="22">
+					22				</option>
+							<option value="23">
+					23				</option>
+							<option value="24">
+					24				</option>
+							<option value="25">
+					25				</option>
+							<option value="26">
+					26				</option>
+							<option value="27">
+					27				</option>
+							<option value="28">
+					28				</option>
+							<option value="29">
+					29				</option>
+							<option value="30">
+					30				</option>
+							<option value="31">
+					31				</option>
+							<option value="32">
+					32				</option>
+							<option value="33">
+					33				</option>
+							<option value="34">
+					34				</option>
+							<option value="35">
+					35				</option>
+							<option value="36">
+					36				</option>
+							<option value="37">
+					37				</option>
+							<option value="38">
+					38				</option>
+							<option value="39">
+					39				</option>
+							<option value="40">
+					40				</option>
+							<option value="41">
+					41				</option>
+							<option value="42">
+					42				</option>
+							<option value="43">
+					43				</option>
+							<option value="44">
+					44				</option>
+							<option value="45">
+					45				</option>
+							<option value="46">
+					46				</option>
+							<option value="47">
+					47				</option>
+							<option value="48">
+					48				</option>
+							<option value="49">
+					49				</option>
+							<option value="50">
+					50				</option>
+							<option value="51">
+					51				</option>
+							<option value="52">
+					52				</option>
+							<option value="53">
+					53				</option>
+							<option value="54">
+					54				</option>
+							<option value="55">
+					55				</option>
+							<option value="56">
+					56				</option>
+							<option value="57">
+					57				</option>
+							<option value="58">
+					58				</option>
+							<option value="59">
+					59				</option>
+							<option value="60">
+					60				</option>
+							<option value="61">
+					61				</option>
+							<option value="62">
+					62				</option>
+							<option value="63">
+					63				</option>
+							<option value="64">
+					64				</option>
+							<option value="65">
+					65				</option>
+							<option value="66">
+					66				</option>
+							<option value="67">
+					67				</option>
+							<option value="68">
+					68				</option>
+							<option value="69">
+					69				</option>
+							<option value="70">
+					70				</option>
+							<option value="71">
+					71				</option>
+							<option value="72">
+					72				</option>
+							<option value="73">
+					73				</option>
+							<option value="74">
+					74				</option>
+							<option value="75">
+					75				</option>
+							<option value="76">
+					76				</option>
+							<option value="77">
+					77				</option>
+							<option value="78">
+					78				</option>
+							<option value="79">
+					79				</option>
+							<option value="80">
+					80				</option>
+							<option value="81">
+					81				</option>
+							<option value="82">
+					82				</option>
+							<option value="83">
+					83				</option>
+							<option value="84">
+					84				</option>
+							<option value="85">
+					85				</option>
+							<option value="86">
+					86				</option>
+							<option value="87">
+					87				</option>
+							<option value="88">
+					88				</option>
+							<option value="89">
+					89				</option>
+							<option value="90">
+					90				</option>
+							<option value="91">
+					91				</option>
+							<option value="92">
+					92				</option>
+							<option value="93">
+					93				</option>
+							<option value="94">
+					94				</option>
+							<option value="95">
+					95				</option>
+							<option value="96">
+					96				</option>
+							<option value="97">
+					97				</option>
+							<option value="98">
+					98				</option>
+							<option value="99">
+					99				</option>
+			            </select>
+          </div>
+          <div class="value" id="lakh_container">
+            <h4>Lakhs</h4>
+            <select class="selectbox" name="lakh" id="lakh" onchange="PropertyListingNew.handlePrice('detail_to_full');">
+             				<option selected="selected" value="0">
+					0				</option>
+							<option value="1">
+					1				</option>
+							<option value="2">
+					2				</option>
+							<option value="3">
+					3				</option>
+							<option value="4">
+					4				</option>
+							<option value="5">
+					5				</option>
+							<option value="6">
+					6				</option>
+							<option value="7">
+					7				</option>
+							<option value="8">
+					8				</option>
+							<option value="9">
+					9				</option>
+							<option value="10">
+					10				</option>
+							<option value="11">
+					11				</option>
+							<option value="12">
+					12				</option>
+							<option value="13">
+					13				</option>
+							<option value="14">
+					14				</option>
+							<option value="15">
+					15				</option>
+							<option value="16">
+					16				</option>
+							<option value="17">
+					17				</option>
+							<option value="18">
+					18				</option>
+							<option value="19">
+					19				</option>
+							<option value="20">
+					20				</option>
+							<option value="21">
+					21				</option>
+							<option value="22">
+					22				</option>
+							<option value="23">
+					23				</option>
+							<option value="24">
+					24				</option>
+							<option value="25">
+					25				</option>
+							<option value="26">
+					26				</option>
+							<option value="27">
+					27				</option>
+							<option value="28">
+					28				</option>
+							<option value="29">
+					29				</option>
+							<option value="30">
+					30				</option>
+							<option value="31">
+					31				</option>
+							<option value="32">
+					32				</option>
+							<option value="33">
+					33				</option>
+							<option value="34">
+					34				</option>
+							<option value="35">
+					35				</option>
+							<option value="36">
+					36				</option>
+							<option value="37">
+					37				</option>
+							<option value="38">
+					38				</option>
+							<option value="39">
+					39				</option>
+							<option value="40">
+					40				</option>
+							<option value="41">
+					41				</option>
+							<option value="42">
+					42				</option>
+							<option value="43">
+					43				</option>
+							<option value="44">
+					44				</option>
+							<option value="45">
+					45				</option>
+							<option value="46">
+					46				</option>
+							<option value="47">
+					47				</option>
+							<option value="48">
+					48				</option>
+							<option value="49">
+					49				</option>
+							<option value="50">
+					50				</option>
+							<option value="51">
+					51				</option>
+							<option value="52">
+					52				</option>
+							<option value="53">
+					53				</option>
+							<option value="54">
+					54				</option>
+							<option value="55">
+					55				</option>
+							<option value="56">
+					56				</option>
+							<option value="57">
+					57				</option>
+							<option value="58">
+					58				</option>
+							<option value="59">
+					59				</option>
+							<option value="60">
+					60				</option>
+							<option value="61">
+					61				</option>
+							<option value="62">
+					62				</option>
+							<option value="63">
+					63				</option>
+							<option value="64">
+					64				</option>
+							<option value="65">
+					65				</option>
+							<option value="66">
+					66				</option>
+							<option value="67">
+					67				</option>
+							<option value="68">
+					68				</option>
+							<option value="69">
+					69				</option>
+							<option value="70">
+					70				</option>
+							<option value="71">
+					71				</option>
+							<option value="72">
+					72				</option>
+							<option value="73">
+					73				</option>
+							<option value="74">
+					74				</option>
+							<option value="75">
+					75				</option>
+							<option value="76">
+					76				</option>
+							<option value="77">
+					77				</option>
+							<option value="78">
+					78				</option>
+							<option value="79">
+					79				</option>
+							<option value="80">
+					80				</option>
+							<option value="81">
+					81				</option>
+							<option value="82">
+					82				</option>
+							<option value="83">
+					83				</option>
+							<option value="84">
+					84				</option>
+							<option value="85">
+					85				</option>
+							<option value="86">
+					86				</option>
+							<option value="87">
+					87				</option>
+							<option value="88">
+					88				</option>
+							<option value="89">
+					89				</option>
+							<option value="90">
+					90				</option>
+							<option value="91">
+					91				</option>
+							<option value="92">
+					92				</option>
+							<option value="93">
+					93				</option>
+							<option value="94">
+					94				</option>
+							<option value="95">
+					95				</option>
+							<option value="96">
+					96				</option>
+							<option value="97">
+					97				</option>
+							<option value="98">
+					98				</option>
+							<option value="99">
+					99				</option>
+			            </select>
+          </div>
+          <div class="value" id="thousand_container">
+            <h4>Thousands</h4>
+            <select class="selectbox" name="thousand" id="thousand" onchange="PropertyListingNew.handlePrice('detail_to_full');">
+             				<option selected="selected" value="0">
+					0				</option>
+							<option value="1">
+					1				</option>
+							<option value="2">
+					2				</option>
+							<option value="3">
+					3				</option>
+							<option value="4">
+					4				</option>
+							<option value="5">
+					5				</option>
+							<option value="6">
+					6				</option>
+							<option value="7">
+					7				</option>
+							<option value="8">
+					8				</option>
+							<option value="9">
+					9				</option>
+							<option value="10">
+					10				</option>
+							<option value="11">
+					11				</option>
+							<option value="12">
+					12				</option>
+							<option value="13">
+					13				</option>
+							<option value="14">
+					14				</option>
+							<option value="15">
+					15				</option>
+							<option value="16">
+					16				</option>
+							<option value="17">
+					17				</option>
+							<option value="18">
+					18				</option>
+							<option value="19">
+					19				</option>
+							<option value="20">
+					20				</option>
+							<option value="21">
+					21				</option>
+							<option value="22">
+					22				</option>
+							<option value="23">
+					23				</option>
+							<option value="24">
+					24				</option>
+							<option value="25">
+					25				</option>
+							<option value="26">
+					26				</option>
+							<option value="27">
+					27				</option>
+							<option value="28">
+					28				</option>
+							<option value="29">
+					29				</option>
+							<option value="30">
+					30				</option>
+							<option value="31">
+					31				</option>
+							<option value="32">
+					32				</option>
+							<option value="33">
+					33				</option>
+							<option value="34">
+					34				</option>
+							<option value="35">
+					35				</option>
+							<option value="36">
+					36				</option>
+							<option value="37">
+					37				</option>
+							<option value="38">
+					38				</option>
+							<option value="39">
+					39				</option>
+							<option value="40">
+					40				</option>
+							<option value="41">
+					41				</option>
+							<option value="42">
+					42				</option>
+							<option value="43">
+					43				</option>
+							<option value="44">
+					44				</option>
+							<option value="45">
+					45				</option>
+							<option value="46">
+					46				</option>
+							<option value="47">
+					47				</option>
+							<option value="48">
+					48				</option>
+							<option value="49">
+					49				</option>
+							<option value="50">
+					50				</option>
+							<option value="51">
+					51				</option>
+							<option value="52">
+					52				</option>
+							<option value="53">
+					53				</option>
+							<option value="54">
+					54				</option>
+							<option value="55">
+					55				</option>
+							<option value="56">
+					56				</option>
+							<option value="57">
+					57				</option>
+							<option value="58">
+					58				</option>
+							<option value="59">
+					59				</option>
+							<option value="60">
+					60				</option>
+							<option value="61">
+					61				</option>
+							<option value="62">
+					62				</option>
+							<option value="63">
+					63				</option>
+							<option value="64">
+					64				</option>
+							<option value="65">
+					65				</option>
+							<option value="66">
+					66				</option>
+							<option value="67">
+					67				</option>
+							<option value="68">
+					68				</option>
+							<option value="69">
+					69				</option>
+							<option value="70">
+					70				</option>
+							<option value="71">
+					71				</option>
+							<option value="72">
+					72				</option>
+							<option value="73">
+					73				</option>
+							<option value="74">
+					74				</option>
+							<option value="75">
+					75				</option>
+							<option value="76">
+					76				</option>
+							<option value="77">
+					77				</option>
+							<option value="78">
+					78				</option>
+							<option value="79">
+					79				</option>
+							<option value="80">
+					80				</option>
+							<option value="81">
+					81				</option>
+							<option value="82">
+					82				</option>
+							<option value="83">
+					83				</option>
+							<option value="84">
+					84				</option>
+							<option value="85">
+					85				</option>
+							<option value="86">
+					86				</option>
+							<option value="87">
+					87				</option>
+							<option value="88">
+					88				</option>
+							<option value="89">
+					89				</option>
+							<option value="90">
+					90				</option>
+							<option value="91">
+					91				</option>
+							<option value="92">
+					92				</option>
+							<option value="93">
+					93				</option>
+							<option value="94">
+					94				</option>
+							<option value="95">
+					95				</option>
+							<option value="96">
+					96				</option>
+							<option value="97">
+					97				</option>
+							<option value="98">
+					98				</option>
+							<option value="99">
+					99				</option>
+			            </select>
+          </div>
+          <div class="value" id="hundred_container">
+            <h4>Hundreds</h4>
+            <select class="selectbox" name="hundred" id="hundred" onchange="PropertyListingNew.handlePrice('detail_to_full');">
+               				<option selected="selected" value="0">
+					0				</option>
+							<option value="1">
+					1				</option>
+							<option value="2">
+					2				</option>
+							<option value="3">
+					3				</option>
+							<option value="4">
+					4				</option>
+							<option value="5">
+					5				</option>
+							<option value="6">
+					6				</option>
+							<option value="7">
+					7				</option>
+							<option value="8">
+					8				</option>
+							<option value="9">
+					9				</option>
+			            </select>
+          </div>
+          
+          <div class="negotiablediv">
+            <div class="float-l"> <img src="02.Post%20Listing_files/rupee.jpg" class="float-l" height="30" width="24">
+             
+              <input class="negotiable" id="price" name="expected_amount" onblur="PropertyListingNew.handlePrice('full_to_detail');" type="text">
+               <h2 class="fl">
+                <input name="is_negotiable" value="0" class="negotiablecheckbox show" onchange="PropertyListingNew.negotiableOnChange(this);" type="checkbox">
+                Negotiable</h2>
+              <div class="t-tip"> <div class="info"> <span>
+                <div class="tt" id="price_error_message"> Please select sale price<br>for property </div>
+                <div class="arrow"> </div>
+                </span><div class="hideerror" id="property_inr_error"></div></div> </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+          <div class="clear"></div>
+      </div>
+	</div>
+	<div id="registration_fee_div" style="display: none;">
+	  <div class="heading">Does the price mentioned include registration fee?</div>
+					<div class="innerdiv">
+								<input id="includes_reg_yes" name="includes_registration_charge" value="1" onclick="$('reg_charges_div').hide();$('reg_charges_input').disable();" disabled="disabled" class="show mrr5" type="radio"> Yes
+								<input id="includes_reg_no" name="includes_registration_charge" value="0" onclick="$('reg_charges_div').show();$('reg_charges_input').enable();" disabled="disabled" class="show mrr5" type="radio"> No
+					</div>
+					<div class="clear"></div>
+					<div id="reg_charges_div" style="display: none">
+						<div class="heading">Can you give an approximate cost for registration?</div>
+						<div class="innerdiv">
+							<div class="float-l">
+								<img src="02.Post%20Listing_files/rupee.jpg" class="float-l" height="30" width="24">
+								<input id="reg_charges_input" disabled="disabled" name="registration_charge" class="tinytextbox float-l" type="text">
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+	</div>
+	<div id="deposit_amount_div" style="display: none;">
+		<div class="heading requiredfield">What is the security deposit amount ?</div>
+		<div class="innerdiv">
+          <div class="value" id="deposit_lakh_container">
+            <h4>Lakhs</h4>
+            <select class="selectbox" name="lakh" id="deposit_lakh" onchange="PropertyListingNew.handlePrice('detail_to_full', 'deposit_');">
+             				<option selected="selected" value="0">
+					0				</option>
+							<option value="1">
+					1				</option>
+							<option value="2">
+					2				</option>
+							<option value="3">
+					3				</option>
+							<option value="4">
+					4				</option>
+							<option value="5">
+					5				</option>
+							<option value="6">
+					6				</option>
+							<option value="7">
+					7				</option>
+							<option value="8">
+					8				</option>
+							<option value="9">
+					9				</option>
+							<option value="10">
+					10				</option>
+							<option value="11">
+					11				</option>
+							<option value="12">
+					12				</option>
+							<option value="13">
+					13				</option>
+							<option value="14">
+					14				</option>
+							<option value="15">
+					15				</option>
+							<option value="16">
+					16				</option>
+							<option value="17">
+					17				</option>
+							<option value="18">
+					18				</option>
+							<option value="19">
+					19				</option>
+							<option value="20">
+					20				</option>
+							<option value="21">
+					21				</option>
+							<option value="22">
+					22				</option>
+							<option value="23">
+					23				</option>
+							<option value="24">
+					24				</option>
+							<option value="25">
+					25				</option>
+							<option value="26">
+					26				</option>
+							<option value="27">
+					27				</option>
+							<option value="28">
+					28				</option>
+							<option value="29">
+					29				</option>
+							<option value="30">
+					30				</option>
+							<option value="31">
+					31				</option>
+							<option value="32">
+					32				</option>
+							<option value="33">
+					33				</option>
+							<option value="34">
+					34				</option>
+							<option value="35">
+					35				</option>
+							<option value="36">
+					36				</option>
+							<option value="37">
+					37				</option>
+							<option value="38">
+					38				</option>
+							<option value="39">
+					39				</option>
+							<option value="40">
+					40				</option>
+							<option value="41">
+					41				</option>
+							<option value="42">
+					42				</option>
+							<option value="43">
+					43				</option>
+							<option value="44">
+					44				</option>
+							<option value="45">
+					45				</option>
+							<option value="46">
+					46				</option>
+							<option value="47">
+					47				</option>
+							<option value="48">
+					48				</option>
+							<option value="49">
+					49				</option>
+							<option value="50">
+					50				</option>
+							<option value="51">
+					51				</option>
+							<option value="52">
+					52				</option>
+							<option value="53">
+					53				</option>
+							<option value="54">
+					54				</option>
+							<option value="55">
+					55				</option>
+							<option value="56">
+					56				</option>
+							<option value="57">
+					57				</option>
+							<option value="58">
+					58				</option>
+							<option value="59">
+					59				</option>
+							<option value="60">
+					60				</option>
+							<option value="61">
+					61				</option>
+							<option value="62">
+					62				</option>
+							<option value="63">
+					63				</option>
+							<option value="64">
+					64				</option>
+							<option value="65">
+					65				</option>
+							<option value="66">
+					66				</option>
+							<option value="67">
+					67				</option>
+							<option value="68">
+					68				</option>
+							<option value="69">
+					69				</option>
+							<option value="70">
+					70				</option>
+							<option value="71">
+					71				</option>
+							<option value="72">
+					72				</option>
+							<option value="73">
+					73				</option>
+							<option value="74">
+					74				</option>
+							<option value="75">
+					75				</option>
+							<option value="76">
+					76				</option>
+							<option value="77">
+					77				</option>
+							<option value="78">
+					78				</option>
+							<option value="79">
+					79				</option>
+							<option value="80">
+					80				</option>
+							<option value="81">
+					81				</option>
+							<option value="82">
+					82				</option>
+							<option value="83">
+					83				</option>
+							<option value="84">
+					84				</option>
+							<option value="85">
+					85				</option>
+							<option value="86">
+					86				</option>
+							<option value="87">
+					87				</option>
+							<option value="88">
+					88				</option>
+							<option value="89">
+					89				</option>
+							<option value="90">
+					90				</option>
+							<option value="91">
+					91				</option>
+							<option value="92">
+					92				</option>
+							<option value="93">
+					93				</option>
+							<option value="94">
+					94				</option>
+							<option value="95">
+					95				</option>
+							<option value="96">
+					96				</option>
+							<option value="97">
+					97				</option>
+							<option value="98">
+					98				</option>
+							<option value="99">
+					99				</option>
+			            </select>
+          </div>
+          <div class="value" id="deposit_thousand_container">
+            <h4>Thousands</h4>
+            <select class="selectbox" name="thousand" id="deposit_thousand" onchange="PropertyListingNew.handlePrice('detail_to_full', 'deposit_');">
+             				<option selected="selected" value="0">
+					0				</option>
+							<option value="1">
+					1				</option>
+							<option value="2">
+					2				</option>
+							<option value="3">
+					3				</option>
+							<option value="4">
+					4				</option>
+							<option value="5">
+					5				</option>
+							<option value="6">
+					6				</option>
+							<option value="7">
+					7				</option>
+							<option value="8">
+					8				</option>
+							<option value="9">
+					9				</option>
+							<option value="10">
+					10				</option>
+							<option value="11">
+					11				</option>
+							<option value="12">
+					12				</option>
+							<option value="13">
+					13				</option>
+							<option value="14">
+					14				</option>
+							<option value="15">
+					15				</option>
+							<option value="16">
+					16				</option>
+							<option value="17">
+					17				</option>
+							<option value="18">
+					18				</option>
+							<option value="19">
+					19				</option>
+							<option value="20">
+					20				</option>
+							<option value="21">
+					21				</option>
+							<option value="22">
+					22				</option>
+							<option value="23">
+					23				</option>
+							<option value="24">
+					24				</option>
+							<option value="25">
+					25				</option>
+							<option value="26">
+					26				</option>
+							<option value="27">
+					27				</option>
+							<option value="28">
+					28				</option>
+							<option value="29">
+					29				</option>
+							<option value="30">
+					30				</option>
+							<option value="31">
+					31				</option>
+							<option value="32">
+					32				</option>
+							<option value="33">
+					33				</option>
+							<option value="34">
+					34				</option>
+							<option value="35">
+					35				</option>
+							<option value="36">
+					36				</option>
+							<option value="37">
+					37				</option>
+							<option value="38">
+					38				</option>
+							<option value="39">
+					39				</option>
+							<option value="40">
+					40				</option>
+							<option value="41">
+					41				</option>
+							<option value="42">
+					42				</option>
+							<option value="43">
+					43				</option>
+							<option value="44">
+					44				</option>
+							<option value="45">
+					45				</option>
+							<option value="46">
+					46				</option>
+							<option value="47">
+					47				</option>
+							<option value="48">
+					48				</option>
+							<option value="49">
+					49				</option>
+							<option value="50">
+					50				</option>
+							<option value="51">
+					51				</option>
+							<option value="52">
+					52				</option>
+							<option value="53">
+					53				</option>
+							<option value="54">
+					54				</option>
+							<option value="55">
+					55				</option>
+							<option value="56">
+					56				</option>
+							<option value="57">
+					57				</option>
+							<option value="58">
+					58				</option>
+							<option value="59">
+					59				</option>
+							<option value="60">
+					60				</option>
+							<option value="61">
+					61				</option>
+							<option value="62">
+					62				</option>
+							<option value="63">
+					63				</option>
+							<option value="64">
+					64				</option>
+							<option value="65">
+					65				</option>
+							<option value="66">
+					66				</option>
+							<option value="67">
+					67				</option>
+							<option value="68">
+					68				</option>
+							<option value="69">
+					69				</option>
+							<option value="70">
+					70				</option>
+							<option value="71">
+					71				</option>
+							<option value="72">
+					72				</option>
+							<option value="73">
+					73				</option>
+							<option value="74">
+					74				</option>
+							<option value="75">
+					75				</option>
+							<option value="76">
+					76				</option>
+							<option value="77">
+					77				</option>
+							<option value="78">
+					78				</option>
+							<option value="79">
+					79				</option>
+							<option value="80">
+					80				</option>
+							<option value="81">
+					81				</option>
+							<option value="82">
+					82				</option>
+							<option value="83">
+					83				</option>
+							<option value="84">
+					84				</option>
+							<option value="85">
+					85				</option>
+							<option value="86">
+					86				</option>
+							<option value="87">
+					87				</option>
+							<option value="88">
+					88				</option>
+							<option value="89">
+					89				</option>
+							<option value="90">
+					90				</option>
+							<option value="91">
+					91				</option>
+							<option value="92">
+					92				</option>
+							<option value="93">
+					93				</option>
+							<option value="94">
+					94				</option>
+							<option value="95">
+					95				</option>
+							<option value="96">
+					96				</option>
+							<option value="97">
+					97				</option>
+							<option value="98">
+					98				</option>
+							<option value="99">
+					99				</option>
+			            </select>
+          </div>
+          <div class="value" id="deposit_hundred_container">
+            <h4>Hundreds</h4>
+            <select class="selectbox" name="hundred" id="deposit_hundred" onchange="PropertyListingNew.handlePrice('detail_to_full', 'deposit_');">
+               				<option selected="selected" value="0">
+					0				</option>
+							<option value="1">
+					1				</option>
+							<option value="2">
+					2				</option>
+							<option value="3">
+					3				</option>
+							<option value="4">
+					4				</option>
+							<option value="5">
+					5				</option>
+							<option value="6">
+					6				</option>
+							<option value="7">
+					7				</option>
+							<option value="8">
+					8				</option>
+							<option value="9">
+					9				</option>
+			            </select>
+          </div>
+          
+          <div class="negotiablediv">
+            <div class="float-l"> 
+            	<img src="02.Post%20Listing_files/rupee.jpg" class="float-l" height="30" width="24">
+             
+              <input class="negotiable" id="deposit_price" name="deposit_amount" onblur="PropertyListingNew.handlePrice('full_to_detail', 'deposit_');" type="text">
+              	 <h2 class="fl">
+                <input name="is_deposit_amount_negotiable" value="0" class="negotiablecheckbox show" onchange="PropertyListingNew.negotiableOnChange(this);" type="checkbox">
+                Negotiable</h2>
+              <div class="t-tip"> <div class="info"> <span>
+                <div class="tt"> Please select deposit amount <br>
+                  for your property </div>
+                <div class="arrow"> </div>
+                </span><div class="hideerror" id="deposit_property_inr_error"></div></div> </div>
+              <div class="clear"></div>
+            </div> 
+          </div>
+          <div class="clear"></div>
+      </div>
+      <div id="maintenance_div">
+      <div class="heading">What are the maintenance charges in your Apartment?</div>
+		<div class="innerdiv">
+			<div class="float-l">
+				<input id="maintenance_charges_input" name="maintenance_charge" class="tinytextbox float-l" type="text">
+				<h4 class="float-l">Per Month</h4>
+			</div>
+			<div class="clear"></div>
+		</div>
+		</div>
+	</div>
+	
+	<div class="innerdiv" id="plot_options" style="display:none"><div class="clear"></div>
+		
+    	<div id="basic_ownership_div">
+    			</div>		
+			<div class="clear"></div>
+      <h2>What is the unit of plot area ? </h2>
+        <select class="mediumselectbox" id="area_unit_type_plot" style="margin-top:0px;" name="area_unit_type" onchange="PropertyListingNew.handleAreaUnitType(this);PropertyListingNew .prevAreaUnitType= this.value;">
+                        <option selected="selected" value="Sq. Ft.">Square Feet</option>
+                        <option value="Sq. Yd.">Square Yard</option>
+                        <option value="Sq. Mt.">Square Meter</option>
+                        <option value="Cent">Cent</option>
+                        <option value="Guntha">Guntha</option>
+                        <option value="Ground">Ground</option>
+                        <option value="Acre">Acre</option>
+                        <option value="Hectare">Hectare</option>
+                      </select>
+    <div class="clear"></div>
+    <div id="plot_dimensions" style="display:block">
+          <h2>What are the dimensions of plot</h2>
+          <input class="tinytextbox fl" name="plot_site" value="" id="plot_site" disabled="disabled" type="hidden">
+           <input class="tinytextbox fl" id="plot_site_l" disabled="disabled" onblur="
+              PropertyListingNew.handlePlotArea();" type="text">
+            <span class="fl">X</span>
+           	<input class="tinytextbox fl" id="plot_site_b" disabled="disabled" onblur="
+           	PropertyListingNew.handlePlotArea();	" type="text">
+            <span id="plot_dimension_type">Feet</span>
+            <div class="t-tip"> <div class="info"> <span>
+
+            <div class="tt"> Please fill correct Plot site<br> </div>
+            <div class="arrow"> </div>
+            </span> <div class="hideerror" id="name_error"></div></div></div>
+          <div class="clear"></div>
+         </div>
+            <div class="heading requiredfield"> What is the total area of the plot</div>
+             <div class="innerdiv">
+
+          <input class="tinytextbox fl" name="plot_area" id="plot_area_hidden" value="" type="hidden">
+          <input class="tinytextbox fl" onblur="PropertyListingNew.validateAreaSqft(this,1);$('plot_area_hidden').value= this.value;" name="plot_area_" id="plot_area_field" disabled="disabled" type="text">
+            <span id="plot_area_type">Sq. Ft.</span>
+</div>
+         <div class="t-tip"> <div class="info"> <span>
+            <div class="tt"> Please enter area <br> in sq. ft.<br> </div>
+            <div class="arrow"> </div>
+            </span> <div class="hideerror" id="plot_area_error"></div></div></div>
+          <div class="clear"></div>
+	</div>
+  
+            
+          <div class="clear"></div>
+      <div class="innerdiv">
+      <div class="heading requiredfield">Give a brief description of your property</div>
+          <div class="featurediv">
+            <p class="float-l">
+              <textarea name="features" class="largetextbox" id="features" autocomplete="off" rows="3" cols="60" onblur="PropertyListingNew.validateFeature(this);" style=""></textarea>
+                </p><div class="t-tip"> <div class="info"> <span>
+                  <div class="tt">Please Write brief description about your Property </div>
+                  <div class="arrow"> </div>
+                  </span> <div class="hideerror" id="features_error"></div> </div> </div>
+                <div class="clear"></div>
+            <p></p>
+          </div>
+      </div>
+      
+      <div class="innerdiv">
+      	<div style="display:none;" id="owner_prompt">
+      		<input checked="checked" id="broker_asst" name="agent_connect" class="show fl" type="checkbox">
+      		<label for="broker_asst" class="fl">I am willing to use Broker Assistance to increase response on my listings.</label>
+		 </div>
+		 <div style="display:block;" id="broker_prompt">
+      		<h2>Brokerage Terms Applicable: </h2>
+      		<input id="brokerage_terms" size="30" class="textbox" name="agent_terms" type="text">
+      		<small>(eg. 1% of sale value.)</small>
+      	</div>
+      	 <div class="clear"></div>
+      </div>
+      <div id="listing_catagory_div"><input id="listing_category" type="hidden"></div>
+            <input name="listing_category" value="paid_basic" type="hidden">
+            <input name="is_refresh_from_user" id="is_refresh_from_user" type="hidden">
+            <div class="clear"></div>
+      
+       <div class="clear"></div>
+      <div class="innerdiv" id="savenow_btn">
+	      <input value="Save Now" class="button" onclick="$('tag_to_move').value='basic_detail_link';ContentPropertyListingNew.saveListingDetail();" type="button">
+      </div>
+      <div class="clear"></div>
+      <br><hr><br>
+ <div id="autosuggest" class="suggestion absolute" style="z-index:99;width:320px"><ul></ul></div>
+ <script type="text/javascript">	   
+ var ela_suggester = null;
+      
+</script>
+	   <div id="additional_info_div">
+			   
+	   </div>
+      
+<script type="text/javascript">
+</script>	   
+   </form>   
+   </div>      
+    <div class="dashboard_right"> </div>
+  </div>
+<!--  <div id="footer"> <img src="/images/property_listing/footer.JPG" height="329" width="1008" /> </div>-->
+</div>
+    
+      
+ <div id="success_form" style="width:600px;"> </div>
+ <script type="text/javascript">
+$('block_select').disable();
+//PropertyListingNew.handlePropertyOwnershipType($('ownership_type'),'');
+$("name").focus();
+//PropertyListingNew.loadBlocks($('property_id'));
+
+var data = {"Bangalore":"","Mumbai":"","Pune":"","Gurgaon":"","Noida":"","Hyderabad":"","Chennai":"","Greater Noida":"","Ghaziabad":"","Delhi":"","Faridabad":"","Navi Mumbai":"","Kolkata":"","Jaipur":"","Adilabad":"","Agra":"","Ahmedabad":"","Ahmednagar":"","Aizawl":"","Ajmer":"","Akola":"","Alappuzha":"","Aligarh":"","Allahabad":"","Almora":"","Alwar":"","Amarnath":"","Ambala":"","Ambedkar Nagar":"","Amravati":"","Amreli":"","Amritsar":"","Anand":"","Anantapur":"","Anantnag":"","Andaman & Nicobar":"","Angul":"","Anuppur":"","Ara":"","Araria":"","Arwal":"","Asansol":"","Ashoknagar":"","Auraiya":"","Aurangabad":"","Azamgarh":"","Badgam":"","Bagalkot":"","Bageshwar":"","Baghpat":"","Bahadurgarh":"","Bahraich":"","Baksa":"","Balaghat":"","Baleswar":"","Ballia":"","Baloda Bazar":"","Balrampur":"","Banaskantha":"","Banda":"","Banka":"","Bankura":"","Banswara":"","Barabanki":"","Baramula":"","Baran":"","Bardhaman":"","Bareilly":"","Bargarh":"","Barmer":"","Barnala":"","Barpeta":"","Barwani":"","Bastar":"","Basti":"","Bathinda":"","Beawar":"","Beed":"","Begusarai":"","Belgaum":"","Bellary":"","Betul":"","Bhadrak":"","Bhagalpur":"","Bhandara":"","Bharatpur":"","Bharuch":"","Bhavnagar":"","Bhilai":"","Bhilwara":"","Bhind":"","Bhiwadi":"","Bhiwandi":"","Bhiwani":"","Bhojpur":"","Bhopal":"","Bhramapur":"","Bhubaneswar":"","Bidar ":"","Bijapur":"","Bijnor":"","Bikaner":"","Bilaspur":"","Billhaur":"","Birbhum":"","Bishnupur":"","Bokaro":"","Bolangir":"","Bongaigaon":"","Boudh":"","Budaun":"","Bulandshahar":"","Buldhana":"","Bundi":"","Burhanpur":"","Buxar":"","Cachar":"","Calicut":"","Chamarajanagar ":"","Chamba":"","Chamoli":"","Champawat":"","Champhai":"","Chandauli":"","Chandel":"","Chandigarh":"","Chandrapur":"","Changlang":"","Chatra":"","Chhatarpur":"","Chhindwara":"","Chikballapur":"","Chikkamaglur":"","Chirang":"","Chitiradurga":"","Chitrakoot":"","Chittoor":"","Chittorgarh":"","Churachandpur":"","Churu":"","Coimbatore":"","Cooch Behar":"","Coorg":"","Cuddalore":"","Cuttack":"","Dadra & Nagar Haveli":"","Dahod":"","Daman":"","Damoh":"","Dantewada":"","Darbhanga":"","Darjeeling":"","Darrang":"","Datia":"","Dausa":"","Davanagere":"","Debagarh":"","Dehradun":"","Deoghar":"","Deoria":"","Dewas":"","Dhamtari":"","Dhanbad":"","Dhar":"","Dharmapuri":"","Dharuhera":"","Dhemaji":"","Dhenkanal":"","Dholpur":"","Dhubri":"","Dhule":"","Dibrugarh":"","Dimapur":"","Dinajpur":"","Dindigul":"","Dindori":"","Doda":"","Dumka":"","Dungapur":"","Durg":"","Durgapur":"","East Godavari":"","East Kameng":"","East Siang":"","Erode":"","Etah":"","Etawah":"","Faizabad":"","Faridkot":"","Farrukhabad":"","Fatehabad":"","Fatehgarh Sahib":"","Fatehpur":"","Firozabad":"","Firozpur":"","Gadag":"","Gadchiroli":"","Gajapati":"","Ganderbal":"","Gandhinagar":"","Ganganagar":"","Gangtok":"","Ganjam":"","Garhwa":"","Gautam Buddha Nagar":"","Gaya":"","Geyzing":"","Ghazipur":"","Giridih":"","Goa":"","Goalpara":"","Godda":"","Golaghat":"","Gonda":"","Gondiya":"","Gopalganj":"","Gorakhpur":"","Gulbarga":"","Gumla":"","Guna":"","Guntur":"","Gurdaspur":"","Guruvayoor":"","Guwahati":"","Gwalior":"","Hailakandi":"","Hamirpur":"","Hanumangarh":"","Hapur":"","Harda":"","Hardoi":"","Haridwar":"","Hassan":"","Hathras":"","Haveri":"","Hawai":"","Hazaribagh":"","Hingoli":"","Hisar":"","Hoshangabad":"","Hoshiarpur":"","Hosur":"","Hubli-Dharwad":"","Idukki":"","Imphal":"","Indore":"","Jabalpur":"","Jagatsinghpur":"","Jaisalmer":"","Jajapur":"","Jalandhar":"","Jalaun":"","Jalgaon":"","Jalna":"","Jalore":"","Jalpaiguri":"","Jammu":"","Jamnagar":"","Jamshedpur":"","Jamui":"","Janjgir-Champa":"","Jashpur":"","Jaunpur":"","Jehanabad":"","Jhabua":"","Jhajjar":"","Jhalawar":"","Jhansi":"","Jharsuguda":"","Jind":"","Jodhpur":"","Jorhat":"","Juhnjhunun":"","Junagadh":"","Jyotiba Phoole Nagar":"","Kadapa":"","Kaimur":"","Kaithal":"","Kalahandi":"","Kamrup Metropolitan":"","Kamrup Rural":"","Kanchipuram":"","Kandhamal":"","Kangra":"","Kanker":"","Kannauj":"","Kannur":"","Kanpur":"","Kanyakumari":"","Kapurthala":"","Karauli":"","Karbi Anglong":"","Kargil":"","Karimganj":"","Karimnagar":"","Karnal":"","Karur":"","Karwar":"","Kasaragod":"","Kathua":"","Katihar":"","Katni":"","Kaushambi":"","Kawardha":"","Kendrapara":"","Kendujhar":"","Khagaria":"","Khammam":"","Khandwa":"","Kharagpur":"","Khargone":"","Kheda":"","Kinnaur":"","Kishanganj":"","Kishtwar":"","Kochi":"","Koderma":"","Kohima":"","Kokrajhar":"","Kolar":"","Kolhapur":"","Kollam":"","Koppal":"","Koraput":"","Korba":"","Koriya":"","Kota":"","Kottayam":"","Krishna":"","Krishnagiri":"","Kulgam":"","Kullu":"","Kupwara":"","Kurnool":"","Kurukshetra":"","Kurung Kumey":"","Kushi Nagar ":"","Kutch":"","Lahaul and Spiti":"","Lakhimpur":"","Lakhimpur Kheri":"","Lakhisarai":"","Lakshadweep":"","Lalitpur":"","Latur":"","Leh":"","Lohardaga":"","Lohit":"","Lonavala":"","Lower Dibang Valley":"","Lower Subansiri":"","Lucknow":"","Ludhiana":"","Lunglei":"","MAU":"","Madhepura":"","Madhubani":"","Madurai":"","Mahabubnagar":"","Maharajganj":"","Mahasamund":"","Mahendragarh":"","Mahoba":"","Mainpuri":"","Malappuram":"","Malda":"","Malkangiri":"","Mandi":"","Mandla":"","Mandsaur":"","Mandya":"","Mangalore":"","Mansa":"","Marigaon":"","Mathura":"","Mayurbhanj":"","Medak":"","Meerut":"","Mehsana":"","Mewat":"","Midnapore":"","Mirzapur":"","Moga":"","Mohali":"","Mokokchung":"","Mon":"","Moradabad":"","Morbi":"","Morena":"","Mukatsar":"","Munger":"","Murshidabad":"","Mussoorie":"","Muzaffarnagar":"","Muzaffarpur":"","Mysore":"","Nabarangpur":"","Nagaon":"","Nagapattinam":"","Nagaur":"","Nagpur":"","Nainital":"","Nalanda":"","Nalbari":"","Nalgonda":"","Namakkal":"","Namchi":"","Nanded":"","Nandurbar":"","Narayanpur":"","Narmada":"","Narsinghpur":"","Nashik":"","Navsari":"","Nawada":"","Nawan Shehar":"","Nayagarh":"","Neemrana":"","Neemuch":"","Nellore":"","Nizamabad":"","North Cachar Hills":"","North Tripura":"","Nuapada":"","Odalguri":"","Ooty":"","Osmanabad":"","Pakur":"","Palakkad":"","Palamu":"","Pali":"","Panchmahal":"","Panipat":"","Panna":"","Papum Pare":"","Parbhani":"","Pashchim":"","Patan":"","Pathanamthitta":"","Patiala":"","Patna":"","Pauri":"","Perambalur":"","Phaltan":"","Phek":"","Pilibhit":"","Pithoragarh":"","Pondicherry":"","Poonch":"","Porbandar":"","Prakasam":"","Pratapgarh":"","Pudukkottai":"","Pulwama":"","Purba":"","Purba Champaran":"","Puri":"","Purnia":"","Purulia":"","Puttaparthi":"","Raebareli":"","Raichur":"","Raigarh":"","Raipur":"","Raisen":"","Rajahmundry":"","Rajauri":"","Rajgarh":"","Rajkot":"","Rajnandgaon":"","Rajsamand":"","Ramanagram":"","Ramanathapuram":"","Ramban":"","Rampur":"","Ranchi":"","Rangareddy":"","Ratlam":"","Ratnagiri":"","Raurkela":"","Rayagada":"","Reasi":"","Rewa":"","Rewari":"","Rohtak":"","Rohtas":"","Roorkee":"","Rudraprayag":"","Rudrapur":"","Rupnagar":"","Sabarkantha":"","Sagar":"","Saharanpur":"","Saharsa":"","Sahibganj":"","Salem":"","Samastipur":"","Samba":"","Sambalpur":"","Sangli":"","Sangrur":"","Sant Kabir Nagar":"","Sant Ravidas Nagar":"","Saran":"","Satara":"","Satna":"","Sawai":"","Sawai Madhopur":"","Sehore":"","Senapati":"","Seoni":"","Shahdol":"","Shahjahanpur":"","Shajapur":"","Sheikhpura":"","Sheohar":"","Sheopur":"","Shillong":"","Shimla":"","Shimoga":"","Shivpuri":"","Shopian":"","Shravasti":"","Sibsagar":"","Siddharth Nagar":"","Sidhi":"","Sikar":"","Siliguri":"","Sindhudurg":"","Singrauli":"","Sirmaur":"","Sirohi":"","Sirsa":"","Sitamarhi":"","Sitapur":"","Sivaganga":"","Siwan":"","Solan":"","Solapur":"","Sonbhadra":"","Sonipat":"","Sonitpur":"","South Tripura":"","Srikakulam":"","Srinagar":"","Srkakulam":"","Subarnapur":"","Sultanpur":"","Sundargarh":"","Supaul":"","Surat":"","Surendranagar":"","Surguja":"","Tamenglong":"","Tapi":"","Tarn Taran":"","Tawang":"","Tehri Garhwal":"","Thane":"","Thanjavur":"","The Dangs":"","The Nilgiris":"","Theni":"","Thoothukudi":"","Thoubal":"","Thrissur":"","Tikamgarh":"","Tinsukia":"","Tirap":"","Tirunelveli":"","Tirupati":"","Tiruppur":"","Tiruvannamalai":"","Tonk":"","Trichy":"","Trivandrum":"","Tuensang":"","Tumkur":"","Udaipur":"","Udham Singh Nagar":"","Udhampur":"","Udupi":"","Ujjain":"","Ukhrul":"","Ulhasnagar":"","Umaria":"","Una":"","Unnao":"","Upper Dibang Valley":"","Upper Siang":"","Upper Subansiri":"","Uttar Kannada":"","Uttarkashi":"","Vadodara":"","Vaishali":"","Valsad":"","Varanasi":"","Vellore":"","Vidisha":"","Vijayawada":"","Villupuram":"","Virudhunagar":"","Visakhapatnam":"","Vizianagaram":"","Warangal":"","Wardha":"","Washim":"","Wayanad":"","West Godavari":"","West Kameng":"","West Siang":"","West Tripura":"","Wokha":"","Yamunanagar":"","Yavatmal":"","Zunheboto":""};
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--
+var cf_apt_suggester = new NewAutoSuggest("project_name", $("project_name").value,null,
+{'targetElemId':'property_id',
+'suggestionSeperator':'|',
+'onMissMarkup':'Could not find any matches for your input',
+'itemType' : 'apartment',
+'subItem' : 'area',
+'subItemTargetInputId' : ['area','property_address'],
+'subItemTargetHiddenId' : ['area_id'],
+   	 'autosuggestClass' : 'autosuggestclass',
+         'onEnterOrTabStopPropagation': 1,
+         'selCallbackFunction' : function(name,id) {
+          $('sel_proj_locality').value = $('area_id').value;
+          ContentPropertyListingNew.showAdditionalInfo(1);
+          var project_picked = document.getElementById('project_picked');
+          if(project_picked)
+          {
+               $('project_validity_radio_db').checked = false;
+               $('project_validity_radio_unknown').checked = false;
+               $('project_picked').hide();
+          }
+          
+          var locality_not_picked = document.getElementById('locality_not_picked');
+          if(locality_not_picked)
+          {
+               $('locality_validity_radio_unknown').checked = false;
+               $('locality_not_picked').hide();
+          }
+          $('project_name_error').className = "hideerror";
+          $('area_name_error').className = "hideerror";
+          var locality_mismatch_error = document.getElementById('locality_mismatch_error');
+          if(locality_mismatch_error)
+          {
+               $('locality_mismatch_error').hide();
+          }
+          var new_area_info = document.getElementById('new_area_info');
+          if(new_area_info)
+          {
+               $('new_area_info').show();
+          }
+          var old_area_info = document.getElementById('old_area_info');
+          if(old_area_info)
+          {
+               $('old_area_info').hide();
+          }
+          var tempname = name.split(cf_apt_suggester.options.subItemSeperator);$('tmp_project_name').value =tempname[0];  $('sel_proj_locality').value = tempname[1]; $('tmp_locality_name').value = tempname[2];},
+'autosuggestId' : 'plbd_as' });
+var cf_loc_suggester = new NewAutoSuggest("area", $("area").value,null,
+{'targetElemId':'area_id',
+'suggestionSeperator':'|',
+'onMissMarkup':'Could not find any matches for your input',
+'itemType' : 'area',
+'autosuggestId' : 'plbd_l_as',
+         'onEnterOrTabStopPropagation': 1,
+         'selCallbackFunction' : function(name,id) {
+          ContentPropertyListingNew.showAdditionalInfo(1);
+          var locality_not_picked = document.getElementById('locality_not_picked');
+          if(locality_not_picked)
+          {
+               $('locality_validity_radio_unknown').checked = false;
+               $('locality_not_picked').hide();
+          }
+          $('area_name_error').className = "hideerror";
+          $('tmp_locality_name').value =name;},
+'autosuggestClass' : 'autosuggestclass'});
+//-->
+
+$('project_name').observe('blur', PropertyListingNew.projectNameOnBlur);
+$('area').observe('blur', PropertyListingNew.areaNameOnBlur);
+
+</script>
+<style>
+    #footer { margin-left:180px;}
+</style>
+
+	<p class="grey_line"><spacer height="1" type="block"></spacer></p>
+
+<!-- vizury Code for CF-Global-Visitor Remarketing List Starts here-->
+<script type="text/javascript">
+                    (function() {
+                        function async_load(){
+
+                                    (function() {
+                                        try {
+                                            var viz = document.createElement("script");
+                                            viz.type = "text/javascript";
+                                            viz.async = true;
+                                            viz.src = ("https:" == document.location.protocol ?"https://ssl.vizury.com" : "http://www.vizury.com")+ "/analyze/pixel.php?account_id=VIZVRM1085";
+
+                                            var s = document.getElementsByTagName("script")[0];
+                                            s.parentNode.insertBefore(viz, s);
+                                            viz.onload = function() {
+                                                try {
+                                                    pixel.parse();
+                                                } catch (i) {
+                                                }
+                                            };
+                                            viz.onreadystatechange = function() {
+                                                if (viz.readyState == "complete" || viz.readyState == "loaded") {
+                                                    try {
+                                                        pixel.parse();
+                                                    } catch (i) {
+                                                    }
+                                                }
+                                            };
+                                        } catch (i) {
+                                        }
+                                    })();
+
+                        }
+                        if (window.attachEvent)
+                            window.attachEvent("onload", async_load);
+                        else
+                            window.addEventListener("load", async_load, false);
+                    })();
+					</script><!-- vizury Code for CF-Global-Visitor Remarketing List Ends here-->
+	<div class="footer">
+<p style="font-size:11px;color:#cccccc; ">Disclaimer : Commonfloor.com 
+cannot be held responsible for the accuracy of data displayed on the 
+site. Commonfloor.com does not claim any guarantee and it should be 
+individualistically verified.</p>
+
+<p class="footerlinks" align="center">Copyright © 2007-15 CommonFloor.com. All rights reserved.</p>
+	</div>
+        <!-- footer ends -->
+    </div>
+<script type="text/javascript" src="02.Post%20Listing_files/jquery_002.js"></script>
+
+    <script>
+        jQuery(document).ready(function() {
+            if(jQuery(".lazy_load_image").length > 0){
+                jQuery(".lazy_load_image").unveil();
+            }
+        });
+    </script>
+
+<!-- Crazy Egg -->
+<!-- End Crazy Egg -->
+<script type="text/javascript">
+function getCFITrackURL() {
+    return "http://t.cfcdn.com//cfitrack/cfitrack.php";
+}
+
+window.cfit = "59a16b611b8197c0515054374551e51c5513ecba017454.31990324";
+</script>
+<script type="text/javascript" src="02.Post%20Listing_files/jquery.js"></script>
+<script type="text/javascript" src="02.Post%20Listing_files/inventory_tracking.js"></script>
+
+
+<div id="listing_loader" style="z-index:1000;width:100px;height:50px;background-color:#FFFFFF;border:#999999 thick solid;top:45%;left:45%;display:none;position:fixed;" align="center">
+    <br>
+    <img src="02.Post%20Listing_files/loader.gif">
+</div>
+
+</div><div style="display: none;" class="autosuggestclass autosuggestDiv" id="plbd_as"></div><div style="display: none;" class="autosuggestclass autosuggestDiv" id="plbd_l_as"></div></body></html>

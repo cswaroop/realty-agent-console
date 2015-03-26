@@ -1,0 +1,418 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: 'Vegur';
+    src: url('/fonts/vegur/vegur-r-webfont.eot');
+    src: url('/fonts/vegur/vegur-r-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/vegur/vegur-r-webfont.woff') format('woff'),
+         url('/fonts/vegur/vegur-r-webfont.ttf') format('truetype'),
+         url('/fonts/vegur/vegur-r-webfont.svg#VegurRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.vegur{font-family:vegur;}
+body{margin: 0;padding: 0;font-family:vegur;}
+img {border: 0;vertical-align: middle;}
+.red{color:#E55933 !important;}
+li {list-style: none;}
+.w1000{width:1000px !important;}
+.center{text-align:center;}
+.block{display:block !important;}
+	
+input, textarea, select {line-height: normal;}
+a {outline: none;text-decoration:none;color:#638094;cursor:pointer;font-family:vegur;font-size:14px;}
+a:hover {color:#222;}
+.float-l {float: left;}
+.float-r {float: right;}
+.clear {clear: both;height:0px;overflow:hidden;}
+p{margin:0px;padding:0px;}
+.hr{width:100%;height:1px;background-color:#E8E8E8;overflow:hidden;}
+
+#wrapper{background-color: #FFFFFF;background-repeat: no-repeat;padding: 0;text-align: center;width: 1005px;margin: auto;}
+
+#wrapper.container-wrapper-cls{width: 100%;float: left;margin: 0px;}
+.container-holder{margin: auto;width: 1005px;}
+
+#container {margin: 20px;padding: 0;text-align: left;width: 1005px;float:left;}
+
+.heading{font-family:Arial, Helvetica, sans-serif;font-size:21px;color:#333;font-weight:normal;padding: 0 0 0 15px;margin:20px 0 7px 0;}
+.requiredfield{background-image:url(/images/property_listing/star.png);background-repeat:no-repeat;}
+h2{color:#4d4d4d;font-size:18px;font-family:Arial, Helvetica, sans-serif;font-weight:normal;margin: 10px 0 10px 0;clear:none !important;}
+h3{color:#666;font-size:14px;font-weight:normal;margin: 0 0 12px 2px;font-family:Vegur, sans-serif;line-height: 20px;}
+h4{color:#4d4d4d;font-size:18px;font-family:vegur;font-weight:normal;margin: 5px 0;}
+h5{text-align:center;color:#333;font-family:vegur;font-size:18px;font-weight:normal;margin: 12px 7px;height: 20px;}
+.questiontooltip{margin:20px 0 0 7px !important;}
+.padLeft15{padding:0 0 0 15px;}
+
+
+.shadow{background:url(/images/property_listing/headerbg.png);width:968px;}
+#container .header{border:1px solid #ccc;float: left;margin: 2px 1px;padding: 0px;width: 968px;}
+#container .header ul{float:left;margin:0px;padding:0px;}
+#container .header ul li{float:left;padding: 12px 0px 12px 1px;display:block;}
+
+.header .subitems ul .select{background:url(/images/property_listing/innerarrow.png) no-repeat center 45px;}
+.header #navigation .sel{background-color:#808080;color:#fff;border-radius:20px;-moz-border-radius:20px;-webkit-border-radius:20px;}
+.header #navigation  li a{text-decoration:none; color:#638094; font-size:18px;padding: 7px 14px; font-family: vegur; border:none;}
+
+.header .subitems ul {display:none;width:973px;margin-left:-4px !important;margin-bottom:-8px !important;background-image:url(/images/property_listing/innershadow.png);background-repeat:no-repeat;}
+.header .subitems ul li{float:left;border-right:none;}
+.header .subitems ul li a{color:#fff; padding: 7px 9px;}
+
+.header #navigation  li a:hover{background-color:#808080;color:#fff;border-radius:20px;-moz-border-radius:20px;-webkit-border-radius:20px;}
+.header #navigation .subitems ul li:hover{background:url(/images/property_listing/innerarrow.png) no-repeat center 45px;}
+
+#container .dasheddiv{border:1px dashed #ccc;padding:6px 16px;float: left;margin-bottom: 10px;width:936px;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;}
+#container .dasheddiv .left{margin-top:3px;float:left;}
+#container .dasheddiv .left .imgdiv{float:left;background-color:#f1f1f1;padding:5px 16px;text-align:center;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;margin-right:8px;}
+#container .dasheddiv .left .textdiv{float:left;}
+#container .dasheddiv .left .textdiv p{font-size:14px;font-family:Arial, Helvetica, sans-serif;margin-bottom:10px;margin-top:8px;}
+#container .dasheddiv .left .textdiv a{font-family:Vegur;text-decoration:none;font-size:13px;}
+#container .dasheddiv .right{width:181px;float:right}
+#container .dasheddiv .right .moblie {cursor: pointer;float: left;margin: 12px 0 0;padding: 0 0 0 15px;}
+#container .dasheddiv .right .picture{float: left; width: 48px; border-right: 1px solid #ccc; border-left: 1px solid #ccc; padding: 0pt 20px; margin: 0px 20px;}
+#container .dasheddiv .right .picture .number{background-color:#f2f2f2;padding:0 5px;float:right;font-size:12px;}
+#container .dasheddiv .right .picture .cam{float:left;text-align:center;border-bottom:2px solid #e6e6e6;}
+#container .dasheddiv .right .picture .text{float: left; text-align: center; margin-top: 2px; width: 48px; font-size: 12px;}
+#container .dasheddiv .right .circle{float:right;margin-top: 6px;}
+
+
+#container .dashboard_left{width:740px;margin-right:20px;float:left;}
+#container .dashboard_left .innerdiv{margin-left:14px;}
+#container .dashboard_left .innerdiv .parking{float:left;margin: 6px;}
+#container .dashboard_left .innerdiv .parking .image{float:left;margin: 0 12px;}
+#container .dashboard_left .innerdiv .parking .type{float:left;}
+#container .dashboard_left .innerdiv .parking span{font-family:Arial, Helvetica, sans-serif;font-size:21px;color:#333;font-weight:normal;margin:4px;float: none;}
+#container .dashboard_left .innerdiv .sepratediv{float:left;margin-right:10px;width: 290px;}
+#container .dashboard_left .innerdiv .edit{float:left;margin-top:6px;}
+#container .dashboard_left .innerdiv .edit a{text-decoration:none;font-size:14px;}
+#container .dashboard_left .innerdiv .textbox{padding:6px;width:332px;border:1px solid #888;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;margin-bottom:5px;font-family:Vegur, sans-serif;float:left;font-size:16px !important;}
+#container .dashboard_left .innerdiv .textbox:hover{border:1px solid #333;}
+#container .dashboard_left .innerdiv .selectbox{padding:5px;width:105px;border:1px solid #888;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;margin-bottom:5px;float:left;margin-right:10px;}
+#container .dashboard_left .innerdiv .selectbox:hover{border:1px solid #333;}
+#container .dashboard_left .innerdiv .mediumselectbox{padding:5px;width:150px;border:1px solid #888;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;margin-bottom:5px;float:left;margin-right:10px;}
+#container .dashboard_left .innerdiv .mediumselectbox:hover{border:1px solid #333;}
+#container .dashboard_left .innerdiv .largeselectbox{padding:5px;width:330px;border:1px solid #888;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;margin-bottom:5px;float: left;}
+#container .dashboard_left .innerdiv .largeselectbox:hover{border:1px solid #333;}
+#container .dashboard_left .innerdiv .smalltextbox{padding:6px;width:216px;border:1px solid #888;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;margin-bottom:5px;font-family:Vegur, sans-serif;float:left;}
+#container .dashboard_left .innerdiv .smalltextbox:hover{border:1px solid #333;}
+#container .dashboard_left .innerdiv .largetextbox{padding:6px;width:535px;border:1px solid #888;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;margin-bottom:12px;font-family:Vegur, sans-serif; }
+#container .dashboard_left .innerdiv .largetextbox:hover{border:1px solid #333;}
+#container .dashboard_left .innerdiv .tinytextbox{padding:6px;width:110px;border:1px solid #888;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;margin-bottom:5px;font-family:Vegur, sans-serif;margin: 0px 6px 5px;}
+#container .dashboard_left .innerdiv .tinytextbox:hover{border:1px solid #333;}
+#container .dashboard_left .innerdiv .textarea{padding:6px;width:560px;height:90px;border:1px solid #888;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;margin-bottom:5px;font-family:Vegur, sans-serif;float:left;}
+#container .dashboard_left .innerdiv .textarea:hover{border:1px solid #333;}
+#container .dashboard_left .innerdiv span{float:left;margin-left:5px;margin-top:8px;font-size:13px;}
+#container .dashboard_left .addleft{margin-top:10px;float:left;}
+#container .dashboard_left .addmore{background:url(/images/property_listing/addmore.png) no-repeat 0px 0px;font-size: 14px;height: 24px;padding: 4px 0 0 28px;text-decoration: none;width: 24px;}
+#container .dashboard_left .addmore:hover{background:url(/images/property_listing/addmore.png) no-repeat 0px -29px;}
+#container .dashboard_left .innerdiv .negotiablediv{float:left;margin-top:30px;width:244px;}
+#container .dashboard_left .innerdiv .negotiablediv .checkboxdiv{float:right;margin-right: 40px;}
+#container .dashboard_left .innerdiv .negotiablediv .negotiable{width:156px;padding:5px;background-color:#ddd;border:0px;margin:0 5px 0 10px;border:1px solid #ccc;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;float:left;}
+#container .dashboard_left .innerdiv .negotiablediv .negotiable:hover{background-color:#eee;}
+#container .dashboard_left .innerdiv .questionmark{border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;background-color: #CCCCCC;color: #666666;float: left;margin-left: 10px;margin-top: 3px;padding: 1px 5px;cursor:pointer;}
+#container .dashboard_left .greylefttip{margin-top:33px;margin-left:8px;}
+#container .dashboard_left .documentaltooltip{border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;background-color: #e6e6e6;color: #666666;float: left;margin-right: 20px;margin-top: 3px;padding: 1px 5px;cursor:pointer;}
+#container .dashboard_left .button{border:0px;cursor:pointer;background:url(/images/property_listing/button.png) 0px 0px;height:37px;width:163px;margin-right:8px;float:left;margin-top:30px;color:#fff;font-family:vegur;font-size:18px;}
+#container .dashboard_left .button:hover{background:url(/images/property_listing/button.png) 0px -37px;}
+#container .dashboard_left .innerdiv .savelink{float:left;text-decoration:underline;margin-top: 40px;}
+#container .dashboard_left .innerdiv .proptype{width:100px;margin-right: 10px;float:left;}
+#container .dashboard_left .innerdiv .value{float:left;width:120px}
+#container .dashboard_left .innerdiv .rent{background:url(/images/property_listing/rent.png) 0px 0px;height:96px;width:96px;cursor:pointer;float:left;}
+#container .dashboard_left .innerdiv .sale{background:url(/images/property_listing/sale.png) 0px 0px;height:96px;width:96px;cursor:pointer;float:left;margin-right:30px;}
+#container .dashboard_left .innerdiv .rent:hover,#container .dashboard_left .innerdiv .rentselected{background:url(/images/property_listing/rent.png) 0px -97px;height:96px;width:96px;cursor:pointer;float:left;}
+#container .dashboard_left .innerdiv .sale:hover,#container .dashboard_left .innerdiv .saleselected{background:url(/images/property_listing/sale.png) 0px -97px;height:96px;width:96px;cursor:pointer;float:left;margin-right:30px;}
+#container .dashboard_left .innerdiv .bedroom{background:url(/images/property_listing/bedroom.png);height:90px;width:89px;float:left;margin-right:12px;margin-bottom:20px;}
+#container .dashboard_left .innerdiv .bathroom{background:url(/images/property_listing/bathroom.png);height:90px;width:89px;float:left;margin-right:12px;margin-bottom:10px;}
+#container .dashboard_left .innerdiv .balcony{background:url(/images/property_listing/balcony.png);height:90px;width:89px;float:left;margin-right:12px;margin-bottom:10px;}
+#container .dashboard_left .innerdiv .dining{background:url(/images/property_listing/dining.png);height:90px;width:89px;float:left;margin-right:12px;margin-bottom:10px;}
+#container .dashboard_left .innerdiv .servantaccom{background:url(/images/property_listing/servantaccom.png);height:90px;width:89px;float:left;margin-right:12px;margin-bottom:10px;}
+#container .dashboard_left .innerdiv .carpetarea{background:url(/images/property_listing/carpetarea.jpg);height:82px;width:83px;float:left;margin-right:12px;margin-bottom:20px;}
+#container .dashboard_left .innerdiv .builtuparea{background:url(/images/property_listing/builtuparea.jpg);height:82px;width:83px;float:left;margin-right:12px;margin-bottom:20px;}
+#container .dashboard_left .innerdiv .blank{background:url(/images/property_listing/bg.png);height:49px;width:77px;float:left;margin-right:12px;margin-bottom:15px;padding-top: 28px;text-align: center;font-size:18px;color:#333;cursor:pointer;}
+#container .dashboard_left .innerdiv .blankselected{background:url(/images/property_listing/bghover.png);height:49px;width:77px;float:left;margin-right:12px;margin-bottom:15px;padding-top: 28px;text-align: center;font-size:18px;color:#333;cursor:pointer;}
+#container .dashboard_left .innerdiv .blank:hover{background:url(/images/property_listing/bghover.png);}
+#container .dashboard_left .innerdiv .yesno .blankbig{color: #333333;cursor: pointer;float: left;font-size: 15px;height: 55px;margin-bottom: 10px;margin-right: 12px;padding: 20px 11px;text-align: center;width: 74px;background:url(/images/property_listing/proptype.png);margin-top:20px;}
+#container .dashboard_left .innerdiv .yesno .blankbig:hover{background:url(/images/property_listing/proptype.png) 0px -97px;}
+#container .dashboard_left .innerdiv .yesno .blankbigtwoline{color: #333333;cursor: pointer;float: left;font-size: 15px;height: 38px;margin-bottom: 10px;margin-right: 12px;padding: 29px 11px;text-align: center;width: 74px;background:url(/images/property_listing/proptype.png);margin-top:20px;}
+#container .dashboard_left .innerdiv .yesno .blankbigtwoline:hover{background:url(/images/property_listing/proptype.png) 0px -97px;}
+#container .dashboard_left .innerdiv .yesno .blankbigtwolineselected{color: #333333;cursor: pointer;float: left;font-size: 15px;height: 38px;margin-bottom: 10px;margin-right: 12px;padding: 29px 11px;text-align: center;width: 74px;background:url(/images/property_listing/proptype.png) 0px -97px;margin-top:20px;}
+#container .dashboard_left .innerdiv .yesno .ownershiptype{color: #333333;cursor: pointer;float: left;font-size: 15px;height: 19px;margin-bottom: 10px;margin-right: 12px;padding: 38px 0;text-align: center;width: 96px;background:url(/images/property_listing/ownership.png);}
+#container .dashboard_left .innerdiv .yesno .ownershiptypeclicked{color: #FFFFFF;cursor: pointer;float: left;font-size: 15px;height: 19px;margin-bottom: 10px;margin-right: 12px;padding: 38px 0;text-align: center;width: 96px;background:url(/images/property_listing/ownershipclick.png);}
+#container .dashboard_left .innerdiv .yesno .ownershiptype:hover{color: #333333;background:url(/images/property_listing/ownership.png) 0px -96px;}
+#container .dashboard_left .innerdiv .yesno .documentalimg{color: #333333;cursor: pointer;float: left;font-size: 15px;height: 19px;margin-bottom: 10px;margin-right: 12px;padding: 29px 0;text-align: center;width: 74px;background:url(/images/property_listing/documentalhover.png);}
+#container .dashboard_left .innerdiv .yesno .documentalimg:hover{background:url(/images/property_listing/documentalhover.png) 0px -77px;}
+#container .dashboard_left .innerdiv .yesno .documentalimgtwo{color: #333333;cursor: pointer;float: left;font-size: 15px;height: 39px;margin-bottom: 10px;margin-right: 12px;padding: 19px 6px;text-align: center;width: 64px;background:url(/images/property_listing/documentalhover.png);}
+#container .dashboard_left .innerdiv .yesno .documentalimgtwo:hover{background:url(/images/property_listing/documentalhover.png) 0px -77px;}
+#container .dashboard_left .innerdiv .yesno{float:left;}
+#container .dashboard_left .innerdiv .yesno h3{margin:0px !important;}
+#container .dashboard_left .innerdiv .bg{background-repeat:no-repeat;background-position:top left; position:relative;background:url(/images/property_listing/proptype.png);width:96px;height:96px;cursor:pointer;margin-right: 14px;float:left;margin-bottom:10px;}
+#container .dashboard_left .innerdiv .bg:hover{background:url(/images/property_listing/proptype.png) 0px -96px;}
+#container .dashboard_left .innerdiv .bg .apartment{background:url(/images/property_listing/complex.png) no-repeat scroll 5px 5px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .bg .house{background:url(/images/property_listing/house.png) no-repeat scroll 5px 5px transparent;  height:90px;width:91px;}
+#container .dashboard_left .innerdiv .bg .villa{background:url(/images/property_listing/villa.png) no-repeat scroll 5px 5px transparent;  height:90px;width:91px;}
+#container .dashboard_left .innerdiv .bg .rowhouse{background:url(/images/property_listing/rowhouse.png) no-repeat scroll 5px 5px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .bg .plot{background:url(/images/property_listing/plot.png) no-repeat scroll 5px 5px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .bg .builderfloor{background:url(/images/property_listing/builder_floor.png) no-repeat scroll 5px 5px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .bg .farmhouse{background:url(/images/property_listing/farm_house.png) no-repeat scroll 5px 5px transparent;  height:90px;width:91px;}
+#container .dashboard_left .innerdiv .bg .penthouse{background:url(/images/property_listing/penthouse.png) no-repeat scroll 5px 5px transparent;  height:90px;width:91px;}
+#container .dashboard_left .innerdiv .bg .studioapartment{background:url(/images/property_listing/studio_apartment.png) no-repeat scroll 5px 5px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .bg .serviceapartment{background:url(/images/property_listing/service_apartment.png) no-repeat scroll 5px 5px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .bg .checked{background:url(/images/property_listing/checked.png) no-repeat scroll 5px 2px transparent; height:90px;width:91px;z-index:-12px;opacity:.4px;}
+#container .dashboard_left .innerdiv .furnishing{width:130px;margin-right: 10px;float:left;}
+#container .dashboard_left .innerdiv .furnishing .bg{position:relative;background:url(/images/property_listing/proptype.png) 0px 0px;width:96px;height:96px;cursor:pointer;margin-right: 14px;float:left;margin-bottom:10px;margin-left: 14px;}
+#container .dashboard_left .innerdiv .furnishing .bg:hover{background:url(/images/property_listing/proptype.png) 0px -96px;}
+#container .dashboard_left .innerdiv .furnishing .bg .unfurnished{background:url(/images/property_listing/unfurnished.png) no-repeat scroll 5px 6px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .furnishing .bg .semifurnished{background:url(/images/property_listing/semifurnished.png) no-repeat scroll 5px 6px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .furnishing .bg .fullyfurnished{background:url(/images/property_listing/fullyfurnished.png) no-repeat scroll 5px 6px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .furnishing .bg .mosaictiles{background:url(/images/property_listing/mosiac.png) no-repeat scroll 5px 5px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .furnishing .bg .wooden{background:url(/images/property_listing/wooden.png) no-repeat scroll 5px 5px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .furnishing .bg .marbleflooring{background:url(/images/property_listing/marble.png) no-repeat scroll 5px 5px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .furnishing .bg .granite{background:url(/images/property_listing/granite.png) no-repeat scroll 5px 5px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .furnishing .bg .vitrifiedtiles{background:url(/images/property_listing/vitrified.png) no-repeat scroll 5px 5px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .furnishing .bg .ceramic{background:url(/images/property_listing/ceramictiles.png) no-repeat scroll 5px 5px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .furnishing .bg .normaltiles{background:url(/images/property_listing/tiles.png) no-repeat scroll 5px 5px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .furnishing .bg .marbonite{background:url(/images/property_listing/marbonite.png) no-repeat scroll 5px 5px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .furnishing .bg .twocovered{background:url(/images/property_listing/twocovered.png) no-repeat scroll 5px 5px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .furnishing .bg .twouncovered{background:url(/images/property_listing/twouncovered.png) no-repeat scroll 5px 5px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .furnishing .bg .fourcommon{background:url(/images/property_listing/fourcommon.png) no-repeat scroll 5px 6px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .furnishing .bg .fouruncovered{background:url(/images/property_listing/fouruncovered.png) no-repeat scroll 5px 6px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .furnishing .bg .fourcovered{background:url(/images/property_listing/fourcovered.png) no-repeat scroll 5px 6px transparent; height:90px;width:91px;}
+
+#container .dashboard_left .innerdiv .sports{width:105px;margin-right: 5px;float:left;}
+#container .dashboard_left .innerdiv .sports h5{font-family:vegur;font-size:15px;font-weight:normal;margin:0 0 20px 2px;}
+#container .dashboard_left .innerdiv .sports .bg{position:relative;background:url(/images/property_listing/proptype.png) 0px 0px;width:96px;height:96px;cursor:pointer;margin-right: 14px;float:left;margin-bottom:5px;margin-left: 14px;}
+#container .dashboard_left .innerdiv .sports .bg:hover{background:url(/images/property_listing/proptype.png) 0px -96px;}
+#container .dashboard_left .innerdiv .sports .bg .playarea{background:url(/images/property_listing/playarea.png) no-repeat scroll 5px 6px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .sports .bg .garden{background:url(/images/property_listing/walk.png) no-repeat scroll 5px 6px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .sports .bg .healthfacilities{background:url(/images/property_listing/club.png) no-repeat scroll 5px 6px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .sports .bg .hall{background:url(/images/property_listing/hall.png) no-repeat scroll 5px 6px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .sports .bg .pooltbl{background:url(/images/property_listing/pooltbl.png) no-repeat scroll 5px 6px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .sports .bg .snookertbl{background:url(/images/property_listing/snookertbl.png) no-repeat scroll 5px 6px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .sports .bg .cardroom{background:url(/images/property_listing/cardroom.png) no-repeat scroll 5px 6px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .sports .bg .tbltennis{background:url(/images/property_listing/tbltennis.png) no-repeat scroll 5px 6px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .sports .bg .lappool{background:url(/images/property_listing/lappool.png) no-repeat scroll 5px 6px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .sports .bg .swimmingpool{background:url(/images/property_listing/swimmingpool.png) no-repeat scroll 5px 6px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .sports .bg .tenniscourt{background:url(/images/property_listing/tenniscourt.png) no-repeat scroll 5px 6px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .sports .bg .badmintoncourt{background:url(/images/property_listing/badminton.png) no-repeat scroll 5px 6px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .sports .bg .basketballcourt{background:url(/images/property_listing/basketballcourt.png) no-repeat scroll 5px 6px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .sports .bg .scourt{background:url(/images/property_listing/scourt.png) no-repeat scroll 5px 6px transparent; height:90px;width:91px;}
+
+#container .dashboard_left .innerdiv .sports .bg .recreationfacilities{background:url(/images/property_listing/recreational_facilities.png) no-repeat scroll 1px 2px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .sports .bg .hrbackup{background:url(/images/property_listing/24hrbackup.png) no-repeat scroll 1px 2px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .sports .bg .maintenancestaff{background:url(/images/property_listing/maintanace_staff.png) no-repeat scroll 1px 2px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .sports .bg .security{background:url(/images/property_listing/security.png) no-repeat scroll 1px 2px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .sports .bg .intercom{background:url(/images/property_listing/intercom.png) no-repeat scroll 1px 2px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .sports .bg .clubhouse{background:url(/images/property_listing/club_house.png) no-repeat scroll 1px 2px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .sports .bg .rainwaterharvesting{background:url(/images/property_listing/rain_water_harvesting.png) no-repeat scroll 1px 2px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .sports .bg .wifi{background:url(/images/property_listing/wifi.png) no-repeat scroll 1px 2px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .sports .bg .cafeteria{background:url(/images/property_listing/cafeteria.png) no-repeat scroll 1px 2px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .sports .bg .broadbandinternet{background:url(/images/property_listing/broadband.png) no-repeat scroll 1px 2px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .sports .bg .library{background:url(/images/property_listing/library.png) no-repeat scroll 1px 2px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .sports .bg .gymnasium{background:url(/images/property_listing/gymnasium.png) no-repeat scroll 1px 2px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .sports .bg .bankatm{background:url(/images/property_listing/atm.png) no-repeat scroll 1px 2px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .sports .bg .indoorgames{background:url(/images/property_listing/indoorgames.png) no-repeat scroll 1px 2px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .sports .bg .communityhall{background:url(/images/property_listing/communityhall.png) no-repeat scroll 1px 2px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .sports .bg .temple{background:url(/images/property_listing/place_of_worship.png) no-repeat scroll 1px 2px transparent; height:90px;width:91px;}
+
+#container .dashboard_left .innerdiv .sports .bg .default{background:url(/images/property_listing/garden.png) no-repeat scroll 1px 2px transparent; height:90px;width:91px;}
+#container .dashboard_left .innerdiv .services{float:left;}
+#container .dashboard_left .innerdiv .services .servicesdetail{height:40px;margin:7px 0px;}
+#container .dashboard_left .innerdiv #services .type{float:left;width:260px;}
+#container .dashboard_left .innerdiv #services .name{float:left;width:280px;}
+#container .dashboard_left .innerdiv #services .distance{float:left;width:375px;}
+#container .dashboard_left .innerdiv #services .text{color:#4d4d4d;font-family:vegur;font-size:18px;font-weight:normal;}
+#container .dashboard_left .innerdiv .organize{width:440px;margin:70px auto 50px;}
+#container .dashboard_left .innerdiv .organize .voteupdiv{width:400px;margin:70px auto 20px;padding:20px;background-color:#f2f2f2;}
+#container .dashboard_left .innerdiv .organize .voteupdiv p{margin:5px;text-align:center;color: #666666;font-family: Vegur,sans-serif;font-size: 14px;font-weight: normal;}
+#container .dashboard_left .innerdiv .voteup{width:85px;margin:0px auto;}
+#container .dashboard_left .innerdiv .voteup a{text-align:center;color:#638094;font-size:22px;font-family:Arial, Helvetica, sans-serif;text-decoration:none}
+#container .dashboard_left .innerdiv .featurediv{margin:15px 0px;}
+#container .dashboard_right{width:240px;float:left;padding-top:45px;}
+
+/*----------------------  toolt tip ----------------------------*/
+.t-tip{width:26px;float:left;margin: 3px 0 0 10px;}
+ 
+.t-tip .info{
+    position:relative; /*this is the key*/
+    z-index:24;
+}
+
+.t-tip .info span{display: none}
+
+.t-tip .info:hover span{ /*the span will display just on :hover state*/
+    display:block;
+    position:absolute;
+    top:-56px;left:-85px; width:180px;
+    text-align: left;
+	float:left;
+	font-size:12px;z-index:9999;
+	}
+	
+#totalfloor_innerVal{display:inline}
+.info:hover #totalfloor_innerVal{display:inline;}
+.tt{
+	    border:1px solid #b2b2b2;
+    background-color:#fff; color:#4d4d4d;padding:5px;
+	z-index:11;
+
+}
+.arrow{	
+background:url(/images/property_listing/arrow.png) ;margin-top:-1px;width:13px;height:8px;margin-left: 47%;margin-top: -3px;
+}
+
+/*----------------------  toolt tip 2 ----------------------------*/
+
+a.tooltip{
+    position:relative; /*this is the key*/
+    z-index:24;
+    text-decoration:none;
+}
+
+a.tooltip:hover{z-index:25; }
+
+a.tooltip span{display: none}
+
+a.tooltip:hover span{ /*the span will display just on :hover state*/
+    display:block;
+    position:absolute;
+    top:-25px;
+	left:-65px;
+	width:110px;
+    background-color:#fff; color:#4d4d4d;
+    text-align: left;
+	padding:4px 8px;
+	float:left;
+	background-color:#4d4d4d;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	color:#fff;
+	font-size:13px;
+	}
+	
+	
+.file_upload_ele{padding: 1px;background-color: #DFDFDF;width: 328px;font-size: 16px;font-family: Vegur, sans-serif;}	
+.hiddenfield{
+	border: medium none;
+    font-size: 24px;
+    height: 30px;
+    margin-left: 47px;
+    opacity: 0.0001;
+    padding: 0;
+    visibility: visible;
+    width: 435px;
+    z-index: 10000;
+}
+.field{height:30px;margin-bottom:10px;}
+.filename{background-color:#f2f2f2;width:320px;height:25px;}
+
+/* new styles added */
+.hideerror{background-image:url("/images/property_listing/error.png");width:20px;height:20px;display:none;}
+.showerror{background-image:url("/images/property_listing/error.png");width:20px;height:20px;}
+.correct{background-image:url("/images/property_listing/correct.jpg");width:34px;height:27px;}
+#container .dashboard_left .innerdiv .mediumtextbox{padding:6px;width:316px;border:1px solid #888;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;margin-bottom:5px;font-family:Vegur, sans-serif;float:left;}
+#container .dashboard_left .innerdiv .mediumtextbox:hover{border-color:#333;}
+
+.inline_ele{display: inline;}
+
+#container .dashboard_left .innerdiv .yesno .on_click_select {
+	background: url('/images/property_listing/documentalclick.png') no-repeat scroll 0 0 transparent;
+	color: #FFFFFF;
+	cursor: pointer;
+    float: left;
+    font-size: 15px;
+    height: 19px;
+    margin-bottom: 10px;
+    margin-right: 12px;
+    padding: 29px 0;
+    text-align: center;
+    width: 74px;
+}
+
+.transparent {
+}
+
+#container .dashboard_left .innerdiv .furnishing .bg .checked{background:url(/images/property_listing/checked.png) no-repeat scroll 5px 2px transparent; height:90px;width:91px;}
+
+div.slider {width:300px; margin:10px 0; background-color:#E6E6E6; height:7px; position: relative; }
+div.slider a.handle {width:14px; height:22px; background-color:#f00; cursor:pointer; position: absolute;  bottom: -7px; background: url("/images/property_listing/slider.png") no-repeat scroll 0 0 transparent;}
+div.slider a.handle:hover {background: url("/images/property_listing/slider_on_hover.png") no-repeat scroll 0 0 transparent;}
+div.slider a.handle:active, div.slider a.handle:focus {width:14px; height:22px; background-color:#f00; cursor:pointer; position: absolute; bottom: -7px; background: url("/images/property_listing/slider_on_click.png") no-repeat scroll 0 0 transparent;}
+div.slider_value {bottom: 20px; color: #638094; font-size: 17px; font-weight: bold; left: -10px; position: absolute;}
+
+#container .dasheddiv .right{width:280px;float:right}
+#container .dasheddiv .right .moblie{margin:12px 0 0;float: left;padding: 0 0 0 15px;cursor: pointer;}
+#container .dasheddiv .right .moblie p{font-size:11px;width: 75px;float:left;margin: 8px 4px;}
+#container .dasheddiv .right .circle{float:left; padding: 6px 14px;border-right: 1px solid #CCCCCC;}
+#container .dasheddiv .right .popup{position:absolute;margin-left: 65px;z-index:1000;}
+#container .dasheddiv .right .popuptop{background:url(/images/property_listing/popuptop.png);height:20px;width:256px;}
+#container .dasheddiv .right .popupcenter{background:url(/images/property_listing/popupcenter.png);padding: 10px 18px;width: 220px;font-family:Arial, Helvetica, sans-serif;}
+#container .dasheddiv .right .popupbottom{background:url(/images/property_listing/popupbottom.png);height:14px;width:256px;}
+#container .dasheddiv .right .entercodebtn{background:url(/images/property_listing/entercodebtn.png) no-repeat;padding: 6px 0;width:101px;cursor:pointer;border:0px;color:#4d4d4d;}
+#container .dasheddiv .right .popupcenter .verifytext{font-size:12px;color:#1a1a1a;font-weight:bold;margin-bottom:4px;}
+#container .dasheddiv .right .popupcenter .smalltext{color:#808080;font-size:11px;margin-bottom:14px;}
+#container .dasheddiv .right .popupcenter .mobileicon{float:left;width:35px;}
+#container .dasheddiv .right .popupcenter .icontext{float:left;width:160px;margin-bottom:14px;}
+#container .dasheddiv .right .popupcenter .sms{color:#4d4d4d;font-size:12px;}
+#container .dasheddiv .right .popupcenter .number{color:#4d4d4d;font-family:vegur;font-size:18px;}
+#container .dasheddiv .right .popupcenter .codetext{font-size:12px;color:#333333;margin-bottom:5px;}
+#container .dasheddiv .right .popupcenter .codebox{border: 1px solid #ccc; float: left; margin-right: 10px; margin-top: 2px; padding: 4px; width: 70px;border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px;}
+#container .dasheddiv .right .popupcenter .question{color:#333;font-size:12px;margin-bottom:2px;}
+#container .dasheddiv .right .popupcenter .verificationlink{text-decoration: none;font-family:Arial, Helvetica, sans-serif;font-size:12px;margin-bottom:5px;}
+#container .dasheddiv .right .popupcenter .close{margin-top:-10px;margin-right: -3px;float:right;}
+
+#container .dasheddiv .right .popupcenter .check{float:left;width:46px;margin-top:6px;}
+#container .dasheddiv .right .popupcenter .thanks{font-family:Arial, Helvetica, sans-serif;font-size:13px;font-weight:bold;width: 171px;float:left;}
+#container .dasheddiv .right .popupcenter .resend{background:url(/images/property_listing/bigbutton.png) no-repeat; border: 0 none;margin-top: 12px;width: 190px;padding: 6px 0;font-family:vegur;color:#444;font-size:14px;cursor:pointer;}
+#container .dasheddiv .right .popupcenter .or{color: #888888;font-size: 16px;font-weight: bold;margin-bottom: 2px;text-align: center;width:190px;}
+#container .dasheddiv .right .popupcenter  .closebtn{background:url(/images/property_listing/closebtn.png) no-repeat;width:140px;padding:6px 0px;border:0px none;cursor:pointer;margin-top:15px;}
+#container .dasheddiv .right .popupcenter  .error{color:#F15A24;font-weight:bold;font-size:13px;margin-bottom:12px;}
+.mrb12{margin-bottom:12px;}
+.h60{height:60px;}
+#container .dashboard_left label{float:left;}
+#container .dashboard_left input[type="radio"] {z-index: -1;-moz-opacity:0 ;filter:alpha(opacity: 0); opacity: 0;position: absolute;right: -40px;top: 50px;}
+#container .dashboard_left input[type="radio"].show{position: static !important;-moz-opacity:1 !important;filter:alpha(opacity: 100) !important; opacity: 1 !important;z-index: 1 !important;}
+#container .dashboard_left .negotiablecheckbox {z-index: 0 !important;-moz-opacity:1 ;filter:alpha(opacity: 100) !important; opacity: 1 !important;position: static !important;}
+
+#container .dashboard_left input[type="checkbox"] {z-index: -1;-moz-opacity:0 ;filter:alpha(opacity: 0); opacity: 0;position: absolute;right: -45px;top: 50px;}
+#container .dashboard_left input[type="checkbox"].show {position: static !important;-moz-opacity:1 !important;filter:alpha(opacity: 100) !important; opacity: 1 !important;z-index: 1 !important;}
+
+#container .dashboard_left input[type="checkbox"].check-tag
+{
+		left: -37px !important;
+		position: relative !important;   
+		top: -87px !important;
+
+	}
+
+	@-moz-document url-prefix() {
+		#container .dashboard_left input[type="checkbox"].check-tag
+		{	
+			left: -39px; 
+			position: relative !important;   
+			top: -87px;
+		}
+	}
+	
+
+
+#container .successscreen a{color:#638094;}
+#container .successscreen p{color:#4D4D4D}
+#container .successscreen hr{border:0px;border-top:1px dashed #cccccc;}
+
+#container .popup .popuptop{background:url(/images/login/popuptop.png) no-repeat;height:16px;width:571px; !important;}
+#container .popup .popupcenter{background:url(/images/login/popupcenter.png) repeat-y;width:571px; !important; height:260px !important;}
+#container .popup .popupbottom{background:url(/images/login/popupbottom.png) no-repeat;height:16px;width:571px; !important;}
+
+#container .popup .popupbutton{border:0px;cursor:pointer;background:url(/images/property_listing/button.png) 0px 0px;height:37px;width:163px;color:#fff;font-family:vegur;font-size:18px;padding:8px 45px;}
+#container .popup .popupbutton:hover{background:url(/images/property_listing/button.png) 0px -37px;}
+#container .popup .editbutton{border:0px;background-color:#8AC959;cursor:pointer;height:37px;width:163px;color:#fff;font-family:vegur;font-size:18px;padding:8px 45px;}
+#container .popup .editbutton:hover{border:0px;background-color:#74C62C;cursor:pointer;}
+#container .popup .popupcenter .successscreen{background:url(/images/login/popupgradient.jpg);height:260px;margin:0 12px 0 6px}
+#container .dashboard_left .innerdiv .yesno span{left: 0;position: absolute;top: 10px;width: 64px;margin: 0px 5px;height: 62px;overflow: hidden;}
+h1 {font-family: Arial;font-size: 24px;color: #58595B !important;padding-top: 5px;}
+.mrt20{margin-top: 20px;}
+.parking_div{float: left;padding-right: 10px;}
+#container .parking .t-tip .tt {font: 12px arial;margin-top: -10px;}
+div#two_covered, #four_covered {margin-left: 40px;}
+
