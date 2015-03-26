@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<html class="no-js"><!--<![endif]--><head>
+	<link rel="shortcut icon" href="http://www.commonfloor.com/favicon.ico">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="author" content="CommonFloor.com">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>CF Agent Console : SKC Realty</title>
+	<link type="text/css" rel="stylesheet" href="05.My%20Subscriptions_files/bootstrap.css">
+<link type="text/css" rel="stylesheet" href="05.My%20Subscriptions_files/main.css">
+<link type="text/css" rel="stylesheet" href="05.My%20Subscriptions_files/common.css">
+<link type="text/css" rel="stylesheet" href="05.My%20Subscriptions_files/style.css">
+<link type="text/css" rel="stylesheet" href="05.My%20Subscriptions_files/chosen.css">
+<link type="text/css" rel="stylesheet" href="05.My%20Subscriptions_files/bootstrap-multiselect.css">
+<link type="text/css" rel="stylesheet" href="05.My%20Subscriptions_files/bootstrap-notify.css">
+</head>
+<body id="agent-console-app" data-custom-background="" data-off-canvas-nav="">
+	<section id="header" class="top-header"><header class="clearfix ">
+    <a href="javascript:void(0);" class="toggle-min" id="toggle-min"><i class="icon-cf icon-cf-burger"></i></a>
+
+    <div class="logo">
+        <a href="#/dashboard">
+            <span><img src="05.My%20Subscriptions_files/cf-logo.png"></span>
+        </a>
+    </div>
+
+    <div class="menu-button" toggle-off-canvas="" id="mobile-nav-toggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </div>
+
+    <div class="top-nav">
+        <div class="col-xs-6 font18Regular nopadding">Agent Console</div>
+        <ul class="col-sm-6 nav-right pull-right list-unstyled nopadding">
+            <li class="dropdown text-normal nav-profile pull-right">
+                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="05.My%20Subscriptions_files/default.png" id="header_profile_pic" class="img-circle img30_30 profile-pic">
+                    <span>
+                        <span>SKC Realty</span>
+                    </span>
+                    <i class="icon-cf icon-cf-arrow-down icon-has-ul" style="margiin-top:8px;"></i>
+                </a>
+                <ul class="dropdown-menu with-arrow pull-right">
+                    <li>
+                        <a href="http://www.commonfloor.com/agent/logout">
+                            <i class="icon-cf icon-cf-logout"></i>
+                            <span>Log Out</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</header>
+</section>	<aside id="nav-container">
+    <div id="nav-wrapper">
+        <div style="position: relative; overflow: hidden; width: auto; height: 100%;" class="slimScrollDiv"><ul id="nav" data-collapse-nav="" data-slim-scroll="" data-highlight-active="" style="overflow: hidden; width: auto; height: 100%;">
+            <li class="">
+                <a href="#/dashboard" onclick="trackPageEvents('Menu','Dashboard','',false)">
+                    <i class="icon-cf icon-cf-dashboard">
+                        <span class="icon-bg bg-orange"></span>
+                    </i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li class="">
+                <a href="#/mylistings" onclick="trackPageEvents('Menu','My Listings','',false)">
+                    <i class="icon-cf icon-cf-listing">
+                        <span class="icon-bg bg-orange"></span>
+                    </i>
+                    <span>My Listings</span>
+                </a>
+            </li>
+            <li class="sub-section">
+                <a href="javascript:void(0);" onclick="trackPageEvents('Menu','Leads','',true)">
+                    <i class="icon-cf icon-cf-lead">
+                        <span class="icon-bg bg-orange"></span>
+                    </i>
+                    <span>Leads</span>
+                </a>
+                <ul style="display: none;">
+                    <li class="">
+                        <a href="#/get-leads" onclick="trackPageEvents('Menu','Leads','Get Leads',false)">
+                            <span>Get Leads</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#/manage-leads" onclick="trackPageEvents('Menu','Leads','Manage Leads',false)">
+                            <span>Manage Leads</span>
+                        </a>
+                    </li>
+
+                </ul>
+                <i class="icon-cf icon-cf-arrow-right icon-has-ul"></i>
+            </li>
+            <li class="sub-section">
+                <a href="javascript:void(0);" onclick="trackPageEvents('Menu','Reports','',true)">
+                    <i class="icon-cf icon-cf-report">
+                        <span class="icon-bg bg-orange"></span>
+                    </i>
+                    <span>Reports</span>
+                </a>
+                <ul class="sub-nav" style="display: none;">
+                    <li class="">
+                        <a href="#/credits-summary" onclick="trackPageEvents('Menu','Reports','Credits Summary',false)">
+                            <span>Credits Summary</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#/lead-report" onclick="trackPageEvents('Menu','Reports','Lead Report',false)">
+                            <span>Lead Report</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/refund-status" onclick="trackPageEvents('Menu','Reports','Refund Status',false)">
+                            <span>Refund Status</span>
+                        </a>
+                    </li>
+                </ul>
+                <i class="icon-cf icon-cf-arrow-right icon-has-ul"></i>
+            </li>
+            <li class="sub-section active">
+                <a href="javascript:void(0);" onclick="trackPageEvents('Menu','My Account','',true)">
+                    <i class="icon-cf icon-cf-myprofile">
+                        <span class="icon-bg bg-orange"></span>
+                    </i>
+                    <span>My Account</span>
+                </a>
+                <ul style="display: block;">
+                    <li class="">
+                        <a href="#/my-profile" onclick="trackPageEvents('Menu','My Account','My Profile',false)">
+                            My Profile
+                        </a>
+                    </li>
+                                            <li class="">
+                            <a href="#/my-team" onclick="trackPageEvents('Menu','My Account','My Team',false)">
+                                My Team
+                            </a>
+                        </li>
+                                        <li class="active">
+                        <a href="#/my-subscriptions" onclick="trackPageEvents('Menu','My Account','My Subscriptions',false)">
+                            My Subscriptions
+                        </a>
+                    </li>
+                </ul>
+                <i class="icon-cf icon-cf-arrow-right icon-has-ul"></i>
+            </li>
+            <li>
+                <a href="#/faqs" onclick="trackPageEvents('Menu','Help','',false)">
+                    <i class="icon-cf icon-cf-help">
+                        <span class="icon-bg bg-orange"></span>
+                    </i>
+                    <span>Help</span>
+                </a>
+            </li>
+        </ul><div style="background: none repeat scroll 0% 0% rgb(0, 0, 0); width: 7px; position: absolute; top: 80px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 253.171px;" class="slimScrollBar"></div><div style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: none repeat scroll 0% 0% rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;" class="slimScrollRail"></div></div>
+    </div>
+</aside>	<div class="view-container">
+	<section id="content" class="animate-fade-up">
+		<div class="partial"><div class="page page-mysubscriptions" id="subscriptions" sub-page-name="my-subscriptions">
+    <div class="page-header bread-crumb"><span>My Account :: </span>My Subscriptions</div>
+    <div class="col-sm-12">
+                <div class="callout callout-info">
+            <h4>No Subscriptions!</h4>
+            <p> You can set up filters basis which leads would be 
+delivered to you as and when they enter our system. Please call Agent 
+Care at 0124-465-3000 to have these set up for your account.</p>
+        </div>
+        </div>
+    <br class="clearBoth">
+</div>
+<div class="modal fade custom-modal font14Light" id="edit-credit-cap-modal" data-toggle="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title text-center font18Regular">Edit Cap</h4>
+            </div>
+            <div class="modal-body">
+                <div class="vertical-bar-separator" style="overflow: auto;">
+                    <div class="marginTop10 col-xs-12 col-sm-6 nopadding">
+                        <div style="overflow: auto;">
+                            <div class="col-xs-8 nopadding">Daily Lead Cap <span data-original-title="Maximum no. of leads that can be delivered to you per day. Use this cap to limit your daily spend on leads through this filter." class="tooltip-icon" data-toggle="tooltip" data-placement="right" data-container="#edit-credit-cap-modal" title=""><i class="icon-cf icon-cf-help-rounded"></i></span>
+                            </div>
+                            <div class="col-xs-4 lead-cap"></div>
+                        </div>
+                        <div class="marginTop10">
+                            <div class="col-xs-8 nopadding">New Daily Lead Cap</div>
+                            <div class="col-xs-4"><input class="width100 font12Light" max-length="3" placeholder="Numbers" id="dl-cap" type="number"></div>
+                        </div>
+                    </div>
+                    <div class="marginTop10 col-xs-12 col-sm-6" style="overflow:auto;">
+                        <div style="overflow: auto;">
+                            <div class="col-xs-8 nopadding">Overall Credit Cap<span data-original-title="Maximum count of credits that can be consumed by this filter. Use this cap to limit your overall spend on this filter. This cap may also be used to pause a filter in case you do not wish to receive more leads from it." class="tooltip-icon fa " data-toggle="tooltip" data-placement="right" data-container="#edit-credit-cap-modal" title=""><i class="icon-cf icon-help-rounded"></i></span></div>
+                            <div class="col-xs-4 nopadding credit-cap"></div>
+                        </div>
+                        <div class="marginTop10">
+                            <div class="col-xs-8 nopadding">New Overall Credit Cap</div>
+                            <div class="col-xs-4 nopadding"><input class="width100 font12Light" max-length="3" placeholder="Numbers" id="ol-cap" data-pattern="[^0]" type="number"><span style="font-size:10px;">Enter -1 to remove credit cap</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="edit-credit-cap-submit">Submit</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+		<noscript>
+			<div class="callout callout-danger noscriptmsg">
+                <h4>Javascript disabled!</h4>
+                <p>You don't have Javascript enabled on your browser.<br/>Please enable it from browser settings.</p>
+            </div>
+		</noscript>
+		<div class="footer">
+			<p class="pri"><a href="http://www.commonfloor.com/privacy-policy" target="_blank">Privacy Policy</a></p>
+			<p class="cancel"><a href="http://www.commonfloor.com/cancellation-refund" target="_blank">Cancellation and Refund Policy</a></p>
+			<p class="copyright">Copyright © 2007-15 CommonFloor.com. All rights reserved.</p>
+		</div>
+		<div class="loading" style="min-height: 316px; display: none;"> 
+			<img class="loading-gif" src="05.My%20Subscriptions_files/loaders2.gif" alt="preloader.gif">
+			<div class="full-c">
+				<i class="icon-cf icon-cf-brand-logo" style="color:orange"></i>
+				<p>Loading</p>
+			</div>
+		</div>
+		<div class="notifications cf-custom-alert bottom-right"></div>
+	</section>
+</div>
+	<script src="05.My%20Subscriptions_files/ga.js" async="" type="text/javascript"></script><script src="05.My%20Subscriptions_files/analytics.js" async=""></script><script type="text/javascript" src="05.My%20Subscriptions_files/jquery_003.js"></script>
+	<script type="text/javascript" src="05.My%20Subscriptions_files/bootstrap.js"></script>
+	<script type="text/javascript" src="05.My%20Subscriptions_files/bootstrap-datepicker.js"></script>
+	<script type="text/javascript" src="05.My%20Subscriptions_files/jquery_002.js"></script>
+	<script type="text/javascript" src="05.My%20Subscriptions_files/jquery.js"></script>
+	<script type="text/javascript" src="05.My%20Subscriptions_files/agent-newautosuggest.js"></script>
+	<script type="text/javascript" src="05.My%20Subscriptions_files/chosen.js"></script>
+	<script type="text/javascript" src="05.My%20Subscriptions_files/bootstrap-multiselect.js"></script>
+	<script type="text/javascript" src="05.My%20Subscriptions_files/bootstrap-notify.js"></script>
+
+	<script type="text/javascript" src="05.My%20Subscriptions_files/common.js"></script>
+	<script type="text/javascript" src="05.My%20Subscriptions_files/_profile.js"></script>
+	<script type="text/javascript" src="05.My%20Subscriptions_files/_mycredits.js"></script>
+	<script type="text/javascript" src="05.My%20Subscriptions_files/_listings.js"></script>
+	<script type="text/javascript" src="05.My%20Subscriptions_files/_lead.js"></script>
+	<script type="text/javascript" src="05.My%20Subscriptions_files/_help.js"></script>
+	<script>
+	  	  	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})
+	  	(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		(function () {
+	        var ga = document.createElement('script');
+	        ga.type = 'text/javascript';
+	        ga.async = true;
+	        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	        var s = document.getElementsByTagName('script')[0];
+	        s.parentNode.insertBefore(ga, s);
+	    })();
+		ga('create', 'UA-2595309-4', 'auto');
+		ga('send', 'pageview');
+		var _gaq = _gaq || [];
+	    _gaq.push(['_setAccount', 'UA-2595309-4']);
+ 		_gaq.push(['_setCustomVar',3,"Agent segment - by activity levels",'A1',1]);
+ 		_gaq.push(['_setCustomVar',4,"Agent segment - by current valuation",'V1',1]);
+ 		_gaq.push(['_setCustomVar',6,"User segment",'',1]);
+ 		_gaq.push(['_trackPageview']);
+
+ 		function trackPageEvents(category,action, opt_label, opt_noninteraction){
+ 			if(!category || !action) return;
+ 			var arr = ['_trackEvent',category,action,opt_label||'',,opt_noninteraction||false];
+ 			_gaq.push(arr);
+ 		}
+	</script>
+
+<div style="display: none; width: 0px; left: 0px; top: -23px;" class="greyborder autosuggestDiv" id="autosuggest"></div><div style="display: none; width: 0px; left: 0px; top: -23px;" class="greyborder autosuggestDiv" id="autosuggest"></div></body></html>

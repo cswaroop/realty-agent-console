@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<html class="no-js"><!--<![endif]--><head>
+	<link rel="shortcut icon" href="http://www.commonfloor.com/favicon.ico">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="author" content="CommonFloor.com">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>CF Agent Console : SKC Realty</title>
+	<link type="text/css" rel="stylesheet" href="03.Get%20Leads_files/bootstrap.css">
+<link type="text/css" rel="stylesheet" href="03.Get%20Leads_files/main.css">
+<link type="text/css" rel="stylesheet" href="03.Get%20Leads_files/common.css">
+<link type="text/css" rel="stylesheet" href="03.Get%20Leads_files/style.css">
+<link type="text/css" rel="stylesheet" href="03.Get%20Leads_files/chosen.css">
+<link type="text/css" rel="stylesheet" href="03.Get%20Leads_files/bootstrap-multiselect.css">
+<link type="text/css" rel="stylesheet" href="03.Get%20Leads_files/bootstrap-notify.css">
+</head>
+<body id="agent-console-app" data-custom-background="" data-off-canvas-nav="">
+	<section id="header" class="top-header"><header class="clearfix ">
+    <a href="javascript:void(0);" class="toggle-min" id="toggle-min"><i class="icon-cf icon-cf-burger"></i></a>
+
+    <div class="logo">
+        <a href="#/dashboard">
+            <span><img src="03.Get%20Leads_files/cf-logo.png"></span>
+        </a>
+    </div>
+
+    <div class="menu-button" toggle-off-canvas="" id="mobile-nav-toggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </div>
+
+    <div class="top-nav">
+        <div class="col-xs-6 font18Regular nopadding">Agent Console</div>
+        <ul class="col-sm-6 nav-right pull-right list-unstyled nopadding">
+            <li class="dropdown text-normal nav-profile pull-right">
+                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="03.Get%20Leads_files/default.png" id="header_profile_pic" class="img-circle img30_30 profile-pic">
+                    <span>
+                        <span>SKC Realty</span>
+                    </span>
+                    <i class="icon-cf icon-cf-arrow-down icon-has-ul" style="margiin-top:8px;"></i>
+                </a>
+                <ul class="dropdown-menu with-arrow pull-right">
+                    <li>
+                        <a href="http://www.commonfloor.com/agent/logout">
+                            <i class="icon-cf icon-cf-logout"></i>
+                            <span>Log Out</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</header>
+</section>	<aside id="nav-container">
+    <div id="nav-wrapper">
+        <div style="position: relative; overflow: hidden; width: auto; height: 100%;" class="slimScrollDiv"><ul id="nav" data-collapse-nav="" data-slim-scroll="" data-highlight-active="" style="overflow: hidden; width: auto; height: 100%;">
+            <li class="">
+                <a href="#/dashboard" onclick="trackPageEvents('Menu','Dashboard','',false)">
+                    <i class="icon-cf icon-cf-dashboard">
+                        <span class="icon-bg bg-orange"></span>
+                    </i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li class="">
+                <a href="#/mylistings" onclick="trackPageEvents('Menu','My Listings','',false)">
+                    <i class="icon-cf icon-cf-listing">
+                        <span class="icon-bg bg-orange"></span>
+                    </i>
+                    <span>My Listings</span>
+                </a>
+            </li>
+            <li class="sub-section active">
+                <a href="javascript:void(0);" onclick="trackPageEvents('Menu','Leads','',true)">
+                    <i class="icon-cf icon-cf-lead">
+                        <span class="icon-bg bg-orange"></span>
+                    </i>
+                    <span>Leads</span>
+                </a>
+                <ul style="display: block;">
+                    <li class="active">
+                        <a href="#/get-leads" onclick="trackPageEvents('Menu','Leads','Get Leads',false)">
+                            <span>Get Leads</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/manage-leads" onclick="trackPageEvents('Menu','Leads','Manage Leads',false)">
+                            <span>Manage Leads</span>
+                        </a>
+                    </li>
+
+                </ul>
+                <i class="icon-cf icon-cf-arrow-right icon-has-ul"></i>
+            </li>
+            <li class="sub-section">
+                <a href="javascript:void(0);" onclick="trackPageEvents('Menu','Reports','',true)">
+                    <i class="icon-cf icon-cf-report">
+                        <span class="icon-bg bg-orange"></span>
+                    </i>
+                    <span>Reports</span>
+                </a>
+                <ul class="sub-nav" style="display: none;">
+                    <li class="">
+                        <a href="#/credits-summary" onclick="trackPageEvents('Menu','Reports','Credits Summary',false)">
+                            <span>Credits Summary</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/lead-report" onclick="trackPageEvents('Menu','Reports','Lead Report',false)">
+                            <span>Lead Report</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/refund-status" onclick="trackPageEvents('Menu','Reports','Refund Status',false)">
+                            <span>Refund Status</span>
+                        </a>
+                    </li>
+                </ul>
+                <i class="icon-cf icon-cf-arrow-right icon-has-ul"></i>
+            </li>
+            <li class="sub-section">
+                <a href="javascript:void(0);" onclick="trackPageEvents('Menu','My Account','',true)">
+                    <i class="icon-cf icon-cf-myprofile">
+                        <span class="icon-bg bg-orange"></span>
+                    </i>
+                    <span>My Account</span>
+                </a>
+                <ul style="display: none;">
+                    <li>
+                        <a href="#/my-profile" onclick="trackPageEvents('Menu','My Account','My Profile',false)">
+                            My Profile
+                        </a>
+                    </li>
+                                            <li class="">
+                            <a href="#/my-team" onclick="trackPageEvents('Menu','My Account','My Team',false)">
+                                My Team
+                            </a>
+                        </li>
+                                        <li>
+                        <a href="#/my-subscriptions" onclick="trackPageEvents('Menu','My Account','My Subscriptions',false)">
+                            My Subscriptions
+                        </a>
+                    </li>
+                </ul>
+                <i class="icon-cf icon-cf-arrow-right icon-has-ul"></i>
+            </li>
+            <li>
+                <a href="#/faqs" onclick="trackPageEvents('Menu','Help','',false)">
+                    <i class="icon-cf icon-cf-help">
+                        <span class="icon-bg bg-orange"></span>
+                    </i>
+                    <span>Help</span>
+                </a>
+            </li>
+        </ul><div style="background: none repeat scroll 0% 0% rgb(0, 0, 0); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; height: 282.88px;" class="slimScrollBar"></div><div style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: none repeat scroll 0% 0% rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;" class="slimScrollRail"></div></div>
+    </div>
+</aside>	<div class="view-container">
+	<section id="content" class="animate-fade-up">
+		<div class="partial">
+<div class="page page-get-leads" id="getleads-page" sub-page-name="getleads-page">
+    <div class="page-header" style="overflow:auto;">
+    <div class="pull-left marginTop10 bread-crumb"><span>Leads ::</span> Get Leads</div>
+        <div class="pull-right"> <small class="font12Regular">Got a Property?</small>
+            <a href="http://www.commonfloor.com/listing/post-listing-basic-detail" target="_blank"><button class="btn btn-primary" id="post-listing">List a Property</button></a>
+        </div>
+    </div>
+    <div class="col-xs-12 filter-section nopadding">
+        <div class="btn-toolbar col-xs-4 col-sm-2 nopadding" role="toolbar">
+            <div class="toggle-btn-grp btn-group search_intent">
+                <button type="button" class="btn active" data-intent="sale">Sale</button>
+                <button type="button" class="btn " data-intent="rent">Rent</button>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-8 font12Regular nopadding">
+            <div id="leads-filters">
+                <div class="col-sm-3">
+                    <div class="filter-header">City</div>
+                    <select style="display: none;" name="city" class="custom-chosen" id="city">
+                        <option selected="selected" value="">--Select a City--</option>
+                        <option value="Ahmedabad">Ahmedabad</option><option value="Bangalore">Bangalore</option><option value="Chennai">Chennai</option><option value="Delhi-NCR">Delhi-NCR</option><option value="Bhiwadi">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bhiwadi</option><option value="Delhi">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delhi</option><option value="Dharuhera">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dharuhera</option><option value="Faridabad">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faridabad</option><option value="Ghaziabad">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ghaziabad</option><option value="Greater Noida">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Greater Noida</option><option value="Gurgaon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gurgaon</option><option value="Noida">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Noida</option><option value="Hyderabad">Hyderabad</option><option value="Kochi">Kochi</option><option value="Kolkata">Kolkata</option><option value="Mumbai">Mumbai</option><option value="Pune">Pune</option><option value="Adilabad">Adilabad</option><option value="Agra">Agra</option><option value="Ahmednagar">Ahmednagar</option><option value="Aizawl">Aizawl</option><option value="Ajmer">Ajmer</option><option value="Akola">Akola</option><option value="Alappuzha">Alappuzha</option><option value="Aligarh">Aligarh</option><option value="Allahabad">Allahabad</option><option value="Almora">Almora</option><option value="Alwar">Alwar</option><option value="Amarnath">Amarnath</option><option value="Ambala">Ambala</option><option value="Ambedkar Nagar">Ambedkar Nagar</option><option value="Amravati">Amravati</option><option value="Amreli">Amreli</option><option value="Amritsar">Amritsar</option><option value="Anand">Anand</option><option value="Anantapur">Anantapur</option><option value="Anantnag">Anantnag</option><option value="Andaman &amp; Nicobar">Andaman &amp; Nicobar</option><option value="Angul">Angul</option><option value="Anuppur">Anuppur</option><option value="Ara">Ara</option><option value="Araria">Araria</option><option value="Arwal">Arwal</option><option value="Asansol">Asansol</option><option value="Ashoknagar">Ashoknagar</option><option value="Auraiya">Auraiya</option><option value="Aurangabad">Aurangabad</option><option value="Azamgarh">Azamgarh</option><option value="Badgam">Badgam</option><option value="Bagalkot">Bagalkot</option><option value="Bageshwar">Bageshwar</option><option value="Baghpat">Baghpat</option><option value="Bahadurgarh">Bahadurgarh</option><option value="Bahraich">Bahraich</option><option value="Baksa">Baksa</option><option value="Balaghat">Balaghat</option><option value="Baleswar">Baleswar</option><option value="Ballia">Ballia</option><option value="Baloda Bazar">Baloda Bazar</option><option value="Balrampur">Balrampur</option><option value="Banaskantha">Banaskantha</option><option value="Banda">Banda</option><option value="Banka">Banka</option><option value="Bankura">Bankura</option><option value="Banswara">Banswara</option><option value="Barabanki">Barabanki</option><option value="Baramula">Baramula</option><option value="Baran">Baran</option><option value="Bardhaman">Bardhaman</option><option value="Bareilly">Bareilly</option><option value="Bargarh">Bargarh</option><option value="Barmer">Barmer</option><option value="Barnala">Barnala</option><option value="Barpeta">Barpeta</option><option value="Barwani">Barwani</option><option value="Bastar">Bastar</option><option value="Basti">Basti</option><option value="Bathinda">Bathinda</option><option value="Beawar">Beawar</option><option value="Beed">Beed</option><option value="Begusarai">Begusarai</option><option value="Belgaum">Belgaum</option><option value="Bellary">Bellary</option><option value="Betul">Betul</option><option value="Bhadrak">Bhadrak</option><option value="Bhagalpur">Bhagalpur</option><option value="Bhandara">Bhandara</option><option value="Bharatpur">Bharatpur</option><option value="Bharuch">Bharuch</option><option value="Bhavnagar">Bhavnagar</option><option value="Bhilai">Bhilai</option><option value="Bhilwara">Bhilwara</option><option value="Bhind">Bhind</option><option value="Bhiwandi">Bhiwandi</option><option value="Bhiwani">Bhiwani</option><option value="Bhojpur">Bhojpur</option><option value="Bhopal">Bhopal</option><option value="Bhramapur">Bhramapur</option><option value="Bhubaneswar">Bhubaneswar</option><option value="Bidar ">Bidar </option><option value="Bijapur">Bijapur</option><option value="Bijnor">Bijnor</option><option value="Bikaner">Bikaner</option><option value="Bilaspur">Bilaspur</option><option value="Billhaur">Billhaur</option><option value="Birbhum">Birbhum</option><option value="Bishnupur">Bishnupur</option><option value="Bokaro">Bokaro</option><option value="Bolangir">Bolangir</option><option value="Bongaigaon">Bongaigaon</option><option value="Boudh">Boudh</option><option value="Budaun">Budaun</option><option value="Bulandshahar">Bulandshahar</option><option value="Buldhana">Buldhana</option><option value="Bundi">Bundi</option><option value="Burhanpur">Burhanpur</option><option value="Buxar">Buxar</option><option value="Cachar">Cachar</option><option value="Calicut">Calicut</option><option value="Chamarajanagar ">Chamarajanagar </option><option value="Chamba">Chamba</option><option value="Chamoli">Chamoli</option><option value="Champawat">Champawat</option><option value="Champhai">Champhai</option><option value="Chandauli">Chandauli</option><option value="Chandel">Chandel</option><option value="Chandigarh">Chandigarh</option><option value="Chandrapur">Chandrapur</option><option value="Changlang">Changlang</option><option value="Chatra">Chatra</option><option value="Chhatarpur">Chhatarpur</option><option value="Chhindwara">Chhindwara</option><option value="Chikballapur">Chikballapur</option><option value="Chikkamaglur">Chikkamaglur</option><option value="Chirang">Chirang</option><option value="Chitiradurga">Chitiradurga</option><option value="Chitrakoot">Chitrakoot</option><option value="Chittoor">Chittoor</option><option value="Chittorgarh">Chittorgarh</option><option value="Churachandpur">Churachandpur</option><option value="Churu">Churu</option><option value="Coimbatore">Coimbatore</option><option value="Cooch Behar">Cooch Behar</option><option value="Coorg">Coorg</option><option value="Cuddalore">Cuddalore</option><option value="Cuttack">Cuttack</option><option value="Dadra &amp; Nagar Haveli">Dadra &amp; Nagar Haveli</option><option value="Dahod">Dahod</option><option value="Daman">Daman</option><option value="Damoh">Damoh</option><option value="Dantewada">Dantewada</option><option value="Darbhanga">Darbhanga</option><option value="Darjeeling">Darjeeling</option><option value="Darrang">Darrang</option><option value="Datia">Datia</option><option value="Dausa">Dausa</option><option value="Davanagere">Davanagere</option><option value="Debagarh">Debagarh</option><option value="Dehradun">Dehradun</option><option value="Deoghar">Deoghar</option><option value="Deoria">Deoria</option><option value="Dewas">Dewas</option><option value="Dhamtari">Dhamtari</option><option value="Dhanbad">Dhanbad</option><option value="Dhar">Dhar</option><option value="Dharmapuri">Dharmapuri</option><option value="Dhemaji">Dhemaji</option><option value="Dhenkanal">Dhenkanal</option><option value="Dholpur">Dholpur</option><option value="Dhubri">Dhubri</option><option value="Dhule">Dhule</option><option value="Dibrugarh">Dibrugarh</option><option value="Dimapur">Dimapur</option><option value="Dinajpur">Dinajpur</option><option value="Dindigul">Dindigul</option><option value="Dindori">Dindori</option><option value="Doda">Doda</option><option value="Dumka">Dumka</option><option value="Dungapur">Dungapur</option><option value="Durg">Durg</option><option value="Durgapur">Durgapur</option><option value="East Godavari">East Godavari</option><option value="East Kameng">East Kameng</option><option value="East Siang">East Siang</option><option value="Erode">Erode</option><option value="Etah">Etah</option><option value="Etawah">Etawah</option><option value="Faizabad">Faizabad</option><option value="Faridkot">Faridkot</option><option value="Farrukhabad">Farrukhabad</option><option value="Fatehabad">Fatehabad</option><option value="Fatehgarh Sahib">Fatehgarh Sahib</option><option value="Fatehpur">Fatehpur</option><option value="Firozabad">Firozabad</option><option value="Firozpur">Firozpur</option><option value="Gadag">Gadag</option><option value="Gadchiroli">Gadchiroli</option><option value="Gajapati">Gajapati</option><option value="Ganderbal">Ganderbal</option><option value="Gandhinagar">Gandhinagar</option><option value="Ganganagar">Ganganagar</option><option value="Gangtok">Gangtok</option><option value="Ganjam">Ganjam</option><option value="Garhwa">Garhwa</option><option value="Gautam Buddha Nagar">Gautam Buddha Nagar</option><option value="Gaya">Gaya</option><option value="Geyzing">Geyzing</option><option value="Ghazipur">Ghazipur</option><option value="Giridih">Giridih</option><option value="Goa">Goa</option><option value="Goalpara">Goalpara</option><option value="Godda">Godda</option><option value="Golaghat">Golaghat</option><option value="Gonda">Gonda</option><option value="Gondiya">Gondiya</option><option value="Gopalganj">Gopalganj</option><option value="Gorakhpur">Gorakhpur</option><option value="Gulbarga">Gulbarga</option><option value="Gumla">Gumla</option><option value="Guna">Guna</option><option value="Guntur">Guntur</option><option value="Gurdaspur">Gurdaspur</option><option value="Guruvayoor">Guruvayoor</option><option value="Guwahati">Guwahati</option><option value="Gwalior">Gwalior</option><option value="Hailakandi">Hailakandi</option><option value="Hamirpur">Hamirpur</option><option value="Hanumangarh">Hanumangarh</option><option value="Hapur">Hapur</option><option value="Harda">Harda</option><option value="Hardoi">Hardoi</option><option value="Haridwar">Haridwar</option><option value="Hassan">Hassan</option><option value="Hathras">Hathras</option><option value="Haveri">Haveri</option><option value="Hawai">Hawai</option><option value="Hazaribagh">Hazaribagh</option><option value="Hingoli">Hingoli</option><option value="Hisar">Hisar</option><option value="Hoshangabad">Hoshangabad</option><option value="Hoshiarpur">Hoshiarpur</option><option value="Hosur">Hosur</option><option value="Hubli-Dharwad">Hubli-Dharwad</option><option value="Idukki">Idukki</option><option value="Imphal">Imphal</option><option value="Indore">Indore</option><option value="Jabalpur">Jabalpur</option><option value="Jagatsinghpur">Jagatsinghpur</option><option value="Jaipur">Jaipur</option><option value="Jaisalmer">Jaisalmer</option><option value="Jajapur">Jajapur</option><option value="Jalandhar">Jalandhar</option><option value="Jalaun">Jalaun</option><option value="Jalgaon">Jalgaon</option><option value="Jalna">Jalna</option><option value="Jalore">Jalore</option><option value="Jalpaiguri">Jalpaiguri</option><option value="Jammu">Jammu</option><option value="Jamnagar">Jamnagar</option><option value="Jamshedpur">Jamshedpur</option><option value="Jamui">Jamui</option><option value="Janjgir-Champa">Janjgir-Champa</option><option value="Jashpur">Jashpur</option><option value="Jaunpur">Jaunpur</option><option value="Jehanabad">Jehanabad</option><option value="Jhabua">Jhabua</option><option value="Jhajjar">Jhajjar</option><option value="Jhalawar">Jhalawar</option><option value="Jhansi">Jhansi</option><option value="Jharsuguda">Jharsuguda</option><option value="Jind">Jind</option><option value="Jodhpur">Jodhpur</option><option value="Jorhat">Jorhat</option><option value="Juhnjhunun">Juhnjhunun</option><option value="Junagadh">Junagadh</option><option value="Jyotiba Phoole Nagar">Jyotiba Phoole Nagar</option><option value="Kadapa">Kadapa</option><option value="Kaimur">Kaimur</option><option value="Kaithal">Kaithal</option><option value="Kalahandi">Kalahandi</option><option value="Kamrup Metropolitan">Kamrup Metropolitan</option><option value="Kamrup Rural">Kamrup Rural</option><option value="Kanchipuram">Kanchipuram</option><option value="Kandhamal">Kandhamal</option><option value="Kangra">Kangra</option><option value="Kanker">Kanker</option><option value="Kannauj">Kannauj</option><option value="Kannur">Kannur</option><option value="Kanpur">Kanpur</option><option value="Kanyakumari">Kanyakumari</option><option value="Kapurthala">Kapurthala</option><option value="Karauli">Karauli</option><option value="Karbi Anglong">Karbi Anglong</option><option value="Kargil">Kargil</option><option value="Karimganj">Karimganj</option><option value="Karimnagar">Karimnagar</option><option value="Karnal">Karnal</option><option value="Karur">Karur</option><option value="Karwar">Karwar</option><option value="Kasaragod">Kasaragod</option><option value="Kathua">Kathua</option><option value="Katihar">Katihar</option><option value="Katni">Katni</option><option value="Kaushambi">Kaushambi</option><option value="Kawardha">Kawardha</option><option value="Kendrapara">Kendrapara</option><option value="Kendujhar">Kendujhar</option><option value="Khagaria">Khagaria</option><option value="Khammam">Khammam</option><option value="Khandwa">Khandwa</option><option value="Kharagpur">Kharagpur</option><option value="Khargone">Khargone</option><option value="Kheda">Kheda</option><option value="Kinnaur">Kinnaur</option><option value="Kishanganj">Kishanganj</option><option value="Kishtwar">Kishtwar</option><option value="Koderma">Koderma</option><option value="Kohima">Kohima</option><option value="Kokrajhar">Kokrajhar</option><option value="Kolar">Kolar</option><option value="Kolhapur">Kolhapur</option><option value="Kollam">Kollam</option><option value="Koppal">Koppal</option><option value="Koraput">Koraput</option><option value="Korba">Korba</option><option value="Koriya">Koriya</option><option value="Kota">Kota</option><option value="Kottayam">Kottayam</option><option value="Krishna">Krishna</option><option value="Krishnagiri">Krishnagiri</option><option value="Kulgam">Kulgam</option><option value="Kullu">Kullu</option><option value="Kupwara">Kupwara</option><option value="Kurnool">Kurnool</option><option value="Kurukshetra">Kurukshetra</option><option value="Kurung Kumey">Kurung Kumey</option><option value="Kushi Nagar ">Kushi Nagar </option><option value="Kutch">Kutch</option><option value="Lahaul and Spiti">Lahaul and Spiti</option><option value="Lakhimpur">Lakhimpur</option><option value="Lakhimpur Kheri">Lakhimpur Kheri</option><option value="Lakhisarai">Lakhisarai</option><option value="Lakshadweep">Lakshadweep</option><option value="Lalitpur">Lalitpur</option><option value="Latur">Latur</option><option value="Leh">Leh</option><option value="Lohardaga">Lohardaga</option><option value="Lohit">Lohit</option><option value="Lonavala">Lonavala</option><option value="Lower Dibang Valley">Lower Dibang Valley</option><option value="Lower Subansiri">Lower Subansiri</option><option value="Lucknow">Lucknow</option><option value="Ludhiana">Ludhiana</option><option value="Lunglei">Lunglei</option><option value="Madhepura">Madhepura</option><option value="Madhubani">Madhubani</option><option value="Madurai">Madurai</option><option value="Mahabubnagar">Mahabubnagar</option><option value="Maharajganj">Maharajganj</option><option value="Mahasamund">Mahasamund</option><option value="Mahendragarh">Mahendragarh</option><option value="Mahoba">Mahoba</option><option value="Mainpuri">Mainpuri</option><option value="Malappuram">Malappuram</option><option value="Malda">Malda</option><option value="Malkangiri">Malkangiri</option><option value="Mandi">Mandi</option><option value="Mandla">Mandla</option><option value="Mandsaur">Mandsaur</option><option value="Mandya">Mandya</option><option value="Mangalore">Mangalore</option><option value="Mansa">Mansa</option><option value="Marigaon">Marigaon</option><option value="Mathura">Mathura</option><option value="MAU">MAU</option><option value="Mayurbhanj">Mayurbhanj</option><option value="Medak">Medak</option><option value="Meerut">Meerut</option><option value="Mehsana">Mehsana</option><option value="Mewat">Mewat</option><option value="Midnapore">Midnapore</option><option value="Mirzapur">Mirzapur</option><option value="Moga">Moga</option><option value="Mohali">Mohali</option><option value="Mokokchung">Mokokchung</option><option value="Mon">Mon</option><option value="Moradabad">Moradabad</option><option value="Morbi">Morbi</option><option value="Morena">Morena</option><option value="Mukatsar">Mukatsar</option><option value="Munger">Munger</option><option value="Murshidabad">Murshidabad</option><option value="Mussoorie">Mussoorie</option><option value="Muzaffarnagar">Muzaffarnagar</option><option value="Muzaffarpur">Muzaffarpur</option><option value="Mysore">Mysore</option><option value="Nabarangpur">Nabarangpur</option><option value="Nagaon">Nagaon</option><option value="Nagapattinam">Nagapattinam</option><option value="Nagaur">Nagaur</option><option value="Nagpur">Nagpur</option><option value="Nainital">Nainital</option><option value="Nalanda">Nalanda</option><option value="Nalbari">Nalbari</option><option value="Nalgonda">Nalgonda</option><option value="Namakkal">Namakkal</option><option value="Namchi">Namchi</option><option value="Nanded">Nanded</option><option value="Nandurbar">Nandurbar</option><option value="Narayanpur">Narayanpur</option><option value="Narmada">Narmada</option><option value="Narsinghpur">Narsinghpur</option><option value="Nashik">Nashik</option><option value="Navi Mumbai">Navi Mumbai</option><option value="Navsari">Navsari</option><option value="Nawada">Nawada</option><option value="Nawan Shehar">Nawan Shehar</option><option value="Nayagarh">Nayagarh</option><option value="Neemrana">Neemrana</option><option value="Neemuch">Neemuch</option><option value="Nellore">Nellore</option><option value="Nizamabad">Nizamabad</option><option value="North Cachar Hills">North Cachar Hills</option><option value="North Tripura">North Tripura</option><option value="Nuapada">Nuapada</option><option value="Odalguri">Odalguri</option><option value="Ooty">Ooty</option><option value="Osmanabad">Osmanabad</option><option value="Pakur">Pakur</option><option value="Palakkad">Palakkad</option><option value="Palamu">Palamu</option><option value="Pali">Pali</option><option value="Panchmahal">Panchmahal</option><option value="Panipat">Panipat</option><option value="Panna">Panna</option><option value="Papum Pare">Papum Pare</option><option value="Parbhani">Parbhani</option><option value="Pashchim">Pashchim</option><option value="Patan">Patan</option><option value="Pathanamthitta">Pathanamthitta</option><option value="Patiala">Patiala</option><option value="Patna">Patna</option><option value="Pauri">Pauri</option><option value="Perambalur">Perambalur</option><option value="Phaltan">Phaltan</option><option value="Phek">Phek</option><option value="Pilibhit">Pilibhit</option><option value="Pithoragarh">Pithoragarh</option><option value="Pondicherry">Pondicherry</option><option value="Poonch">Poonch</option><option value="Porbandar">Porbandar</option><option value="Prakasam">Prakasam</option><option value="Pratapgarh">Pratapgarh</option><option value="Pudukkottai">Pudukkottai</option><option value="Pulwama">Pulwama</option><option value="Purba">Purba</option><option value="Purba Champaran">Purba Champaran</option><option value="Puri">Puri</option><option value="Purnia">Purnia</option><option value="Purulia">Purulia</option><option value="Puttaparthi">Puttaparthi</option><option value="Raebareli">Raebareli</option><option value="Raichur">Raichur</option><option value="Raigarh">Raigarh</option><option value="Raipur">Raipur</option><option value="Raisen">Raisen</option><option value="Rajahmundry">Rajahmundry</option><option value="Rajauri">Rajauri</option><option value="Rajgarh">Rajgarh</option><option value="Rajkot">Rajkot</option><option value="Rajnandgaon">Rajnandgaon</option><option value="Rajsamand">Rajsamand</option><option value="Ramanagram">Ramanagram</option><option value="Ramanathapuram">Ramanathapuram</option><option value="Ramban">Ramban</option><option value="Rampur">Rampur</option><option value="Ranchi">Ranchi</option><option value="Rangareddy">Rangareddy</option><option value="Ratlam">Ratlam</option><option value="Ratnagiri">Ratnagiri</option><option value="Raurkela">Raurkela</option><option value="Rayagada">Rayagada</option><option value="Reasi">Reasi</option><option value="Rewa">Rewa</option><option value="Rewari">Rewari</option><option value="Rohtak">Rohtak</option><option value="Rohtas">Rohtas</option><option value="Roorkee">Roorkee</option><option value="Rudraprayag">Rudraprayag</option><option value="Rudrapur">Rudrapur</option><option value="Rupnagar">Rupnagar</option><option value="Sabarkantha">Sabarkantha</option><option value="Sagar">Sagar</option><option value="Saharanpur">Saharanpur</option><option value="Saharsa">Saharsa</option><option value="Sahibganj">Sahibganj</option><option value="Salem">Salem</option><option value="Samastipur">Samastipur</option><option value="Samba">Samba</option><option value="Sambalpur">Sambalpur</option><option value="Sangli">Sangli</option><option value="Sangrur">Sangrur</option><option value="Sant Kabir Nagar">Sant Kabir Nagar</option><option value="Sant Ravidas Nagar">Sant Ravidas Nagar</option><option value="Saran">Saran</option><option value="Satara">Satara</option><option value="Satna">Satna</option><option value="Sawai">Sawai</option><option value="Sawai Madhopur">Sawai Madhopur</option><option value="Sehore">Sehore</option><option value="Senapati">Senapati</option><option value="Seoni">Seoni</option><option value="Shahdol">Shahdol</option><option value="Shahjahanpur">Shahjahanpur</option><option value="Shajapur">Shajapur</option><option value="Sheikhpura">Sheikhpura</option><option value="Sheohar">Sheohar</option><option value="Sheopur">Sheopur</option><option value="Shillong">Shillong</option><option value="Shimla">Shimla</option><option value="Shimoga">Shimoga</option><option value="Shivpuri">Shivpuri</option><option value="Shopian">Shopian</option><option value="Shravasti">Shravasti</option><option value="Sibsagar">Sibsagar</option><option value="Siddharth Nagar">Siddharth Nagar</option><option value="Sidhi">Sidhi</option><option value="Sikar">Sikar</option><option value="Siliguri">Siliguri</option><option value="Sindhudurg">Sindhudurg</option><option value="Singrauli">Singrauli</option><option value="Sirmaur">Sirmaur</option><option value="Sirohi">Sirohi</option><option value="Sirsa">Sirsa</option><option value="Sitamarhi">Sitamarhi</option><option value="Sitapur">Sitapur</option><option value="Sivaganga">Sivaganga</option><option value="Siwan">Siwan</option><option value="Solan">Solan</option><option value="Solapur">Solapur</option><option value="Sonbhadra">Sonbhadra</option><option value="Sonipat">Sonipat</option><option value="Sonitpur">Sonitpur</option><option value="South Tripura">South Tripura</option><option value="Srikakulam">Srikakulam</option><option value="Srinagar">Srinagar</option><option value="Srkakulam">Srkakulam</option><option value="Subarnapur">Subarnapur</option><option value="Sultanpur">Sultanpur</option><option value="Sundargarh">Sundargarh</option><option value="Supaul">Supaul</option><option value="Surat">Surat</option><option value="Surendranagar">Surendranagar</option><option value="Surguja">Surguja</option><option value="Tamenglong">Tamenglong</option><option value="Tapi">Tapi</option><option value="Tarn Taran">Tarn Taran</option><option value="Tawang">Tawang</option><option value="Tehri Garhwal">Tehri Garhwal</option><option value="Thane">Thane</option><option value="Thanjavur">Thanjavur</option><option value="The Dangs">The Dangs</option><option value="The Nilgiris">The Nilgiris</option><option value="Theni">Theni</option><option value="Thoothukudi">Thoothukudi</option><option value="Thoubal">Thoubal</option><option value="Thrissur">Thrissur</option><option value="Tikamgarh">Tikamgarh</option><option value="Tinsukia">Tinsukia</option><option value="Tirap">Tirap</option><option value="Tirunelveli">Tirunelveli</option><option value="Tirupati">Tirupati</option><option value="Tiruppur">Tiruppur</option><option value="Tiruvannamalai">Tiruvannamalai</option><option value="Tonk">Tonk</option><option value="Trichy">Trichy</option><option value="Trivandrum">Trivandrum</option><option value="Tuensang">Tuensang</option><option value="Tumkur">Tumkur</option><option value="Udaipur">Udaipur</option><option value="Udham Singh Nagar">Udham Singh Nagar</option><option value="Udhampur">Udhampur</option><option value="Udupi">Udupi</option><option value="Ujjain">Ujjain</option><option value="Ukhrul">Ukhrul</option><option value="Ulhasnagar">Ulhasnagar</option><option value="Umaria">Umaria</option><option value="Una">Una</option><option value="Unnao">Unnao</option><option value="Upper Dibang Valley">Upper Dibang Valley</option><option value="Upper Siang">Upper Siang</option><option value="Upper Subansiri">Upper Subansiri</option><option value="Uttar Kannada">Uttar Kannada</option><option value="Uttarkashi">Uttarkashi</option><option value="Vadodara">Vadodara</option><option value="Vaishali">Vaishali</option><option value="Valsad">Valsad</option><option value="Varanasi">Varanasi</option><option value="Vellore">Vellore</option><option value="Vidisha">Vidisha</option><option value="Vijayawada">Vijayawada</option><option value="Villupuram">Villupuram</option><option value="Virudhunagar">Virudhunagar</option><option value="Visakhapatnam">Visakhapatnam</option><option value="Vizianagaram">Vizianagaram</option><option value="Warangal">Warangal</option><option value="Wardha">Wardha</option><option value="Washim">Washim</option><option value="Wayanad">Wayanad</option><option value="West Godavari">West Godavari</option><option value="West Kameng">West Kameng</option><option value="West Siang">West Siang</option><option value="West Tripura">West Tripura</option><option value="Wokha">Wokha</option><option value="Yamunanagar">Yamunanagar</option><option value="Yavatmal">Yavatmal</option><option value="Zunheboto">Zunheboto</option>                    </select><div id="city_chosen" title="" style="width: 93px;" class="chosen-container chosen-container-single"><a class="chosen-single" tabindex="-1"><span>--Select a City--</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input autocomplete="off" type="text"></div><ul class="chosen-results"></ul></div></div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="filter-header">Locality</div>
+                    <div id="gl_hidden_fields_container"></div>
+                    <input autocomplete="off" id="get-leads-filter-location" type="text">
+                    <a href="javascript:void(0);" class="custom-link" id="localities-chosen"></a>
+                </div>
+                <div class="col-sm-3">
+                    <div class="filter-header">Projects</div>
+                    <div id="gl_community_hidden_fields_container"></div>
+                    <input autocomplete="off" id="get-leads-filter-community" type="text">
+                    <a href="javascript:void(0);" class="custom-link" id="community-chosen"></a>
+                </div>
+                <div class="col-sm-3">
+                    <div class="filter-header">Property Type</div>
+                    <select style="display: none;" name="house_type[]" id="get-leads-proptype" class="drop-down-ms" multiple="multiple">
+                       <option value="Apartment">Apartment</option>
+                       <option value="House">Individual House</option>
+                       <option value="Row House">Row House</option>
+                       <option value="Villa">Villa</option>
+                       <option value="Plot">Plot</option>
+                       <option value="Builder Floor">Builder Floor</option>
+                       <option value="Penthouse">Penthouse</option>
+                       <option value="Farmhouse">Farm house</option>
+                       <option value="Service Apartment">Service Apartment</option>
+                       <option value="Studio Apartment">Studio Apartment</option>
+                    </select><div class="btn-group"><button title="None selected" type="button" class="multiselect dropdown-toggle btn btn-default" data-toggle="dropdown"><span class="multiselect-selected-text">None selected</span> <b class="caret"></b></button><ul class="multiselect-container dropdown-menu"><li><a tabindex="0"><label class="checkbox"><input value="Apartment" type="checkbox"> Apartment</label></a></li><li><a tabindex="0"><label class="checkbox"><input value="House" type="checkbox"> Individual House</label></a></li><li><a tabindex="0"><label class="checkbox"><input value="Row House" type="checkbox"> Row House</label></a></li><li><a tabindex="0"><label class="checkbox"><input value="Villa" type="checkbox"> Villa</label></a></li><li><a tabindex="0"><label class="checkbox"><input value="Plot" type="checkbox"> Plot</label></a></li><li><a tabindex="0"><label class="checkbox"><input value="Builder Floor" type="checkbox"> Builder Floor</label></a></li><li><a tabindex="0"><label class="checkbox"><input value="Penthouse" type="checkbox"> Penthouse</label></a></li><li><a tabindex="0"><label class="checkbox"><input value="Farmhouse" type="checkbox"> Farm house</label></a></li><li><a tabindex="0"><label class="checkbox"><input value="Service Apartment" type="checkbox"> Service Apartment</label></a></li><li><a tabindex="0"><label class="checkbox"><input value="Studio Apartment" type="checkbox"> Studio Apartment</label></a></li></ul></div>
+                </div>
+                <div id="advanced-filter-section" style="display:none;clear:both">
+                    <div class="col-sm-5" style="" id="budget-section">
+                        <div class="filter-header">Budget</div>
+                        <select style="display: none;" name="min_inr_budget" class="drop-down-ms">
+                            <option selected="selected" value="min">Min</option>
+                                                            <option value="999999">&lt; 10 Lakhs</option>
+                                                            <option value="1000000">10 Lakhs</option>
+                                                            <option value="1500000">15 Lakhs</option>
+                                                            <option value="2000000">20 Lakhs</option>
+                                                            <option value="2500000">25 Lakhs</option>
+                                                            <option value="3000000">30 Lakhs</option>
+                                                            <option value="4000000">40 Lakhs</option>
+                                                            <option value="5000000">50 Lakhs</option>
+                                                            <option value="6000000">60 Lakhs</option>
+                                                            <option value="7000000">70 Lakhs</option>
+                                                            <option value="7500000">75 Lakhs</option>
+                                                            <option value="8000000">80 Lakhs</option>
+                                                            <option value="9000000">90 Lakhs</option>
+                                                            <option value="10000000">1 Crore</option>
+                                                            <option value="15000000">1.5 Crore</option>
+                                                            <option value="20000000">2 Crores</option>
+                                                            <option value="30000000">3 Crores</option>
+                                                            <option value="40000000">4 Crores</option>
+                                                            <option value="50000000">5 Crores</option>
+                                                            <option value="60000000">6 Crores</option>
+                                                            <option value="70000000">7 Crores</option>
+                                                            <option value="80000000">8 Crores</option>
+                                                            <option value="90000000">9 Crores</option>
+                                                            <option value="100000000">10 Crores</option>
+                                                            <option value="120000000">12 Crores</option>
+                                                            <option value="150000000">15 Crores</option>
+                                                            <option value="200000000">20 Crores</option>
+                                                            <option value="300000000">30 Crores</option>
+                                                            <option value="400000000">40 Crores</option>
+                                                            <option value="500000000">50 Crores</option>
+                                                            <option value="600000000">60 Crores</option>
+                                                            <option value="700000000">70 Crores</option>
+                                                            <option value="800000000">80 Crores</option>
+                                                            <option value="900000000">90 Crores</option>
+                                                            <option value="999999900">&gt; 90 Crores</option>
+                                                    </select><div class="btn-group"><button title="Min" type="button" class="multiselect dropdown-toggle btn btn-default" data-toggle="dropdown"><span class="multiselect-selected-text">Min</span> <b class="caret"></b></button><ul class="multiselect-container dropdown-menu"><li class="active"><a tabindex="0"><label class="radio"><input checked="checked" value="min" type="radio"> Min</label></a></li><li><a tabindex="0"><label class="radio"><input value="999999" type="radio"> &lt; 10 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="1000000" type="radio"> 10 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="1500000" type="radio"> 15 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="2000000" type="radio"> 20 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="2500000" type="radio"> 25 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="3000000" type="radio"> 30 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="4000000" type="radio"> 40 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="5000000" type="radio"> 50 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="6000000" type="radio"> 60 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="7000000" type="radio"> 70 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="7500000" type="radio"> 75 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="8000000" type="radio"> 80 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="9000000" type="radio"> 90 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="10000000" type="radio"> 1 Crore</label></a></li><li><a tabindex="0"><label class="radio"><input value="15000000" type="radio"> 1.5 Crore</label></a></li><li><a tabindex="0"><label class="radio"><input value="20000000" type="radio"> 2 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="30000000" type="radio"> 3 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="40000000" type="radio"> 4 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="50000000" type="radio"> 5 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="60000000" type="radio"> 6 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="70000000" type="radio"> 7 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="80000000" type="radio"> 8 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="90000000" type="radio"> 9 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="100000000" type="radio"> 10 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="120000000" type="radio"> 12 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="150000000" type="radio"> 15 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="200000000" type="radio"> 20 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="300000000" type="radio"> 30 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="400000000" type="radio"> 40 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="500000000" type="radio"> 50 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="600000000" type="radio"> 60 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="700000000" type="radio"> 70 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="800000000" type="radio"> 80 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="900000000" type="radio"> 90 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="999999900" type="radio"> &gt; 90 Crores</label></a></li></ul></div>
+                        <select style="display: none;" name="max_inr_budget" class="drop-down-ms">
+                            <option selected="selected" value="max">Max</option>
+                                                            <option value="999999">&lt; 10 Lakhs</option>
+                                                            <option value="1000000">10 Lakhs</option>
+                                                            <option value="1500000">15 Lakhs</option>
+                                                            <option value="2000000">20 Lakhs</option>
+                                                            <option value="2500000">25 Lakhs</option>
+                                                            <option value="3000000">30 Lakhs</option>
+                                                            <option value="4000000">40 Lakhs</option>
+                                                            <option value="5000000">50 Lakhs</option>
+                                                            <option value="6000000">60 Lakhs</option>
+                                                            <option value="7000000">70 Lakhs</option>
+                                                            <option value="7500000">75 Lakhs</option>
+                                                            <option value="8000000">80 Lakhs</option>
+                                                            <option value="9000000">90 Lakhs</option>
+                                                            <option value="10000000">1 Crore</option>
+                                                            <option value="15000000">1.5 Crore</option>
+                                                            <option value="20000000">2 Crores</option>
+                                                            <option value="30000000">3 Crores</option>
+                                                            <option value="40000000">4 Crores</option>
+                                                            <option value="50000000">5 Crores</option>
+                                                            <option value="60000000">6 Crores</option>
+                                                            <option value="70000000">7 Crores</option>
+                                                            <option value="80000000">8 Crores</option>
+                                                            <option value="90000000">9 Crores</option>
+                                                            <option value="100000000">10 Crores</option>
+                                                            <option value="120000000">12 Crores</option>
+                                                            <option value="150000000">15 Crores</option>
+                                                            <option value="200000000">20 Crores</option>
+                                                            <option value="300000000">30 Crores</option>
+                                                            <option value="400000000">40 Crores</option>
+                                                            <option value="500000000">50 Crores</option>
+                                                            <option value="600000000">60 Crores</option>
+                                                            <option value="700000000">70 Crores</option>
+                                                            <option value="800000000">80 Crores</option>
+                                                            <option value="900000000">90 Crores</option>
+                                                            <option value="999999900">&gt; 90 Crores</option>
+                                                    </select><div class="btn-group"><button title="Max" type="button" class="multiselect dropdown-toggle btn btn-default" data-toggle="dropdown"><span class="multiselect-selected-text">Max</span> <b class="caret"></b></button><ul class="multiselect-container dropdown-menu"><li class="active"><a tabindex="0"><label class="radio"><input checked="checked" value="max" type="radio"> Max</label></a></li><li><a tabindex="0"><label class="radio"><input value="999999" type="radio"> &lt; 10 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="1000000" type="radio"> 10 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="1500000" type="radio"> 15 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="2000000" type="radio"> 20 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="2500000" type="radio"> 25 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="3000000" type="radio"> 30 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="4000000" type="radio"> 40 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="5000000" type="radio"> 50 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="6000000" type="radio"> 60 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="7000000" type="radio"> 70 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="7500000" type="radio"> 75 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="8000000" type="radio"> 80 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="9000000" type="radio"> 90 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="10000000" type="radio"> 1 Crore</label></a></li><li><a tabindex="0"><label class="radio"><input value="15000000" type="radio"> 1.5 Crore</label></a></li><li><a tabindex="0"><label class="radio"><input value="20000000" type="radio"> 2 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="30000000" type="radio"> 3 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="40000000" type="radio"> 4 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="50000000" type="radio"> 5 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="60000000" type="radio"> 6 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="70000000" type="radio"> 7 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="80000000" type="radio"> 8 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="90000000" type="radio"> 9 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="100000000" type="radio"> 10 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="120000000" type="radio"> 12 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="150000000" type="radio"> 15 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="200000000" type="radio"> 20 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="300000000" type="radio"> 30 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="400000000" type="radio"> 40 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="500000000" type="radio"> 50 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="600000000" type="radio"> 60 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="700000000" type="radio"> 70 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="800000000" type="radio"> 80 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="900000000" type="radio"> 90 Crores</label></a></li><li><a tabindex="0"><label class="radio"><input value="999999900" type="radio"> &gt; 90 Crores</label></a></li></ul></div>
+                    </div>
+                    <div class="col-sm-5" style="display:none;" id="rent-section">
+                        <div class="filter-header">Monthly Rent</div>
+                        <select style="display: none;" name="min_inr_rent" class="drop-down-ms">
+                            <option selected="selected" value="min">Min</option>
+                                                            <option value="4999">&lt; 5,000</option>
+                                                            <option value="5000">5,000</option>
+                                                            <option value="8000">8,000</option>
+                                                            <option value="10000">10,000</option>
+                                                            <option value="12000">12,000</option>
+                                                            <option value="15000">15,000</option>
+                                                            <option value="20000">20,000</option>
+                                                            <option value="25000">25,000</option>
+                                                            <option value="30000">30,000</option>
+                                                            <option value="35000">35,000</option>
+                                                            <option value="40000">40,000</option>
+                                                            <option value="50000">50,000</option>
+                                                            <option value="60000">60,000</option>
+                                                            <option value="70000">70,000</option>
+                                                            <option value="80000">80,000</option>
+                                                            <option value="90000">90,000</option>
+                                                            <option value="100000">1 Lakh</option>
+                                                            <option value="150000">1.5 Lakhs</option>
+                                                            <option value="200000">2 Lakhs</option>
+                                                            <option value="300000">3 Lakhs</option>
+                                                            <option value="400000">4 Lakhs</option>
+                                                            <option value="500000">5 Lakhs</option>
+                                                            <option value="600000">6 Lakhs</option>
+                                                            <option value="700000">7 Lakhs</option>
+                                                            <option value="800000">8 Lakhs</option>
+                                                            <option value="900000">9 Lakhs</option>
+                                                            <option value="1000000">10 Lakhs</option>
+                                                            <option value="9999900">&gt; 10 Lakhs</option>
+                                                    </select><div class="btn-group"><button title="Min" type="button" class="multiselect dropdown-toggle btn btn-default" data-toggle="dropdown"><span class="multiselect-selected-text">Min</span> <b class="caret"></b></button><ul class="multiselect-container dropdown-menu"><li class="active"><a tabindex="0"><label class="radio"><input checked="checked" value="min" type="radio"> Min</label></a></li><li><a tabindex="0"><label class="radio"><input value="4999" type="radio"> &lt; 5,000</label></a></li><li><a tabindex="0"><label class="radio"><input value="5000" type="radio"> 5,000</label></a></li><li><a tabindex="0"><label class="radio"><input value="8000" type="radio"> 8,000</label></a></li><li><a tabindex="0"><label class="radio"><input value="10000" type="radio"> 10,000</label></a></li><li><a tabindex="0"><label class="radio"><input value="12000" type="radio"> 12,000</label></a></li><li><a tabindex="0"><label class="radio"><input value="15000" type="radio"> 15,000</label></a></li><li><a tabindex="0"><label class="radio"><input value="20000" type="radio"> 20,000</label></a></li><li><a tabindex="0"><label class="radio"><input value="25000" type="radio"> 25,000</label></a></li><li><a tabindex="0"><label class="radio"><input value="30000" type="radio"> 30,000</label></a></li><li><a tabindex="0"><label class="radio"><input value="35000" type="radio"> 35,000</label></a></li><li><a tabindex="0"><label class="radio"><input value="40000" type="radio"> 40,000</label></a></li><li><a tabindex="0"><label class="radio"><input value="50000" type="radio"> 50,000</label></a></li><li><a tabindex="0"><label class="radio"><input value="60000" type="radio"> 60,000</label></a></li><li><a tabindex="0"><label class="radio"><input value="70000" type="radio"> 70,000</label></a></li><li><a tabindex="0"><label class="radio"><input value="80000" type="radio"> 80,000</label></a></li><li><a tabindex="0"><label class="radio"><input value="90000" type="radio"> 90,000</label></a></li><li><a tabindex="0"><label class="radio"><input value="100000" type="radio"> 1 Lakh</label></a></li><li><a tabindex="0"><label class="radio"><input value="150000" type="radio"> 1.5 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="200000" type="radio"> 2 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="300000" type="radio"> 3 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="400000" type="radio"> 4 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="500000" type="radio"> 5 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="600000" type="radio"> 6 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="700000" type="radio"> 7 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="800000" type="radio"> 8 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="900000" type="radio"> 9 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="1000000" type="radio"> 10 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="9999900" type="radio"> &gt; 10 Lakhs</label></a></li></ul></div>
+                        <select style="display: none;" name="max_inr_rent" class="drop-down-ms">
+                            <option selected="selected" value="max">Max</option>
+                                                            <option value="4999">&lt; 5,000</option>
+                                                            <option value="5000">5,000</option>
+                                                            <option value="8000">8,000</option>
+                                                            <option value="10000">10,000</option>
+                                                            <option value="12000">12,000</option>
+                                                            <option value="15000">15,000</option>
+                                                            <option value="20000">20,000</option>
+                                                            <option value="25000">25,000</option>
+                                                            <option value="30000">30,000</option>
+                                                            <option value="35000">35,000</option>
+                                                            <option value="40000">40,000</option>
+                                                            <option value="50000">50,000</option>
+                                                            <option value="60000">60,000</option>
+                                                            <option value="70000">70,000</option>
+                                                            <option value="80000">80,000</option>
+                                                            <option value="90000">90,000</option>
+                                                            <option value="100000">1 Lakh</option>
+                                                            <option value="150000">1.5 Lakhs</option>
+                                                            <option value="200000">2 Lakhs</option>
+                                                            <option value="300000">3 Lakhs</option>
+                                                            <option value="400000">4 Lakhs</option>
+                                                            <option value="500000">5 Lakhs</option>
+                                                            <option value="600000">6 Lakhs</option>
+                                                            <option value="700000">7 Lakhs</option>
+                                                            <option value="800000">8 Lakhs</option>
+                                                            <option value="900000">9 Lakhs</option>
+                                                            <option value="1000000">10 Lakhs</option>
+                                                            <option value="9999900">&gt; 10 Lakhs</option>
+                                                    </select><div class="btn-group"><button title="Max" type="button" class="multiselect dropdown-toggle btn btn-default" data-toggle="dropdown"><span class="multiselect-selected-text">Max</span> <b class="caret"></b></button><ul class="multiselect-container dropdown-menu"><li class="active"><a tabindex="0"><label class="radio"><input checked="checked" value="max" type="radio"> Max</label></a></li><li><a tabindex="0"><label class="radio"><input value="4999" type="radio"> &lt; 5,000</label></a></li><li><a tabindex="0"><label class="radio"><input value="5000" type="radio"> 5,000</label></a></li><li><a tabindex="0"><label class="radio"><input value="8000" type="radio"> 8,000</label></a></li><li><a tabindex="0"><label class="radio"><input value="10000" type="radio"> 10,000</label></a></li><li><a tabindex="0"><label class="radio"><input value="12000" type="radio"> 12,000</label></a></li><li><a tabindex="0"><label class="radio"><input value="15000" type="radio"> 15,000</label></a></li><li><a tabindex="0"><label class="radio"><input value="20000" type="radio"> 20,000</label></a></li><li><a tabindex="0"><label class="radio"><input value="25000" type="radio"> 25,000</label></a></li><li><a tabindex="0"><label class="radio"><input value="30000" type="radio"> 30,000</label></a></li><li><a tabindex="0"><label class="radio"><input value="35000" type="radio"> 35,000</label></a></li><li><a tabindex="0"><label class="radio"><input value="40000" type="radio"> 40,000</label></a></li><li><a tabindex="0"><label class="radio"><input value="50000" type="radio"> 50,000</label></a></li><li><a tabindex="0"><label class="radio"><input value="60000" type="radio"> 60,000</label></a></li><li><a tabindex="0"><label class="radio"><input value="70000" type="radio"> 70,000</label></a></li><li><a tabindex="0"><label class="radio"><input value="80000" type="radio"> 80,000</label></a></li><li><a tabindex="0"><label class="radio"><input value="90000" type="radio"> 90,000</label></a></li><li><a tabindex="0"><label class="radio"><input value="100000" type="radio"> 1 Lakh</label></a></li><li><a tabindex="0"><label class="radio"><input value="150000" type="radio"> 1.5 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="200000" type="radio"> 2 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="300000" type="radio"> 3 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="400000" type="radio"> 4 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="500000" type="radio"> 5 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="600000" type="radio"> 6 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="700000" type="radio"> 7 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="800000" type="radio"> 8 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="900000" type="radio"> 9 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="1000000" type="radio"> 10 Lakhs</label></a></li><li><a tabindex="0"><label class="radio"><input value="9999900" type="radio"> &gt; 10 Lakhs</label></a></li></ul></div>
+                    </div>
+                    <div class="col-sm-4" id="bedrooms-section">
+                        <div class="filter-header">Bed rooms</div>
+                        <select style="display: none;" name="bed_rooms[]" class="drop-down-ms" multiple="multiple" id="get-leads-bedrooms">
+                            <option value="1">1 BHK</option>
+                            <option value="1.5">1.5 BHK</option>
+                            <option value="2">2 BHK</option>
+                            <option value="2.5">2.5 BHK</option>
+                            <option value="3">3 BHK</option>
+                            <option value="3.5">3.5 BHK</option>
+                            <option value="4">4 BHK</option>
+                            <option value="4.5">4.5 BHK</option>
+                            <option value="5">5 BHK</option>
+                            <option value="6">6 BHK</option>
+                            <option value="6">6+ BHK</option>
+                        </select><div class="btn-group"><button title="None selected" type="button" class="multiselect dropdown-toggle btn btn-default" data-toggle="dropdown"><span class="multiselect-selected-text">None selected</span> <b class="caret"></b></button><ul class="multiselect-container dropdown-menu"><li><a tabindex="0"><label class="checkbox"><input value="1" type="checkbox"> 1 BHK</label></a></li><li><a tabindex="0"><label class="checkbox"><input value="1.5" type="checkbox"> 1.5 BHK</label></a></li><li><a tabindex="0"><label class="checkbox"><input value="2" type="checkbox"> 2 BHK</label></a></li><li><a tabindex="0"><label class="checkbox"><input value="2.5" type="checkbox"> 2.5 BHK</label></a></li><li><a tabindex="0"><label class="checkbox"><input value="3" type="checkbox"> 3 BHK</label></a></li><li><a tabindex="0"><label class="checkbox"><input value="3.5" type="checkbox"> 3.5 BHK</label></a></li><li><a tabindex="0"><label class="checkbox"><input value="4" type="checkbox"> 4 BHK</label></a></li><li><a tabindex="0"><label class="checkbox"><input value="4.5" type="checkbox"> 4.5 BHK</label></a></li><li><a tabindex="0"><label class="checkbox"><input value="5" type="checkbox"> 5 BHK</label></a></li><li><a tabindex="0"><label class="checkbox"><input value="6" type="checkbox"> 6 BHK</label></a></li><li><a tabindex="0"><label class="checkbox"><input value="6" type="checkbox"> 6+ BHK</label></a></li></ul></div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="filter-header">Need by</div>
+                       <select style="display: none;" name="want_within" id="want_within" class="drop-down-ms">
+                            <option value="0" selected="selected">Immediate</option>
+                            <option value="15">15 Days</option>
+                            <option value="30">One Month</option>
+                            <option value="180">Six Months</option>
+                            <option value="365">One Year</option>
+                        </select><div class="btn-group"><button title="Immediate" type="button" class="multiselect dropdown-toggle btn btn-default" data-toggle="dropdown"><span class="multiselect-selected-text">Immediate</span> <b class="caret"></b></button><ul class="multiselect-container dropdown-menu"><li class="active"><a tabindex="0"><label class="radio"><input checked="checked" value="0" type="radio"> Immediate</label></a></li><li><a tabindex="0"><label class="radio"><input value="15" type="radio"> 15 Days</label></a></li><li><a tabindex="0"><label class="radio"><input value="30" type="radio"> One Month</label></a></li><li><a tabindex="0"><label class="radio"><input value="180" type="radio"> Six Months</label></a></li><li><a tabindex="0"><label class="radio"><input value="365" type="radio"> One Year</label></a></li></ul></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-4 col-sm-2 nopadding"><button id="gl-search-btn" class="btn btn-primary pull-right">Search</button></div>
+    </div>
+    <div class="advanced-filters font12Light"><a id="advanced-filter-button" state="min" href="javascript:void(0);"><span>+</span> Advanced Filters</a></div>
+
+    <div class="dashboard-box col-xs-12 font16Regular"><span class="font16SemiBold">
+         168932    </span> Results</div>
+
+            <div class="col-xs-12 page-mylistings-details" style="padding:0px;">
+            <div class="listings-contact-detail-container">
+
+                <div>
+                    <span class="pull-left"><small>Looking For</small></span>
+                    <span class="pull-right">
+                        <span class="secondary-text"><i class="icon-cf icon-cf-rupee"></i>
+                            9.99L  - 20L                        </span>
+                    </span>
+                </div>
+
+                <div style="padding-bottom: 10px;border-bottom: solid 1px #ccc;">
+                    <div class="col-sm-2 col-xs-12">
+                        <div><i class="icon-cf icon-cf-bed"></i>
+                            1 
+                            <small>BHK</small>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-xs-12">
+                        <div><i class="icon-cf icon-cf-home"></i>
+                            Apartment                        </div>
+                    </div>
+                     <div class="col-sm-5 col-xs-12">
+                        <div><i class="icon-cf icon-cf-gps"></i>
+                            Wadgaon Sheri, Pune                        </div>
+                     </div>
+                </div>
+
+                <div class="col-sm-12 listings-contact-info">
+                    <div class="col-xs-3 pull-right text-center">Freshness :<b>
+                        21 mins                     </b></div>
+                    <div class="col-xs-3 pull-right text-center">Want Within : <b>
+                        Immediate
+                    </b></div>
+                    <!--<div class="col-xs-3 pull-right text-center">By : <b>Kadam</b></div> -->
+                </div>
+                <div class="pull-right"><i><small>(0.28 Credit)</small></i></div>
+                                    <div style="clear:right;position:relative;">
+                                                <div class="pull-right">
+                                <button credit-val="0.28" class="btn btn-info pull-right vci-btn" listing-id="5513af959414c">See Contact Info.</button>
+                                                                    <div class="pull-right" style="margin:5px;"><i class="icon-cf icon-cf-mobile"></i><i class="icon-cf icon-cf-verified mob-verified"></i></div>
+                                                            </div>
+                    </div>
+                            </div>
+       </div>
+            <div class="col-xs-12 page-mylistings-details" style="padding:0px;">
+            <div class="listings-contact-detail-container">
+
+                <div>
+                    <span class="pull-left"><small>Looking For</small></span>
+                    <span class="pull-right">
+                        <span class="secondary-text"><i class="icon-cf icon-cf-rupee"></i>
+                            15L  - 25L                        </span>
+                    </span>
+                </div>
+
+                <div style="padding-bottom: 10px;border-bottom: solid 1px #ccc;">
+                    <div class="col-sm-2 col-xs-12">
+                        <div><i class="icon-cf icon-cf-bed"></i>
+                            1 
+                            <small>BHK</small>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-xs-12">
+                        <div><i class="icon-cf icon-cf-home"></i>
+                            Apartment                        </div>
+                    </div>
+                     <div class="col-sm-5 col-xs-12">
+                        <div><i class="icon-cf icon-cf-gps"></i>
+                            Pimpri, Pune                        </div>
+                     </div>
+                </div>
+
+                <div class="col-sm-12 listings-contact-info">
+                    <div class="col-xs-3 pull-right text-center">Freshness :<b>
+                        21 mins                     </b></div>
+                    <div class="col-xs-3 pull-right text-center">Want Within : <b>
+                        Immediate
+                    </b></div>
+                    <!--<div class="col-xs-3 pull-right text-center">By : <b>Ravindra</b></div> -->
+                </div>
+                <div class="pull-right"><i><small>(0.33 Credit)</small></i></div>
+                                    <div style="clear:right;position:relative;">
+                                                <div class="pull-right">
+                                <button credit-val="0.33" class="btn btn-info pull-right vci-btn" listing-id="5513af957b6a4">See Contact Info.</button>
+                                                            </div>
+                    </div>
+                            </div>
+       </div>
+            <div class="col-xs-12 page-mylistings-details" style="padding:0px;">
+            <div class="listings-contact-detail-container">
+
+                <div>
+                    <span class="pull-left"><small>Looking For</small></span>
+                    <span class="pull-right">
+                        <span class="secondary-text"><i class="icon-cf icon-cf-rupee"></i>
+                            40L  - 60L                        </span>
+                    </span>
+                </div>
+
+                <div style="padding-bottom: 10px;border-bottom: solid 1px #ccc;">
+                    <div class="col-sm-2 col-xs-12">
+                        <div><i class="icon-cf icon-cf-bed"></i>
+                            1 
+                            <small>BHK</small>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-xs-12">
+                        <div><i class="icon-cf icon-cf-home"></i>
+                            Apartment                        </div>
+                    </div>
+                     <div class="col-sm-5 col-xs-12">
+                        <div><i class="icon-cf icon-cf-gps"></i>
+                            New Gurgaon, Gurgaon                        </div>
+                     </div>
+                </div>
+
+                <div class="col-sm-12 listings-contact-info">
+                    <div class="col-xs-3 pull-right text-center">Freshness :<b>
+                        22 mins                     </b></div>
+                    <div class="col-xs-3 pull-right text-center">Want Within : <b>
+                        Immediate
+                    </b></div>
+                    <!--<div class="col-xs-3 pull-right text-center">By : <b>Jatin</b></div> -->
+                </div>
+                <div class="pull-right"><i><small>(0.6 Credit)</small></i></div>
+                                    <div style="clear:right;position:relative;">
+                                                <div class="pull-right">
+                                <button credit-val="0.6" class="btn btn-info pull-right vci-btn" listing-id="5513af829b127">See Contact Info.</button>
+                                                                    <div class="pull-right" style="margin:5px;"><i class="icon-cf icon-cf-mobile"></i><i class="icon-cf icon-cf-verified mob-verified"></i></div>
+                                                            </div>
+                    </div>
+                            </div>
+       </div>
+            <div class="col-xs-12 page-mylistings-details" style="padding:0px;">
+            <div class="listings-contact-detail-container">
+
+                <div>
+                    <span class="pull-left"><small>Looking For</small></span>
+                    <span class="pull-right">
+                        <span class="secondary-text"><i class="icon-cf icon-cf-rupee"></i>
+                            18.80L  - 21.20L                        </span>
+                    </span>
+                </div>
+
+                <div style="padding-bottom: 10px;border-bottom: solid 1px #ccc;">
+                    <div class="col-sm-2 col-xs-12">
+                        <div><i class="icon-cf icon-cf-bed"></i>
+                            2 
+                            <small>BHK</small>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-xs-12">
+                        <div><i class="icon-cf icon-cf-home"></i>
+                            Apartment                        </div>
+                    </div>
+                     <div class="col-sm-5 col-xs-12">
+                        <div><i class="icon-cf icon-cf-gps"></i>
+                            Buti Bori, Nagpur                        </div>
+                     </div>
+                </div>
+
+                <div class="col-sm-12 listings-contact-info">
+                    <div class="col-xs-3 pull-right text-center">Freshness :<b>
+                        22 mins                     </b></div>
+                    <div class="col-xs-3 pull-right text-center">Want Within : <b>
+                        Immediate
+                    </b></div>
+                    <!--<div class="col-xs-3 pull-right text-center">By : <b>mahesh</b></div> -->
+                </div>
+                <div class="pull-right"><i><small>(0.16 Credit)</small></i></div>
+                                    <div style="clear:right;position:relative;">
+                                                <div class="pull-right">
+                                <button credit-val="0.16" class="btn btn-info pull-right vci-btn" listing-id="5513af7f598cf">See Contact Info.</button>
+                                                            </div>
+                    </div>
+                            </div>
+       </div>
+            <div class="col-xs-12 page-mylistings-details" style="padding:0px;">
+            <div class="listings-contact-detail-container">
+
+                <div>
+                    <span class="pull-left"><small>Looking For</small></span>
+                    <span class="pull-right">
+                        <span class="secondary-text"><i class="icon-cf icon-cf-rupee"></i>
+                            61.10L  - 68.90L                        </span>
+                    </span>
+                </div>
+
+                <div style="padding-bottom: 10px;border-bottom: solid 1px #ccc;">
+                    <div class="col-sm-2 col-xs-12">
+                        <div><i class="icon-cf icon-cf-bed"></i>
+                            2 
+                            <small>BHK</small>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-xs-12">
+                        <div><i class="icon-cf icon-cf-home"></i>
+                            Apartment                        </div>
+                    </div>
+                     <div class="col-sm-5 col-xs-12">
+                        <div><i class="icon-cf icon-cf-gps"></i>
+                            Tavarekere, BTM Layout, Bangalore                        </div>
+                     </div>
+                </div>
+
+                <div class="col-sm-12 listings-contact-info">
+                    <div class="col-xs-3 pull-right text-center">Freshness :<b>
+                        22 mins                     </b></div>
+                    <div class="col-xs-3 pull-right text-center">Want Within : <b>
+                        Immediate
+                    </b></div>
+                    <!--<div class="col-xs-3 pull-right text-center">By : <b>denish</b></div> -->
+                </div>
+                <div class="pull-right"><i><small>(0.74 Credit)</small></i></div>
+                                    <div style="clear:right;position:relative;">
+                                                <div class="pull-right">
+                                <button credit-val="0.74" class="btn btn-info pull-right vci-btn" listing-id="5513af716a210">See Contact Info.</button>
+                                                            </div>
+                    </div>
+                            </div>
+       </div>
+            <div class="col-xs-12 page-mylistings-details" style="padding:0px;">
+            <div class="listings-contact-detail-container">
+
+                <div>
+                    <span class="pull-left"><small>Looking For</small></span>
+                    <span class="pull-right">
+                        <span class="secondary-text"><i class="icon-cf icon-cf-rupee"></i>
+                            51.70L  - 58.30L                        </span>
+                    </span>
+                </div>
+
+                <div style="padding-bottom: 10px;border-bottom: solid 1px #ccc;">
+                    <div class="col-sm-2 col-xs-12">
+                        <div><i class="icon-cf icon-cf-bed"></i>
+                            3 
+                            <small>BHK</small>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-xs-12">
+                        <div><i class="icon-cf icon-cf-home"></i>
+                            House                        </div>
+                    </div>
+                     <div class="col-sm-5 col-xs-12">
+                        <div><i class="icon-cf icon-cf-gps"></i>
+                            Hosa Road, Hosur Road, Bangalore                        </div>
+                     </div>
+                </div>
+
+                <div class="col-sm-12 listings-contact-info">
+                    <div class="col-xs-3 pull-right text-center">Freshness :<b>
+                        22 mins                     </b></div>
+                    <div class="col-xs-3 pull-right text-center">Want Within : <b>
+                        Immediate
+                    </b></div>
+                    <!--<div class="col-xs-3 pull-right text-center">By : <b>Sandeep</b></div> -->
+                </div>
+                <div class="pull-right"><i><small>(0.65 Credit)</small></i></div>
+                                    <div style="clear:right;position:relative;">
+                                                <div class="pull-right">
+                                <button credit-val="0.65" class="btn btn-info pull-right vci-btn" listing-id="5513af5a6c7ea">See Contact Info.</button>
+                                                                    <div class="pull-right" style="margin:5px;"><i class="icon-cf icon-cf-mobile"></i><i class="icon-cf icon-cf-verified mob-verified"></i></div>
+                                                            </div>
+                    </div>
+                            </div>
+       </div>
+            <div class="col-xs-12 page-mylistings-details" style="padding:0px;">
+            <div class="listings-contact-detail-container">
+
+                <div>
+                    <span class="pull-left"><small>Looking For</small></span>
+                    <span class="pull-right">
+                        <span class="secondary-text"><i class="icon-cf icon-cf-rupee"></i>
+                            9.99L  - 15L                        </span>
+                    </span>
+                </div>
+
+                <div style="padding-bottom: 10px;border-bottom: solid 1px #ccc;">
+                    <div class="col-sm-2 col-xs-12">
+                        <div><i class="icon-cf icon-cf-bed"></i>
+                            1 
+                            <small>BHK</small>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-xs-12">
+                        <div><i class="icon-cf icon-cf-home"></i>
+                            Apartment                        </div>
+                    </div>
+                     <div class="col-sm-5 col-xs-12">
+                        <div><i class="icon-cf icon-cf-gps"></i>
+                            Chinchwad, Talegaon, Pune                        </div>
+                     </div>
+                </div>
+
+                <div class="col-sm-12 listings-contact-info">
+                    <div class="col-xs-3 pull-right text-center">Freshness :<b>
+                        22 mins                     </b></div>
+                    <div class="col-xs-3 pull-right text-center">Want Within : <b>
+                        Immediate
+                    </b></div>
+                    <!--<div class="col-xs-3 pull-right text-center">By : <b>Ashwini Pujari</b></div> -->
+                </div>
+                <div class="pull-right"><i><small>(0.26 Credit)</small></i></div>
+                                    <div style="clear:right;position:relative;">
+                                                <div class="pull-right">
+                                <button credit-val="0.26" class="btn btn-info pull-right vci-btn" listing-id="5513af56938bc">See Contact Info.</button>
+                                                            </div>
+                    </div>
+                            </div>
+       </div>
+            <div class="col-xs-12 page-mylistings-details" style="padding:0px;">
+            <div class="listings-contact-detail-container">
+
+                <div>
+                    <span class="pull-left"><small>Looking For</small></span>
+                    <span class="pull-right">
+                        <span class="secondary-text"><i class="icon-cf icon-cf-rupee"></i>
+                            20L  - 25L                        </span>
+                    </span>
+                </div>
+
+                <div style="padding-bottom: 10px;border-bottom: solid 1px #ccc;">
+                    <div class="col-sm-2 col-xs-12">
+                        <div><i class="icon-cf icon-cf-bed"></i>
+                            1/2 
+                            <small>BHK</small>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-xs-12">
+                        <div><i class="icon-cf icon-cf-home"></i>
+                            Apartment                        </div>
+                    </div>
+                     <div class="col-sm-5 col-xs-12">
+                        <div><i class="icon-cf icon-cf-gps"></i>
+                            Ambernath, Mumbai                        </div>
+                     </div>
+                </div>
+
+                <div class="col-sm-12 listings-contact-info">
+                    <div class="col-xs-3 pull-right text-center">Freshness :<b>
+                        22 mins                     </b></div>
+                    <div class="col-xs-3 pull-right text-center">Want Within : <b>
+                        Immediate
+                    </b></div>
+                    <!--<div class="col-xs-3 pull-right text-center">By : <b>neeta ashok sakrennavar</b></div> -->
+                </div>
+                <div class="pull-right"><i><small>(0.35 Credit)</small></i></div>
+                                    <div style="clear:right;position:relative;">
+                                                <div class="pull-right">
+                                <button credit-val="0.35" class="btn btn-info pull-right vci-btn" listing-id="5513af5291bac">See Contact Info.</button>
+                                                                    <div class="pull-right" style="margin:5px;"><i class="icon-cf icon-cf-mobile"></i><i class="icon-cf icon-cf-verified mob-verified"></i></div>
+                                                            </div>
+                    </div>
+                            </div>
+       </div>
+            <div class="col-xs-12 page-mylistings-details" style="padding:0px;">
+            <div class="listings-contact-detail-container">
+
+                <div>
+                    <span class="pull-left"><small>Looking For</small></span>
+                    <span class="pull-right">
+                        <span class="secondary-text"><i class="icon-cf icon-cf-rupee"></i>
+                            32.90L  - 37.10L                        </span>
+                    </span>
+                </div>
+
+                <div style="padding-bottom: 10px;border-bottom: solid 1px #ccc;">
+                    <div class="col-sm-2 col-xs-12">
+                        <div><i class="icon-cf icon-cf-bed"></i>
+                            2 
+                            <small>BHK</small>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-xs-12">
+                        <div><i class="icon-cf icon-cf-home"></i>
+                            Apartment                        </div>
+                    </div>
+                     <div class="col-sm-5 col-xs-12">
+                        <div><i class="icon-cf icon-cf-gps"></i>
+                            Dommasandra, Bangalore                        </div>
+                     </div>
+                </div>
+
+                <div class="col-sm-12 listings-contact-info">
+                    <div class="col-xs-3 pull-right text-center">Freshness :<b>
+                        23 mins                     </b></div>
+                    <div class="col-xs-3 pull-right text-center">Want Within : <b>
+                        Immediate
+                    </b></div>
+                    <!--<div class="col-xs-3 pull-right text-center">By : <b>deepu</b></div> -->
+                </div>
+                <div class="pull-right"><i><small>(0.46 Credit)</small></i></div>
+                                    <div style="clear:right;position:relative;">
+                                                <div class="pull-right">
+                                <button credit-val="0.46" class="btn btn-info pull-right vci-btn" listing-id="5513af346be7c">See Contact Info.</button>
+                                                            </div>
+                    </div>
+                            </div>
+       </div>
+            <div class="col-xs-12 page-mylistings-details" style="padding:0px;">
+            <div class="listings-contact-detail-container">
+
+                <div>
+                    <span class="pull-left"><small>Looking For</small></span>
+                    <span class="pull-right">
+                        <span class="secondary-text"><i class="icon-cf icon-cf-rupee"></i>
+                            31.02L  - 34.98L                        </span>
+                    </span>
+                </div>
+
+                <div style="padding-bottom: 10px;border-bottom: solid 1px #ccc;">
+                    <div class="col-sm-2 col-xs-12">
+                        <div><i class="icon-cf icon-cf-bed"></i>
+                             
+                            <small>BHK</small>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-xs-12">
+                        <div><i class="icon-cf icon-cf-home"></i>
+                            Plot                        </div>
+                    </div>
+                     <div class="col-sm-5 col-xs-12">
+                        <div><i class="icon-cf icon-cf-gps"></i>
+                            Koradi Road, Nagpur                        </div>
+                     </div>
+                </div>
+
+                <div class="col-sm-12 listings-contact-info">
+                    <div class="col-xs-3 pull-right text-center">Freshness :<b>
+                        23 mins                     </b></div>
+                    <div class="col-xs-3 pull-right text-center">Want Within : <b>
+                        Immediate
+                    </b></div>
+                    <!--<div class="col-xs-3 pull-right text-center">By : <b>sures</b></div> -->
+                </div>
+                <div class="pull-right"><i><small>(0.22 Credit)</small></i></div>
+                                    <div style="clear:right;position:relative;">
+                                                <div class="pull-right">
+                                <button credit-val="0.22" class="btn btn-info pull-right vci-btn" listing-id="5513af315490e">See Contact Info.</button>
+                                                            </div>
+                    </div>
+                            </div>
+       </div>
+            <div class="table-footer">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="col-xs-12 marginTop10" style="background: white;padding-top: 5px;">
+                    <div class="col-md-6 page-num-info">
+                        Show
+                        <span class="ui-select">
+                            <select max-page-size="" name="page_size">
+                                <option value="10" selected="selected">10</option>
+                                <option value="25">25</option>
+                                <option value="50">50</option>
+                            </select> 
+                        </span>
+                        entries per page
+                    </div>
+                    
+                    <div class="col-md-6 text-right pagination-container">
+                        <ul class="pagination-sm pagination">
+                                                        <li class="disabled">
+                                <a href="javascript:void(0);" data-page="1">First</a>
+                            </li>
+                            <li class="disabled">
+                                <a href="javascript:void(0);" data-page="-3">‹</a>
+                            </li>
+                                                        <li class="page-num active">
+                                <a ref="javascript:void(0);" data-page="1">1</a>
+                            </li>
+                                                        <li class="page-num ">
+                                <a ref="javascript:void(0);" data-page="2">2</a>
+                            </li>
+                                                        <li class="page-num ">
+                                <a ref="javascript:void(0);" data-page="3">3</a>
+                            </li>
+                                                        <li class="page-num ">
+                                <a ref="javascript:void(0);" data-page="4">4</a>
+                            </li>
+                                                        <li class="">
+                                <a href="javascript:void(0);" data-page="5">›</a>
+                            </li>
+                            <li class="">
+                                <a href="javascript:void(0);" data-page="16894">Last</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="modal fade custom-modal font14Light" id="vci-modal" data-toggle="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title text-center font18Regular">View Contact Information</h4>
+                </div>
+                <div class="modal-body">
+                    <div>You would be charged <span id="credit-val"></span> credits for this lead.</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="vci-submit">Confirm</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade custom-modal font14Light" id="localities-modal" data-toggle="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title text-center font18Regular">Localities</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="get-leads_hidden_fields_container"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade custom-modal font14Light" id="community-modal" data-toggle="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title text-center font18Regular">Community</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="get-community_hidden_fields_container"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade  custom-modal font14Light" id="report-agent-modal" data-toggle="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title text-center font18Regular">Confirm Refund Request</h4>
+                </div>
+                <div class="modal-body">
+                    <div>If your refund request is found valid, i.e., 
+lead belongs to an agent, the credits charged for the lead would be 
+reversed into your account. All refund requests would be processed 
+within 3 working days.</div>
+                    <div class="marginTop10">Are you sure you want to proceed?</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="report-agent-modal-submit">Confirm</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<input value="so=&amp;sot=" id="sort_params" type="hidden">
+<input value="" id="request_uri" type="hidden">
+<input value="55113b5d155d4" id="broker_id" type="hidden">
+<input value="[]" id="leads_preloaded_localities" type="hidden">
+<input value="[]" id="leads_preloaded_communities" type="hidden">
+</div></div>
+		<noscript>
+			<div class="callout callout-danger noscriptmsg">
+                <h4>Javascript disabled!</h4>
+                <p>You don't have Javascript enabled on your browser.<br/>Please enable it from browser settings.</p>
+            </div>
+		</noscript>
+		<div class="footer">
+			<p class="pri"><a href="http://www.commonfloor.com/privacy-policy" target="_blank">Privacy Policy</a></p>
+			<p class="cancel"><a href="http://www.commonfloor.com/cancellation-refund" target="_blank">Cancellation and Refund Policy</a></p>
+			<p class="copyright">Copyright © 2007-15 CommonFloor.com. All rights reserved.</p>
+		</div>
+		<div class="loading" style="min-height: 372px; display: none;"> 
+			<img class="loading-gif" src="03.Get%20Leads_files/loaders2.gif" alt="preloader.gif">
+			<div class="full-c">
+				<i class="icon-cf icon-cf-brand-logo" style="color:orange"></i>
+				<p>Loading</p>
+			</div>
+		</div>
+		<div class="notifications cf-custom-alert bottom-right"></div>
+	</section>
+</div>
+	<script src="03.Get%20Leads_files/ga.js" async="" type="text/javascript"></script><script src="03.Get%20Leads_files/analytics.js" async=""></script><script type="text/javascript" src="03.Get%20Leads_files/jquery_003.js"></script>
+	<script type="text/javascript" src="03.Get%20Leads_files/bootstrap.js"></script>
+	<script type="text/javascript" src="03.Get%20Leads_files/bootstrap-datepicker.js"></script>
+	<script type="text/javascript" src="03.Get%20Leads_files/jquery_002.js"></script>
+	<script type="text/javascript" src="03.Get%20Leads_files/jquery.js"></script>
+	<script type="text/javascript" src="03.Get%20Leads_files/agent-newautosuggest.js"></script>
+	<script type="text/javascript" src="03.Get%20Leads_files/chosen.js"></script>
+	<script type="text/javascript" src="03.Get%20Leads_files/bootstrap-multiselect.js"></script>
+	<script type="text/javascript" src="03.Get%20Leads_files/bootstrap-notify.js"></script>
+
+	<script type="text/javascript" src="03.Get%20Leads_files/common.js"></script>
+	<script type="text/javascript" src="03.Get%20Leads_files/_profile.js"></script>
+	<script type="text/javascript" src="03.Get%20Leads_files/_mycredits.js"></script>
+	<script type="text/javascript" src="03.Get%20Leads_files/_listings.js"></script>
+	<script type="text/javascript" src="03.Get%20Leads_files/_lead.js"></script>
+	<script type="text/javascript" src="03.Get%20Leads_files/_help.js"></script>
+	<script>
+	  	  	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})
+	  	(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		(function () {
+	        var ga = document.createElement('script');
+	        ga.type = 'text/javascript';
+	        ga.async = true;
+	        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	        var s = document.getElementsByTagName('script')[0];
+	        s.parentNode.insertBefore(ga, s);
+	    })();
+		ga('create', 'UA-2595309-4', 'auto');
+		ga('send', 'pageview');
+		var _gaq = _gaq || [];
+	    _gaq.push(['_setAccount', 'UA-2595309-4']);
+ 		_gaq.push(['_setCustomVar',3,"Agent segment - by activity levels",'A1',1]);
+ 		_gaq.push(['_setCustomVar',4,"Agent segment - by current valuation",'V1',1]);
+ 		_gaq.push(['_setCustomVar',6,"User segment",'',1]);
+ 		_gaq.push(['_trackPageview']);
+
+ 		function trackPageEvents(category,action, opt_label, opt_noninteraction){
+ 			if(!category || !action) return;
+ 			var arr = ['_trackEvent',category,action,opt_label||'',,opt_noninteraction||false];
+ 			_gaq.push(arr);
+ 		}
+	</script>
+
+</body></html>

@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<html class="no-js"><!--<![endif]--><head>
+	<link rel="shortcut icon" href="http://www.commonfloor.com/favicon.ico">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="author" content="CommonFloor.com">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>CF Agent Console : SKC Realty</title>
+	<link type="text/css" rel="stylesheet" href="06.Help_files/bootstrap.css">
+<link type="text/css" rel="stylesheet" href="06.Help_files/main.css">
+<link type="text/css" rel="stylesheet" href="06.Help_files/common.css">
+<link type="text/css" rel="stylesheet" href="06.Help_files/style.css">
+<link type="text/css" rel="stylesheet" href="06.Help_files/chosen.css">
+<link type="text/css" rel="stylesheet" href="06.Help_files/bootstrap-multiselect.css">
+<link type="text/css" rel="stylesheet" href="06.Help_files/bootstrap-notify.css">
+</head>
+<body id="agent-console-app" data-custom-background="" data-off-canvas-nav="">
+	<section id="header" class="top-header"><header class="clearfix ">
+    <a href="javascript:void(0);" class="toggle-min" id="toggle-min"><i class="icon-cf icon-cf-burger"></i></a>
+
+    <div class="logo">
+        <a href="#/dashboard">
+            <span><img src="06.Help_files/cf-logo.png"></span>
+        </a>
+    </div>
+
+    <div class="menu-button" toggle-off-canvas="" id="mobile-nav-toggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </div>
+
+    <div class="top-nav">
+        <div class="col-xs-6 font18Regular nopadding">Agent Console</div>
+        <ul class="col-sm-6 nav-right pull-right list-unstyled nopadding">
+            <li class="dropdown text-normal nav-profile pull-right">
+                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="06.Help_files/default.png" id="header_profile_pic" class="img-circle img30_30 profile-pic">
+                    <span>
+                        <span>SKC Realty</span>
+                    </span>
+                    <i class="icon-cf icon-cf-arrow-down icon-has-ul" style="margiin-top:8px;"></i>
+                </a>
+                <ul class="dropdown-menu with-arrow pull-right">
+                    <li>
+                        <a href="http://www.commonfloor.com/agent/logout">
+                            <i class="icon-cf icon-cf-logout"></i>
+                            <span>Log Out</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</header>
+</section>	<aside id="nav-container">
+    <div id="nav-wrapper">
+        <div style="position: relative; overflow: hidden; width: auto; height: 100%;" class="slimScrollDiv"><ul id="nav" data-collapse-nav="" data-slim-scroll="" data-highlight-active="" style="overflow: hidden; width: auto; height: 100%;">
+            <li class="">
+                <a href="#/dashboard" onclick="trackPageEvents('Menu','Dashboard','',false)">
+                    <i class="icon-cf icon-cf-dashboard">
+                        <span class="icon-bg bg-orange"></span>
+                    </i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li class="">
+                <a href="#/mylistings" onclick="trackPageEvents('Menu','My Listings','',false)">
+                    <i class="icon-cf icon-cf-listing">
+                        <span class="icon-bg bg-orange"></span>
+                    </i>
+                    <span>My Listings</span>
+                </a>
+            </li>
+            <li class="sub-section">
+                <a href="javascript:void(0);" onclick="trackPageEvents('Menu','Leads','',true)">
+                    <i class="icon-cf icon-cf-lead">
+                        <span class="icon-bg bg-orange"></span>
+                    </i>
+                    <span>Leads</span>
+                </a>
+                <ul style="display: none;">
+                    <li class="">
+                        <a href="#/get-leads" onclick="trackPageEvents('Menu','Leads','Get Leads',false)">
+                            <span>Get Leads</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#/manage-leads" onclick="trackPageEvents('Menu','Leads','Manage Leads',false)">
+                            <span>Manage Leads</span>
+                        </a>
+                    </li>
+
+                </ul>
+                <i class="icon-cf icon-cf-arrow-right icon-has-ul"></i>
+            </li>
+            <li class="sub-section">
+                <a href="javascript:void(0);" onclick="trackPageEvents('Menu','Reports','',true)">
+                    <i class="icon-cf icon-cf-report">
+                        <span class="icon-bg bg-orange"></span>
+                    </i>
+                    <span>Reports</span>
+                </a>
+                <ul class="sub-nav" style="display: none;">
+                    <li class="">
+                        <a href="#/credits-summary" onclick="trackPageEvents('Menu','Reports','Credits Summary',false)">
+                            <span>Credits Summary</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#/lead-report" onclick="trackPageEvents('Menu','Reports','Lead Report',false)">
+                            <span>Lead Report</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/refund-status" onclick="trackPageEvents('Menu','Reports','Refund Status',false)">
+                            <span>Refund Status</span>
+                        </a>
+                    </li>
+                </ul>
+                <i class="icon-cf icon-cf-arrow-right icon-has-ul"></i>
+            </li>
+            <li class="sub-section">
+                <a href="javascript:void(0);" onclick="trackPageEvents('Menu','My Account','',true)">
+                    <i class="icon-cf icon-cf-myprofile">
+                        <span class="icon-bg bg-orange"></span>
+                    </i>
+                    <span>My Account</span>
+                </a>
+                <ul style="display: none;">
+                    <li class="">
+                        <a href="#/my-profile" onclick="trackPageEvents('Menu','My Account','My Profile',false)">
+                            My Profile
+                        </a>
+                    </li>
+                                            <li class="">
+                            <a href="#/my-team" onclick="trackPageEvents('Menu','My Account','My Team',false)">
+                                My Team
+                            </a>
+                        </li>
+                                        <li class="active">
+                        <a href="#/my-subscriptions" onclick="trackPageEvents('Menu','My Account','My Subscriptions',false)">
+                            My Subscriptions
+                        </a>
+                    </li>
+                </ul>
+                <i class="icon-cf icon-cf-arrow-right icon-has-ul"></i>
+            </li>
+            <li class="active">
+                <a href="#/faqs" onclick="trackPageEvents('Menu','Help','',false)">
+                    <i class="icon-cf icon-cf-help">
+                        <span class="icon-bg bg-orange"></span>
+                    </i>
+                    <span>Help</span>
+                </a>
+            </li>
+        </ul><div style="background: none repeat scroll 0% 0% rgb(0, 0, 0); width: 7px; position: absolute; top: 80px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 253.171px;" class="slimScrollBar"></div><div style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: none repeat scroll 0% 0% rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;" class="slimScrollRail"></div></div>
+    </div>
+</aside>	<div class="view-container">
+	<section id="content" class="animate-fade-up">
+		<div class="partial"><div class="page page-help" id="help-page" sub-page-name="help-page">
+
+    <div class="page-header" style="overflow:auto;">
+            <div class="pull-left marginTop10">Help</div>
+            <div class="pull-right">
+                <button class="btn btn-primary" id="quick_tour">Quick Tour</button>
+            </div>
+    </div>
+    <div class="modal fade" id="quick-tour-modal" data-toggle="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body carousel slide" data-ride="carousel" id="myCarousel" style="background:orange;padding:0px">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                    <li data-target="#myCarousel" data-slide-to="6"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox" style="width:100%;height:100%">
+                   <div class="item active">
+                        <div class="modal-header carousel-image" style="margin-left:15px;">
+                        </div>
+                        <div class="modal-header carousel-text" style="background-color:orange;">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        </div>
+                        <img src="06.Help_files/Intro.png" alt="slide1" class="carousel-image">
+                        <div class="pull-right carousel-text" style="background-color:orange;width:370px;">
+                            <h1 class="modal-title text-left font38Regular" style="color:white;">The New Agent Console</h1>
+                            <p class="font14Light" style="color:white;margin-top:20px;">Start the tour to know how the new agent console lets you better manage your leads and your listings.</p>
+                            <div class="button-icon" style="margin-top:45px;text-align: center;">
+                                <button class="btn btn-danger" data-dismiss="modal" id="skip_tour">Skip Tour</button>
+                                <button class="btn btn-primary start_tour" id="start_tour">Start</button>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="item">
+                        <div class="modal-header carousel-image" style="margin-left:15px;">
+                            <h3 class="modal-title text-left font24Regular">Dashboard</h3>
+                        </div>
+                        <div class="modal-header carousel-text">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        </div>
+                        <img src="06.Help_files/Dashboard.png" alt="slide2" class="carousel-image">
+                        <div class="pull-right carousel-text" style="background-color:white;width:370px;">
+                            <h3 style="margin-left: 38px;color:orange;">What we offer</h3>
+                            <ul>
+                                <li>Bird's eye view of all that is happening in your account</li>
+                                <li>Overview of your promoted projects, sale listings, and rent listings</li>
+                                <li>Your credit consumption summary for the last 15 days</li>
+                                <li>Filters you have set and the leads you have received against them</li>
+                            </ul>
+                        </div> 
+                    </div>
+                    <div class="item">
+                        <div class="modal-header carousel-image" style="margin-left:15px;">
+                            <h3 class="modal-title text-left font24Regular">Profile</h3>
+                        </div>
+                        <div class="modal-header carousel-text">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>                    
+                        </div>
+                        <img src="06.Help_files/Profile.png" alt="slide3" class="carousel-image">
+                        <div class="carousel-text" style="background-color:white;width:370px;">
+                            <h3 style="margin-left: 38px;color:orange;">What we offer</h3>
+                            <ul>
+                                <li>A profile page to create your unique identity on CommonFloor.com</li>
+                                <li>In addition to your name, address, and contact numbers, it contains details about your business and the areas you service</li>
+                                <li>Your profile is visible to all property seekers on CommonFloor</li>
+                            </ul>
+                            <h3 style="margin-left: 38px;color:orange">What you can do</h3>
+                            <ul>
+                                <li class="one">Fill details for your profile. Always keep your profile updated</li>
+                            </ul>
+                        </div> 
+                    </div>
+                    <div class="item">
+                        <div class="modal-header carousel-image" style="margin-left:15px;">
+                            <h3 class="modal-title text-left font24Regular">Property Listings</h3>
+                        </div>
+                        <div class="modal-header carousel-text">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>                    
+                        </div>
+                        <img src="06.Help_files/Property-Listings.png" alt="slide4" class="carousel-image">
+                        <div class="pull-right carousel-text" style="background-color:white;width:370px;">
+                            <h3 style="margin-left: 38px;color:orange;">What we offer</h3>
+                            <ul>
+                                <li>Unlimited listings for free</li>
+                                <li>We deduct credits only on leads delivered to you</li>
+                                <li>Manage your credits by setting a lead cap on each listing</li>
+                            </ul>
+                            <h3 style="margin-left: 38px;margin-left: 38px;color:orange">What you can do</h3>
+                            <ul>
+                                <li class="one">List your property. Fill all the details to get more responses</li>
+                                <li class="two">Modify lead cap. Default is 5 leads per listing</li>
+                                <li class="three">Pause listing if you no longer want to receive leads for it</li>
+                            </ul>
+                        </div> 
+                    </div>
+                    <div class="item">
+                        <div class="modal-header carousel-image" style="margin-left:15px;">
+                            <h3 class="modal-title text-left font24Regular">Leads</h3>
+                        </div>
+                        <div class="modal-header carousel-text">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>                    
+                        </div>
+                        <img src="06.Help_files/Leadsnew.png" alt="slide5" class="carousel-image">
+                        <div class="pull-right carousel-text" style="background-color:white;width:370px;">
+                            <h3 style="margin-left: 38px;color:orange;">What we offer</h3>
+                            <ul>
+                                <li>Get leads matching your filter criteria</li>
+                                <li>We deduct credits only when you view contact details of a lead</li>
+                            </ul>
+                            <h3 style="margin-left: 38px;color:orange">What you can do</h3>
+                            <ul>
+                                <li class="one">Set your filter criteria</li>
+                                <li class="two">View contact details of leads</li>
+                            </ul>
+                        </div> 
+                    </div>
+                    <div class="item">
+                        <div class="modal-header carousel-image" style="margin-left:15px;">
+                            <h3 class="modal-title text-left font24Regular">Reports</h3>
+                        </div>
+                        <div class="modal-header carousel-text">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>                    
+                        </div>
+                        <img src="06.Help_files/Reports.png" alt="slide6" class="carousel-image">
+                        <div class="pull-right carousel-text" style="background-color:white;width:370px">
+                            <h3 style="margin-left: 38px;color:orange;">What we offer</h3>
+                            <ul>
+                                <li>Detailed reports about the leads you consumed</li>
+                                <li>Credit refund if a lead turns out to be a broker</li>
+                            </ul>
+                            <h3 style="margin-left: 38px;color:orange">What you can do</h3>
+                            <ul>
+                                <li class="one"> View and download reports</li>
+                                <li class="two"> Request and track credit refunds. Refund request must be raised within 4 days of the lead being delivered</li>
+                               <li class="three"> Contact your CommonFloor Sales Account Manager to purchase more credits</li>
+                            </ul>
+                        </div> 
+                    </div>
+                    <div class="item">
+                        <div class="modal-header carousel-image" style="margin-left:15px;">
+                            <h3 class="modal-title text-left font24Regular">Team</h3>
+                        </div>
+                        <div class="modal-header carousel-text">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>                    
+                        </div>
+                        <img src="06.Help_files/Team.png" alt="slide7" class="carousel-image">
+                        <div class="pull-right carousel-text" style="background-color:white;width:370px">
+                            <h3 style="margin-left: 38px;color:orange;">What we offer</h3>
+                            <ul>
+                                <li>Manage your business better by adding team members to your CommonFloor account</li>
+                                <li>Individual credit cap for each team member</li>
+                                <li>Subscription filters for each team member</li>
+                            </ul>
+                            <h3 style="margin-left: 38px;color:orange">What you can do</h3>
+                            <ul>
+                                <li class="one"> Create team members</li>
+                                <li class="two"> Allocate credits to each team member</li>
+                                <li class="three"> Contact Agent Care to set up subscription filters for your team members</li>
+                            </ul>
+                        </div> 
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="sr-only pre">Previous</span>
+                    <span class="icon-cf icon-cf-prev" style="font-weight:bold" aria-hidden="true"></span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="sr-only">Next</span>
+                    <span class="icon-cf icon-cf-next" style="font-weight:bold" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+    <div style="overflow:auto;">
+            <div class="sub-header text-left col-xs-12 font18Light">Have a Specific Question? Refer the FAQ Section</div>
+    </div>
+    <div style="overflow:auto;">
+            <div class="pull-left marginTop10 font16Light ">My Account</div>
+    </div>
+
+
+    <div class="accordion marginTop10" id="accordion2">
+        <div class="panel dashboard-box">
+            <div class="accordion-heading">
+                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne" style="text-decoration:none;">
+                <i class="icon-cf icon-has-ul"></i>
+                &nbsp;&nbsp;&nbsp;My account is created by Sales Manager. How do I add more details in my profile?
+                </a>
+            </div>
+            <div id="collapseOne" class="accordion-body collapse">
+                <div class="accordion-inner">
+                Log on to your dashboard and navigate to <b>My Account &gt; My Profile</b> from the left hand navigation bar. Here, you can add details about your business, areas where you operate etc.
+                </div>
+            </div>
+        </div>
+        <div class="panel dashboard-box">
+            <div class="accordion-heading">
+                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo" style="text-decoration:none;">
+                <i class="icon-cf icon-has-ul"></i>
+                &nbsp;&nbsp;&nbsp;How do I check what type of leads am I subscribed for?
+                </a>
+            </div>
+            <div id="collapseTwo" class="accordion-body collapse">
+                <div class="accordion-inner">
+                To check your current subscription of lead type, navigate to <b>My Account &gt; My Subscriptions</b>.
+ Here, you can review the lead filters (criteria for receiving leads) 
+which are set for you. You can also set the limit on total credit 
+consumption and limit on daily leads for these filters.
+                </div>
+            </div>
+        </div>
+        <div class="panel dashboard-box">
+            <div class="accordion-heading">
+                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree" style="text-decoration:none;">
+                <i class="icon-cf icon-has-ul"></i>
+                &nbsp;&nbsp;&nbsp;I have a team of executives who works 
+for me. Can I create their user accounts, assign them credits, and 
+manage their accounts?
+                </a>
+            </div>
+            <div id="collapseThree" class="accordion-body collapse">
+                <div class="accordion-inner">
+                Yes, My team feature provides you the ability to create 
+sub accounts, assign them credits for each type of leads. You can also 
+view the credit consumption details of your team mates.
+                </div>
+            </div>
+        </div>
+        <div class="panel dashboard-box">
+            <div class="accordion-heading">
+                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour" style="text-decoration:none;">
+                <i class="icon-cf icon-has-ul"></i>
+                &nbsp;&nbsp;&nbsp;What happens when I delete my team member’s account with listings and credits in it?
+                </a>
+            </div>
+            <div id="collapseFour" class="accordion-body collapse">
+                <div class="accordion-inner">
+                All listings and remaining credits will be migrated to the Parent (Main) account.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="overflow:auto;">
+            <div class="pull-left marginTop10 font16Light ">My Listings</div>
+    </div>
+    <div class="accordion marginTop10" id="accordion3">
+        <div class="panel dashboard-box">
+            <div class="accordion-heading">
+                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapseOne2" style="text-decoration:none;">
+                <i class="icon-cf icon-has-ul"></i>
+                &nbsp;&nbsp;&nbsp;What happens to my existing premium and sponsored listing with your new transformed model?
+                </a>
+            </div>
+            <div id="collapseOne2" class="accordion-body collapse">
+                <div class="accordion-inner">
+                All active Premium and Sponsored Listings will be 
+converted to Basic Listings. For every premium listing credit, you will 
+be able to post 4 Basic Listings. Similarly, for all sponsored listing 
+credits, you will be able to post 8 Basic Listings. For these listings, 
+you will continue to receive unlimited responses till they expire.
+                </div>
+            </div>
+        </div>
+        <div class="panel dashboard-box">
+            <div class="accordion-heading">
+                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapseTwo2" style="text-decoration:none;">
+                <i class="icon-cf icon-has-ul"></i>
+                &nbsp;&nbsp;&nbsp;I have just subscribed to CommonFloor. Can I get the previous unlimited response plan?
+                </a>
+            </div>
+            <div id="collapseTwo2" class="accordion-body collapse">
+                <div class="accordion-inner">
+                No, all new subscriptions will be migrated to the new 
+lead based model. You will not be able to get the older subscription.
+                </div>
+            </div>
+        </div>
+        <div class="panel dashboard-box">
+            <div class="accordion-heading">
+                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapseThree2" style="text-decoration:none;">
+                <i class="icon-cf icon-has-ul"></i>
+                &nbsp;&nbsp;&nbsp;What is the validity of an active listing in new system?
+                </a>
+            </div>
+            <div id="collapseThree2" class="accordion-body collapse">
+                <div class="accordion-inner">
+                The listing validity remains the same. Rent listings are
+ valid for 60 days and sale listings are valid for 120 days.
+                </div>
+            </div>
+        </div>
+        <div class="panel dashboard-box">
+            <div class="accordion-heading">
+                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapseFour2" style="text-decoration:none;">
+                <i class="icon-cf icon-has-ul"></i>
+                &nbsp;&nbsp;&nbsp;I do not see the option to refresh a listing. Why?
+                </a>
+            </div>
+            <div id="collapseFour2" class="accordion-body collapse">
+                <div class="accordion-inner">
+                Refresh option is not given to ensure that the listing with the most relevant content appears on top. 
+                </div>
+            </div>
+        </div>
+        <div class="panel dashboard-box">
+            <div class="accordion-heading">
+                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapseFive2" style="text-decoration:none;">
+                <i class="icon-cf icon-has-ul"></i>
+                &nbsp;&nbsp;&nbsp;I do not see the option to delete a listing. Why?
+                </a>
+            </div>
+            <div id="collapseFive2" class="accordion-body collapse">
+                <div class="accordion-inner">
+                With refresh option removed, the normal course for the 
+clients to make their listing appear on top of the search results would 
+be to delete the listing and repost again. This is why we have removed 
+the option to delete a listing. 
+                </div>
+            </div>
+        </div>
+        <div class="panel dashboard-box">
+            <div class="accordion-heading">
+                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapseSix2" style="text-decoration:none;">
+                <i class="icon-cf icon-has-ul"></i>
+                &nbsp;&nbsp;&nbsp;How do I ensure that my listing comes on top and remains on top of the search results?
+                </a>
+            </div>
+            <div id="collapseSix2" class="accordion-body collapse">
+                <div class="accordion-inner">
+                CommonFloor shares listing guidelines with clients on 
+how to improve the listing score. Though the guidelines help you in 
+getting better ranking of your listing, we cannot guarantee that it 
+would stay on top for long time. Our sorting algorithm is mostly 
+relevance based which is tuned to promote listings which the system 
+understands to be in demand by the seekers. 
+                </div>
+            </div>
+        </div>
+        <div class="panel dashboard-box">
+            <div class="accordion-heading">
+                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapseSeven2" style="text-decoration:none;">
+                <i class="icon-cf icon-has-ul"></i>
+                &nbsp;&nbsp;&nbsp;How do I ensure that my listing comes on top of the other listing from competitor?
+                </a>
+            </div>
+            <div id="collapseSeven2" class="accordion-body collapse">
+                <div class="accordion-inner">
+                We suggest to post as much relevant information about 
+the property as possible. In case, the details posted by both agents is 
+same, the system will take the reputation of the agent into 
+consideration and will show the listing. 
+                </div>
+            </div>
+        </div>
+        <div class="panel dashboard-box">
+            <div class="accordion-heading">
+                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapseEight2" style="text-decoration:none;">
+                <i class="icon-cf icon-has-ul"></i>
+                &nbsp;&nbsp;&nbsp;What are the listing guidelines?
+                </a>
+            </div>
+            <div id="collapseEight2" class="accordion-body collapse">
+                <div class="accordion-inner">
+                Click <a href="http://www.commonfloor.com/public/assets/agent/img/listing_guide.pdf" target="_blank">here</a>
+ to view the listing guidelines on how to improve the listing score. 
+Though the guidelines help you in getting better ranking of your 
+listing, we cannot guarantee that it would stay on top for long time. 
+                </div>
+            </div>
+        </div>
+        <div class="panel dashboard-box">
+            <div class="accordion-heading">
+                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion3" href="#collapseNine2" style="text-decoration:none;">
+                <i class="icon-cf icon-has-ul"></i>
+                &nbsp;&nbsp;&nbsp;What do you mean by <b>“Pause Listing”</b>?
+                </a>
+            </div>
+            <div id="collapseNine2" class="accordion-body collapse">
+                <div class="accordion-inner">
+                It means that the clients specifically express that they don’t want leads for certain period of time. <br>
+                Reasons could be:<br>
+                Off Season - He is going on a vacation or probably the 
+client wants to promote other projects/listings and don’t want to spend 
+money on leads generated from this listing/project.<br> 
+                Listing closed - It may also be possible that the client
+ has already got responses and has finally converted (sold or rented) 
+the listing. 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="overflow:auto;">
+            <div class="pull-left marginTop10 font16Light ">Leads</div>
+    </div>
+    <div class="accordion marginTop10" id="accordion4">
+        <div class="panel dashboard-box">
+            <div class="accordion-heading">
+                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion4" href="#collapseOne3" style="text-decoration:none;">
+                <i class="icon-cf icon-has-ul"></i>
+                &nbsp;&nbsp;&nbsp;Where will I get leads from? How do 
+you ensure I will get leads when you are cutting down on ads?
+                </a>
+            </div>
+            <div id="collapseOne3" class="accordion-body collapse">
+                <div class="accordion-inner">
+                We are ensuring that the content of 
+Listings/Projects/Localities is enriched with great details.
+                Additionally, our ongoing efforts on SEO and SEM would 
+help us attract more traffic. Our new user experience should help 
+property seekers find properties they are looking for, more easily than 
+ever before. This should significantly boost Lead Quantity. 
+                </div>
+            </div>
+        </div>
+        <div class="panel dashboard-box">
+            <div class="accordion-heading">
+                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion4" href="#collapseTwo3" style="text-decoration:none;">
+                <i class="icon-cf icon-has-ul"></i>
+                &nbsp;&nbsp;&nbsp;What do you mean by <b>“Get Leads”</b>?
+                </a>
+            </div>
+            <div id="collapseTwo3" class="accordion-body collapse">
+                <div class="accordion-inner">
+                This is same as pulling the lead from agent console in 
+the previous version. You can filter specific requirement and pull the 
+contact info by paying the credits shown against it. 
+                </div>
+            </div>
+        </div>
+        <div class="panel dashboard-box">
+            <div class="accordion-heading">
+                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion4" href="#collapseThree3" style="text-decoration:none;">
+                <i class="icon-cf icon-has-ul"></i>
+                &nbsp;&nbsp;&nbsp;Do I get the same lead which is shared with other clients?
+                </a>
+            </div>
+            <div id="collapseThree3" class="accordion-body collapse">
+                <div class="accordion-inner">
+                Project leads are exclusive and are not shared with 
+anyone except the promoter. Locality leads will be shared with others. 
+                </div>
+            </div>
+        </div>
+        <div class="panel dashboard-box">
+            <div class="accordion-heading">
+                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion4" href="#collapseFour3" style="text-decoration:none;">
+                <i class="icon-cf icon-has-ul"></i>
+                &nbsp;&nbsp;&nbsp;How do I report a bad lead? What is the criterion to report a lead?
+                </a>
+            </div>
+            <div id="collapseFour3" class="accordion-body collapse">
+                <div class="accordion-inner">
+                You can use <b>“Request Refund”</b> option against a 
+lead which is from an agent. We do not allow to report bad lead (bogus 
+or insincere) as we do a quality check on each lead before sharing it.<br>
+                You can request for refund within 4 days of lead being shared, post which the option will not be available. 
+                </div>
+            </div>
+        </div>
+        <div class="panel dashboard-box">
+            <div class="accordion-heading">
+                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion4" href="#collapseFive3" style="text-decoration:none;">
+                <i class="icon-cf icon-has-ul"></i>
+                &nbsp;&nbsp;&nbsp;What is the turnaround time on refunding the credits?
+                </a>
+            </div>
+            <div id="collapseFive3" class="accordion-body collapse">
+                <div class="accordion-inner">
+                We take a maximum of 3 working days to verify the lead and refund the credits. 
+                </div>
+            </div>
+        </div>
+        <div class="panel dashboard-box">
+            <div class="accordion-heading">
+                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion4" href="#collapseSix3" style="text-decoration:none;">
+                <i class="icon-cf icon-has-ul"></i>
+                &nbsp;&nbsp;&nbsp;What happens when I request for refund on a lead?
+                </a>
+            </div>
+            <div id="collapseSix3" class="accordion-body collapse">
+                <div class="accordion-inner">
+                Our Service Delivery team will verify if the lead 
+reported by you is genuine or not. If it turns out to be an agent lead, 
+they will process the refund else decline it. 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="overflow:auto;">
+            <div class="pull-left marginTop10 font16Light ">Reports</div>
+    </div>
+    <div class="accordion marginTop10" id="accordion5">
+        <div class="panel dashboard-box">
+            <div class="accordion-heading">
+                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion5" href="#collapseOne4" style="text-decoration:none;">
+                <i class="icon-cf icon-has-ul"></i>
+                &nbsp;&nbsp;&nbsp;What do you mean by lead cap and credit cap?
+                </a>
+            </div>
+            <div id="collapseOne4" class="accordion-body collapse">
+                <div class="accordion-inner">
+                Lead cap on a filter is maximum number of the leads you 
+will receive in a day. Credit cap on a filter is the total number of 
+credits you are willing to pay for leads of the particular filter.
+                </div>
+            </div>
+        </div>
+        <div class="panel dashboard-box">
+            <div class="accordion-heading">
+                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion5" href="#collapseTwo4" style="text-decoration:none;">
+                <i class="icon-cf icon-has-ul"></i>
+                &nbsp;&nbsp;&nbsp;How do I see the lead report of my team member?
+                </a>
+            </div>
+            <div id="collapseTwo4" class="accordion-body collapse">
+                <div class="accordion-inner">
+                Navigate to <b>Reports &gt; Lead Report</b>. Under Account, select appropriate team member name. The page will reload with the lead report of your team member.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="overflow:auto;margin-top: 60px;">
+            <div class="sub-header text-left col-xs-12 font18Light">Have Feedback? Please share with us</div>
+    </div>
+    <form id="feedback-form-model" onsubmit="return false;">
+        <div style="overflow:auto;width:100%;">
+            <select name="feedback_subject" id="feedback-subject">
+                <option selected="selected" value="0">--Please select subject line--</option>
+                <option value="1">Facing an issue performing a task</option>
+                <option value="2">Concern regarding leads - pricing/volume</option>
+                <option value="3">Concern around listings - visibility/responses</option>
+                <option value="4">Suggest improvements on CF Agent</option>
+                <option value="5">Other feedback</option>
+            </select>
+        </div><br>
+        <div>
+            <textarea placeholder="Provide your feedback/ query here..." name="feed-back-txt" data-pattern="^[a-zA-Z0-9][a-zA-Z0-9 ]{1,200}$"></textarea>
+        </div>
+        <div class="pull-right marginTop10">
+            <button class="btn btn-primary feedback-submit" id="feedback-submit">Submit</button>
+        </div>
+    </form>
+    <div style="clear:both"></div>
+        <div style="overflow:auto;margin-top: 30px;">
+        <div class="sub-header text-left col-xs-12 font18Light">Get a quick connect</div>
+    </div>
+    <div style="clear:both;overflow:auto;">
+        <div class="col-sm-6 col-xs-12">
+            <div class="dashboard-box" style="min-height:145px;">
+                <span class="col-xs-4">
+                    <span class="dashboard-box-icon dashboard-box-icon-2x bg-success">
+                        <i class="icon-cf icon-cf-mobile" style="font-size:40px;"></i>
+                    </span>
+                </span>
+
+                <span class="col-xs-8 nopadding">
+                    <div class="font18Light">Prefer a Conversation?</div>
+                    <div class="font18Light">Call</div>
+                    <div class="font24Regular">0124-465-3000</div>
+                    <span class="font12Light">operates 9am to 9pm</span>
+                </span>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xs-12" style="min-height:145px;">
+            <div class="dashboard-box">
+                <span class="col-xs-4">
+                    <span class="dashboard-box-icon dashboard-box-icon-2x bg-primary">
+                        <i class="icon-cf icon-cf-mail" style="font-size:40px;"></i>
+                    </span>
+                </span>
+                <span class="col-xs-8 nopadding">
+                    <div class="font18Light">Need Detailed Response?</div>
+                    <div class="font18Light">Email</div>
+                    <div class="font24Regular" style="word-break:break-all;">agentcare@commonfloor.com</div>
+                </span>
+            </div>
+        </div>
+    </div>
+    
+</div>
+</div>
+		<noscript>
+			<div class="callout callout-danger noscriptmsg">
+                <h4>Javascript disabled!</h4>
+                <p>You don't have Javascript enabled on your browser.<br/>Please enable it from browser settings.</p>
+            </div>
+		</noscript>
+		<div class="footer">
+			<p class="pri"><a href="http://www.commonfloor.com/privacy-policy" target="_blank">Privacy Policy</a></p>
+			<p class="cancel"><a href="http://www.commonfloor.com/cancellation-refund" target="_blank">Cancellation and Refund Policy</a></p>
+			<p class="copyright">Copyright © 2007-15 CommonFloor.com. All rights reserved.</p>
+		</div>
+		<div class="loading" style="min-height: 316px; display: none;"> 
+			<img class="loading-gif" src="06.Help_files/loaders2.gif" alt="preloader.gif">
+			<div class="full-c">
+				<i class="icon-cf icon-cf-brand-logo" style="color:orange"></i>
+				<p>Loading</p>
+			</div>
+		</div>
+		<div class="notifications cf-custom-alert bottom-right"></div>
+	</section>
+</div>
+	<script src="06.Help_files/ga.js" async="" type="text/javascript"></script><script src="06.Help_files/analytics.js" async=""></script><script type="text/javascript" src="06.Help_files/jquery_002.js"></script>
+	<script type="text/javascript" src="06.Help_files/bootstrap.js"></script>
+	<script type="text/javascript" src="06.Help_files/bootstrap-datepicker.js"></script>
+	<script type="text/javascript" src="06.Help_files/jquery_003.js"></script>
+	<script type="text/javascript" src="06.Help_files/jquery.js"></script>
+	<script type="text/javascript" src="06.Help_files/agent-newautosuggest.js"></script>
+	<script type="text/javascript" src="06.Help_files/chosen.js"></script>
+	<script type="text/javascript" src="06.Help_files/bootstrap-multiselect.js"></script>
+	<script type="text/javascript" src="06.Help_files/bootstrap-notify.js"></script>
+
+	<script type="text/javascript" src="06.Help_files/common.js"></script>
+	<script type="text/javascript" src="06.Help_files/_profile.js"></script>
+	<script type="text/javascript" src="06.Help_files/_mycredits.js"></script>
+	<script type="text/javascript" src="06.Help_files/_listings.js"></script>
+	<script type="text/javascript" src="06.Help_files/_lead.js"></script>
+	<script type="text/javascript" src="06.Help_files/_help.js"></script>
+	<script>
+	  	  	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})
+	  	(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		(function () {
+	        var ga = document.createElement('script');
+	        ga.type = 'text/javascript';
+	        ga.async = true;
+	        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	        var s = document.getElementsByTagName('script')[0];
+	        s.parentNode.insertBefore(ga, s);
+	    })();
+		ga('create', 'UA-2595309-4', 'auto');
+		ga('send', 'pageview');
+		var _gaq = _gaq || [];
+	    _gaq.push(['_setAccount', 'UA-2595309-4']);
+ 		_gaq.push(['_setCustomVar',3,"Agent segment - by activity levels",'A1',1]);
+ 		_gaq.push(['_setCustomVar',4,"Agent segment - by current valuation",'V1',1]);
+ 		_gaq.push(['_setCustomVar',6,"User segment",'',1]);
+ 		_gaq.push(['_trackPageview']);
+
+ 		function trackPageEvents(category,action, opt_label, opt_noninteraction){
+ 			if(!category || !action) return;
+ 			var arr = ['_trackEvent',category,action,opt_label||'',,opt_noninteraction||false];
+ 			_gaq.push(arr);
+ 		}
+	</script>
+
+<div style="display: none; width: 0px; left: 0px; top: -23px;" class="greyborder autosuggestDiv" id="autosuggest"></div><div style="display: none; width: 0px; left: 0px; top: -23px;" class="greyborder autosuggestDiv" id="autosuggest"></div></body></html>

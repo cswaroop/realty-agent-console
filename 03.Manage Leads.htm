@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!-->
+<html class="no-js"><!--<![endif]--><head>
+	<link rel="shortcut icon" href="http://www.commonfloor.com/favicon.ico">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="author" content="CommonFloor.com">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>CF Agent Console : SKC Realty</title>
+	<link type="text/css" rel="stylesheet" href="03.Manage%20Leads_files/bootstrap.css">
+<link type="text/css" rel="stylesheet" href="03.Manage%20Leads_files/main.css">
+<link type="text/css" rel="stylesheet" href="03.Manage%20Leads_files/common.css">
+<link type="text/css" rel="stylesheet" href="03.Manage%20Leads_files/style.css">
+<link type="text/css" rel="stylesheet" href="03.Manage%20Leads_files/chosen.css">
+<link type="text/css" rel="stylesheet" href="03.Manage%20Leads_files/bootstrap-multiselect.css">
+<link type="text/css" rel="stylesheet" href="03.Manage%20Leads_files/bootstrap-notify.css">
+</head>
+<body id="agent-console-app" data-custom-background="" data-off-canvas-nav="">
+	<section id="header" class="top-header"><header class="clearfix ">
+    <a href="javascript:void(0);" class="toggle-min" id="toggle-min"><i class="icon-cf icon-cf-burger"></i></a>
+
+    <div class="logo">
+        <a href="#/dashboard">
+            <span><img src="03.Manage%20Leads_files/cf-logo.png"></span>
+        </a>
+    </div>
+
+    <div class="menu-button" toggle-off-canvas="" id="mobile-nav-toggle">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </div>
+
+    <div class="top-nav">
+        <div class="col-xs-6 font18Regular nopadding">Agent Console</div>
+        <ul class="col-sm-6 nav-right pull-right list-unstyled nopadding">
+            <li class="dropdown text-normal nav-profile pull-right">
+                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="03.Manage%20Leads_files/default.png" id="header_profile_pic" class="img-circle img30_30 profile-pic">
+                    <span>
+                        <span>SKC Realty</span>
+                    </span>
+                    <i class="icon-cf icon-cf-arrow-down icon-has-ul" style="margiin-top:8px;"></i>
+                </a>
+                <ul class="dropdown-menu with-arrow pull-right">
+                    <li>
+                        <a href="http://www.commonfloor.com/agent/logout">
+                            <i class="icon-cf icon-cf-logout"></i>
+                            <span>Log Out</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</header>
+</section>	<aside id="nav-container">
+    <div id="nav-wrapper">
+        <div style="position: relative; overflow: hidden; width: auto; height: 100%;" class="slimScrollDiv"><ul id="nav" data-collapse-nav="" data-slim-scroll="" data-highlight-active="" style="overflow: hidden; width: auto; height: 100%;">
+            <li class="">
+                <a href="#/dashboard" onclick="trackPageEvents('Menu','Dashboard','',false)">
+                    <i class="icon-cf icon-cf-dashboard">
+                        <span class="icon-bg bg-orange"></span>
+                    </i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li class="">
+                <a href="#/mylistings" onclick="trackPageEvents('Menu','My Listings','',false)">
+                    <i class="icon-cf icon-cf-listing">
+                        <span class="icon-bg bg-orange"></span>
+                    </i>
+                    <span>My Listings</span>
+                </a>
+            </li>
+            <li class="sub-section active">
+                <a href="javascript:void(0);" onclick="trackPageEvents('Menu','Leads','',true)">
+                    <i class="icon-cf icon-cf-lead">
+                        <span class="icon-bg bg-orange"></span>
+                    </i>
+                    <span>Leads</span>
+                </a>
+                <ul style="display: block;">
+                    <li class="">
+                        <a href="#/get-leads" onclick="trackPageEvents('Menu','Leads','Get Leads',false)">
+                            <span>Get Leads</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#/manage-leads" onclick="trackPageEvents('Menu','Leads','Manage Leads',false)">
+                            <span>Manage Leads</span>
+                        </a>
+                    </li>
+
+                </ul>
+                <i class="icon-cf icon-cf-arrow-right icon-has-ul"></i>
+            </li>
+            <li class="sub-section">
+                <a href="javascript:void(0);" onclick="trackPageEvents('Menu','Reports','',true)">
+                    <i class="icon-cf icon-cf-report">
+                        <span class="icon-bg bg-orange"></span>
+                    </i>
+                    <span>Reports</span>
+                </a>
+                <ul class="sub-nav" style="display: none;">
+                    <li class="">
+                        <a href="#/credits-summary" onclick="trackPageEvents('Menu','Reports','Credits Summary',false)">
+                            <span>Credits Summary</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/lead-report" onclick="trackPageEvents('Menu','Reports','Lead Report',false)">
+                            <span>Lead Report</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/refund-status" onclick="trackPageEvents('Menu','Reports','Refund Status',false)">
+                            <span>Refund Status</span>
+                        </a>
+                    </li>
+                </ul>
+                <i class="icon-cf icon-cf-arrow-right icon-has-ul"></i>
+            </li>
+            <li class="sub-section">
+                <a href="javascript:void(0);" onclick="trackPageEvents('Menu','My Account','',true)">
+                    <i class="icon-cf icon-cf-myprofile">
+                        <span class="icon-bg bg-orange"></span>
+                    </i>
+                    <span>My Account</span>
+                </a>
+                <ul style="display: none;">
+                    <li>
+                        <a href="#/my-profile" onclick="trackPageEvents('Menu','My Account','My Profile',false)">
+                            My Profile
+                        </a>
+                    </li>
+                                            <li class="">
+                            <a href="#/my-team" onclick="trackPageEvents('Menu','My Account','My Team',false)">
+                                My Team
+                            </a>
+                        </li>
+                                        <li>
+                        <a href="#/my-subscriptions" onclick="trackPageEvents('Menu','My Account','My Subscriptions',false)">
+                            My Subscriptions
+                        </a>
+                    </li>
+                </ul>
+                <i class="icon-cf icon-cf-arrow-right icon-has-ul"></i>
+            </li>
+            <li>
+                <a href="#/faqs" onclick="trackPageEvents('Menu','Help','',false)">
+                    <i class="icon-cf icon-cf-help">
+                        <span class="icon-bg bg-orange"></span>
+                    </i>
+                    <span>Help</span>
+                </a>
+            </li>
+        </ul><div style="background: none repeat scroll 0% 0% rgb(0, 0, 0); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; height: 282.88px;" class="slimScrollBar"></div><div style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: none repeat scroll 0% 0% rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;" class="slimScrollRail"></div></div>
+    </div>
+</aside>	<div class="view-container">
+	<section id="content" class="animate-fade-up">
+		<div class="partial"><div class="page page-manage-leads" id="manage-leads" sub-page-name="manage-leads">
+    <div class="page-header bread-crumb"><span>Leads :: </span>Manage Leads</div>
+    <div class="col-md-12 nopadding">
+                    <div class="callout callout-info">
+                <h4>No Leads found!</h4>
+                <p>No leads found. In case of any concerns, feel free to call Agent Care - 0124-465-3000</p>
+            </div>
+                        <div class="modal fade custom-modal font14Light" data-toggle="modal" id="lead-status-modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-center font18Regular">Update Calling Status</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="drop-down-ms lead-status" id="lead-status">
+                            <label for="message-text" class="col-xs-6 col-sm-4 control-label">Status</label>
+                            <select>
+                                <option selected="selected">--Select Status--</option>
+                                <option value="Could not be Reached">Could not be Reached</option>
+                                <option value="Not Interested">Not Interested</option>
+                                <option value="Already Closed">Already Closed</option>
+                                <option value="Follow up">Follow up</option>
+                                <option value="Deal Closed">Deal Closed</option>
+                            </select>
+                        </div>
+                    </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-primary add-status">Add</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade custom-modal font14Light" data-toggle="modal" id="lead-remarks-modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-center font18Regular">Add Remarks</h4>
+                    </div>
+                    <div class="modal-body" style="overflow:auto;">
+                        <div class="col-xs-12 lead-remarks" id="lead-remarks">
+                            <label for="message-text" class="col-xs-6 col-sm-4 control-label">Remarks</label>
+                            <textarea class="lead_remark_in" style="width:300px;height:80px;" placeholder="Add remarks here..."></textarea>  
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary add-remarks">Add</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade custom-modal font14Light" id="report-agent-modal" data-toggle="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title text-center font18Regular">Confirm refund request</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div>If your refund request is found valid, 
+i.e., lead belongs to an agent, the credits charged for the lead would 
+be reversed into your account. All refund requests would be processed 
+within 3 working days.</div>
+                        <div class="marginTop10">Are you sure you want to proceed?</div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" id="report-agent-modal-submit">Confirm</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br class="clearBoth">
+</div>
+<input value="so=shared_on&amp;sot=DESC" id="sort_params" type="hidden">
+<input value="/agent/agent-report/index" id="request_url" type="hidden">
+
+
+</div>
+		<noscript>
+			<div class="callout callout-danger noscriptmsg">
+                <h4>Javascript disabled!</h4>
+                <p>You don't have Javascript enabled on your browser.<br/>Please enable it from browser settings.</p>
+            </div>
+		</noscript>
+		<div class="footer">
+			<p class="pri"><a href="http://www.commonfloor.com/privacy-policy" target="_blank">Privacy Policy</a></p>
+			<p class="cancel"><a href="http://www.commonfloor.com/cancellation-refund" target="_blank">Cancellation and Refund Policy</a></p>
+			<p class="copyright">Copyright © 2007-15 CommonFloor.com. All rights reserved.</p>
+		</div>
+		<div class="loading" style="min-height: 2159px; display: none;"> 
+			<img class="loading-gif" src="03.Manage%20Leads_files/loaders2.gif" alt="preloader.gif">
+			<div class="full-c">
+				<i class="icon-cf icon-cf-brand-logo" style="color:orange"></i>
+				<p>Loading</p>
+			</div>
+		</div>
+		<div class="notifications cf-custom-alert bottom-right"></div>
+	</section>
+</div>
+	<script src="03.Manage%20Leads_files/ga.js" async="" type="text/javascript"></script><script src="03.Manage%20Leads_files/analytics.js" async=""></script><script type="text/javascript" src="03.Manage%20Leads_files/jquery_003.js"></script>
+	<script type="text/javascript" src="03.Manage%20Leads_files/bootstrap.js"></script>
+	<script type="text/javascript" src="03.Manage%20Leads_files/bootstrap-datepicker.js"></script>
+	<script type="text/javascript" src="03.Manage%20Leads_files/jquery_002.js"></script>
+	<script type="text/javascript" src="03.Manage%20Leads_files/jquery.js"></script>
+	<script type="text/javascript" src="03.Manage%20Leads_files/agent-newautosuggest.js"></script>
+	<script type="text/javascript" src="03.Manage%20Leads_files/chosen.js"></script>
+	<script type="text/javascript" src="03.Manage%20Leads_files/bootstrap-multiselect.js"></script>
+	<script type="text/javascript" src="03.Manage%20Leads_files/bootstrap-notify.js"></script>
+
+	<script type="text/javascript" src="03.Manage%20Leads_files/common.js"></script>
+	<script type="text/javascript" src="03.Manage%20Leads_files/_profile.js"></script>
+	<script type="text/javascript" src="03.Manage%20Leads_files/_mycredits.js"></script>
+	<script type="text/javascript" src="03.Manage%20Leads_files/_listings.js"></script>
+	<script type="text/javascript" src="03.Manage%20Leads_files/_lead.js"></script>
+	<script type="text/javascript" src="03.Manage%20Leads_files/_help.js"></script>
+	<script>
+	  	  	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})
+	  	(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		(function () {
+	        var ga = document.createElement('script');
+	        ga.type = 'text/javascript';
+	        ga.async = true;
+	        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	        var s = document.getElementsByTagName('script')[0];
+	        s.parentNode.insertBefore(ga, s);
+	    })();
+		ga('create', 'UA-2595309-4', 'auto');
+		ga('send', 'pageview');
+		var _gaq = _gaq || [];
+	    _gaq.push(['_setAccount', 'UA-2595309-4']);
+ 		_gaq.push(['_setCustomVar',3,"Agent segment - by activity levels",'A1',1]);
+ 		_gaq.push(['_setCustomVar',4,"Agent segment - by current valuation",'V1',1]);
+ 		_gaq.push(['_setCustomVar',6,"User segment",'',1]);
+ 		_gaq.push(['_trackPageview']);
+
+ 		function trackPageEvents(category,action, opt_label, opt_noninteraction){
+ 			if(!category || !action) return;
+ 			var arr = ['_trackEvent',category,action,opt_label||'',,opt_noninteraction||false];
+ 			_gaq.push(arr);
+ 		}
+	</script>
+
+<div style="display: none; width: 163px; left: 501px; top: 120px;" class="greyborder autosuggestDiv" id="autosuggest"></div><div style="display: none; width: 163px; left: 624px; top: 120px;" class="greyborder autosuggestDiv" id="autosuggest"></div></body></html>
